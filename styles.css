@@ -85,12 +85,6 @@ body::before {
   box-shadow: var(--shadow);
 }
 
-.resume-location {
-  margin: 0.75rem 0 0;
-  color: var(--text-muted);
-  font-size: 1rem;
-}
-
 .resume-links {
   display: flex;
   flex-wrap: wrap;
@@ -435,6 +429,48 @@ h3 {
 
 .resume-stack + .resume-stack {
   margin-top: 1rem;
+}
+
+.resume-reveal-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.resume-reveal-label {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.reveal-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0.45rem 0.85rem;
+  color: var(--accent-dark);
+  border: 1px solid rgba(143, 72, 37, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 251, 245, 0.82);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.18s ease,
+    background-color 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.reveal-button:hover {
+  transform: translateY(-1px);
+  border-color: rgba(143, 72, 37, 0.4);
+  background: rgba(255, 247, 239, 0.95);
+}
+
+.reveal-button.is-revealed {
+  color: var(--text);
+  cursor: default;
 }
 
 .resume-entry + .resume-entry {

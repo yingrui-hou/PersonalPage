@@ -22,7 +22,17 @@
         <div>
           <p class="eyebrow">Resume</p>
           <h1>Yingrui Hou</h1>
-          <p class="resume-location">Clermont-Ferrand, France</p>
+          <div class="resume-reveal-row">
+            <span class="resume-reveal-label">Location</span>
+            <button
+              class="reveal-button"
+              type="button"
+              data-reveal="location"
+              data-value="Clermont-Ferrand, France"
+            >
+              Click to see
+            </button>
+          </div>
         </div>
         <div class="resume-links">
           <a href="index.html">Back to Portfolio</a>
@@ -49,7 +59,17 @@
             <p class="sidebar-label">Contact</p>
             <div class="resume-stack">
               <a href="mailto:yingrui.hou@outlook.com">yingrui.hou@outlook.com</a>
-              <p>+33 XXX XXX XXX</p>
+              <div class="resume-reveal-row">
+                <span class="resume-reveal-label">Phone</span>
+                <button
+                  class="reveal-button"
+                  type="button"
+                  data-reveal="phone"
+                  data-value="+33(0)785396332"
+                >
+                  Click to see
+                </button>
+              </div>
               <a href="https://www.linkedin.com/in/yingrui-hou">linkedin.com/in/yingrui-hou</a>
               <a href="https://orcid.org/0000-0001-6454-278X">ORCID</a>
               <a href="https://gitlab.com/hyrsophie">GitLab</a>
@@ -135,7 +155,7 @@
             <p class="sidebar-label">Education</p>
             <div class="resume-stack">
               <p><strong>PhD in Particle Physics</strong></p>
-              <p>[University Name]</p>
+              <p>University of Chinese Academy of Sciences</p>
               <p><strong>BSc / MSc in Physics</strong></p>
             </div>
           </section>
@@ -152,5 +172,14 @@
         </main>
       </div>
     </div>
+    <script>
+      document.querySelectorAll(".reveal-button").forEach((button) => {
+        button.addEventListener("click", () => {
+          button.textContent = button.dataset.value;
+          button.classList.add("is-revealed");
+          button.disabled = true;
+        });
+      });
+    </script>
   </body>
 </html>

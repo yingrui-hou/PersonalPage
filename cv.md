@@ -1,6 +1,6 @@
 # Yingrui HOU
-Clermont-Ferrand, France  
-yingrui.hou@outlook.com | +33 XXX XXX XXX  
+Location available on web CV on request  
+yingrui.hou@outlook.com | Phone available on request  
 LinkedIn: https://www.linkedin.com/in/yingrui-hou  
 
 ---
@@ -76,7 +76,7 @@ GRAiNITA Project
 ## EDUCATION
 
 PhD in Particle Physics  
-[University Name]
+University of Chinese Academy of Sciences
 
 BSc / MSc in Physics
 
