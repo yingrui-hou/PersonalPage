@@ -341,6 +341,7 @@
         },
       };
 
+      const counterUrl = "https://counterapi.com/api/yingrui-hou.github.io/view/personalpage-total";
       const descriptionMeta = document.querySelector('meta[name="description"]');
       const langButtons = document.querySelectorAll("[data-lang-btn]");
       const nameAudioButton = document.getElementById("name-audio-button");
@@ -429,6 +430,7 @@
         });
       }
 
+      fetch(counterUrl).catch(() => {});
       applyResumeLanguage(window.localStorage.getItem("resume-lang") || "en");
     </script>
   </body>

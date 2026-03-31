@@ -839,6 +839,31 @@ h3 {
   margin-top: 0.45rem;
 }
 
+.site-counter {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  margin-top: 1.25rem;
+  padding: 0.7rem 0.95rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(252, 248, 241, 0.92);
+}
+
+.site-counter-label {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.site-counter-value {
+  color: var(--accent-dark);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 .case-evidence {
   margin-top: 1.15rem;
   padding: 1rem 0 0;
