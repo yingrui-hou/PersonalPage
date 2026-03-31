@@ -575,10 +575,13 @@ h3 {
   border-top: 1px solid var(--line);
 }
 
-.resume-section-title {
-  margin: 0 0 1.25rem;
-  font-size: 1.55rem;
-  letter-spacing: -0.03em;
+.resume-role-title {
+  margin: 0 0 1.15rem;
+  color: var(--text);
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .resume-entry-header {
