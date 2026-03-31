@@ -8,6 +8,7 @@
       name="description"
       content="Resume of Yingrui Hou, numerical engineer and data scientist with a PhD in experimental particle physics."
     />
+    <script src="https://counterapi.com/c.js?ns=yingrui-hou.github.io" async></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +18,13 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="resume-page">
+    <div
+      class="counterapi counterapi-invisible"
+      key="personalpage-total"
+      invisible="true"
+      startNumber="1"
+      aria-hidden="true"
+    ></div>
     <div class="resume-shell">
       <header class="resume-header">
         <div>
@@ -341,7 +349,6 @@
         },
       };
 
-      const counterUrl = "https://counterapi.com/api/yingrui-hou.github.io/view/personalpage-total";
       const descriptionMeta = document.querySelector('meta[name="description"]');
       const langButtons = document.querySelectorAll("[data-lang-btn]");
       const nameAudioButton = document.getElementById("name-audio-button");
@@ -430,7 +437,6 @@
         });
       }
 
-      fetch(counterUrl).catch(() => {});
       applyResumeLanguage(window.localStorage.getItem("resume-lang") || "en");
     </script>
   </body>

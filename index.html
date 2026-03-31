@@ -8,6 +8,7 @@
       name="description"
       content="Selected work by Yingrui Hou, focused on data science, probabilistic modelling, signal extraction, bias correction, and machine learning under uncertainty."
     />
+    <script src="https://counterapi.com/c.js?ns=yingrui-hou.github.io" async></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -336,30 +337,20 @@
               analysis, modelling, and analytics roles where robust inference matters more
               than clean textbook data.
             </p>
-            <div class="site-counter" aria-live="polite">
-              <span class="site-counter-label">Site views</span>
-              <span class="site-counter-value" id="site-view-count">...</span>
-            </div>
+            <div
+              class="counterapi site-counter"
+              key="personalpage-total"
+              icon="eye"
+              label="views"
+              color="#88431e"
+              bg="transparent"
+              iconColor="#88431e"
+              noLink="true"
+              startNumber="1"
+            ></div>
           </div>
         </section>
       </main>
     </div>
-    <script>
-      const counterUrl = "https://counterapi.com/api/yingrui-hou.github.io/view/personalpage-total";
-      const siteViewCount = document.getElementById("site-view-count");
-
-      fetch(counterUrl)
-        .then((response) => response.json())
-        .then((data) => {
-          if (siteViewCount && typeof data.value === "number") {
-            siteViewCount.textContent = data.value.toLocaleString();
-          }
-        })
-        .catch(() => {
-          if (siteViewCount) {
-            siteViewCount.textContent = "--";
-          }
-        });
-    </script>
   </body>
 </html>
