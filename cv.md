@@ -1,5 +1,5 @@
 # Yingrui HOU
-Location available on web CV on request  
+Clermont-Ferrand, France  
 yingrui.hou@outlook.com | Phone available on request  
 LinkedIn: https://www.linkedin.com/in/yingrui-hou  
 
