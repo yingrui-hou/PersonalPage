@@ -39,7 +39,7 @@ Experienced in extracting hidden physical quantities using probabilistic models,
 ---
 
 ## PROFESSIONAL EXPERIENCE [Postdoctoral Researcher (2021 – 2025)]
-CNRS / CERN / LHCb Collaboration
+CNRS / CERN / LHCb Collaboration + GRAiNITA Collaboration
 
 ### Data Science — Numerical Modelling & Data Analysis
 
