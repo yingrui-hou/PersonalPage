@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yingrui Hou | Data Science &amp; Modelling Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio site for Yingrui Hou, focused on data science, probabilistic modelling, signal extraction, bias correction, and machine learning under uncertainty."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <a class="brand" href="#top">Yingrui Hou</a>
+          <div class="nav-links">
+            <a href="#case-studies">Case Studies</a>
+            <a href="#competencies">Competencies</a>
+            <a href="portfolio.md">Source Markdown</a>
+          </div>
+        </nav>
+
+        <section class="hero-content" id="top">
+          <p class="eyebrow">Data Science &amp; Modelling Portfolio</p>
+          <h1>Turning noisy systems into reliable decisions.</h1>
+          <p class="hero-about">
+            PhD and postdoctoral researcher in high energy particle physics, with a
+            strong problem-solving mindset and a focus on translating complex data into
+            practical insight.
+          </p>
+          <p class="hero-copy">
+            My work focuses on extracting useful signals where direct ground truth is
+            limited, uncertain, or missing. I build probabilistic models, correct for
+            bias, validate under uncertainty, and translate complex data behaviour into
+            stable analysis pipelines.
+          </p>
+          <p class="hero-contact">
+            Contact:
+            <a href="mailto:yingrui.hou@outlook.com">yingrui.hou@outlook.com</a>
+          </p>
+          <p class="hero-contact">
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/yingrui-hou">linkedin.com/in/yingrui-hou</a>
+          </p>
+          <p class="hero-contact">
+            ORCID:
+            <a href="https://orcid.org/0000-0001-6454-278X">0000-0001-6454-278X</a>
+          </p>
+          <p class="hero-contact">
+            GitLab:
+            <a href="https://gitlab.com/hyrsophie">gitlab.com/hyrsophie</a>
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#case-studies">Explore Case Studies</a>
+            <a class="button button-secondary" href="portfolio.md">Read the Markdown Version</a>
+          </div>
+        </section>
+
+        <section class="summary-grid" aria-label="Portfolio summary">
+          <article class="summary-card">
+            <span class="summary-label">Core Strength</span>
+            <h2>Probabilistic modelling under uncertainty</h2>
+            <p>
+              I work on problems where labels are weak, systems are biased, and data is
+              noisy enough that robust inference matters more than surface accuracy.
+            </p>
+          </article>
+          <article class="summary-card">
+            <span class="summary-label">Typical Deliverables</span>
+            <h2>Calibration, validation, and model refinement</h2>
+            <p>
+              My projects combine statistical modelling, cross-checks, and iterative
+              optimisation to improve stability, generalisation, and measurement quality.
+            </p>
+          </article>
+          <article class="summary-card">
+            <span class="summary-label">Role Fit</span>
+            <h2>Data science, ML, analytics, and quantitative modelling</h2>
+            <p>
+              The work maps directly to anomaly detection, sensor analytics, time-series
+              modelling, domain adaptation, and system optimisation in industry.
+            </p>
+          </article>
+        </section>
+      </header>
+
+      <main>
+        <section class="section intro">
+          <div class="section-heading">
+            <p class="eyebrow">Overview</p>
+            <h2>Applied research translated for industry.</h2>
+          </div>
+          <p class="section-copy">
+            Across these projects, the recurring pattern is consistent: infer what matters
+            when observations are imperfect, assumptions are fragile, and validation must
+            be earned. That is the same pattern behind production data science in fraud,
+            forecasting, lifecycle analytics, signal processing, and decision systems.
+          </p>
+        </section>
+
+        <section class="section" id="case-studies">
+          <div class="section-heading">
+            <p class="eyebrow">Selected Work</p>
+            <h2>Case studies</h2>
+          </div>
+
+          <div class="case-study-grid">
+            <article class="case-study">
+              <div class="case-study-header">
+                <p class="case-number">01</p>
+                <h3>Weak Signal Extraction in Noisy Data</h3>
+              </div>
+              <p>
+                Identified meaningful signals in datasets dominated by background noise,
+                even without per-event ground truth.
+              </p>
+              <ul>
+                <li>Built probabilistic mixture models with signal and background components.</li>
+                <li>Used maximum likelihood estimation and feature-based selection strategies.</li>
+                <li>Validated with proxy metrics such as signal yield, width, and dataset stability.</li>
+              </ul>
+              <p class="impact">
+                Industry relevance: fraud detection, anomaly detection, weak supervision.
+              </p>
+            </article>
+
+            <article class="case-study">
+              <div class="case-study-header">
+                <p class="case-number">02</p>
+                <h3>Time-Series Modelling with Bias Correction</h3>
+              </div>
+              <p>
+                Inferred latent dynamics from noisy temporal data affected by measurement
+                resolution and selection bias.
+              </p>
+              <ul>
+                <li>Built time-dependent probabilistic models across multiple datasets.</li>
+                <li>Corrected for resolution effects, acceptance bias, and noise dilution.</li>
+                <li>Used calibration samples and control datasets to reduce systematic error.</li>
+              </ul>
+              <p class="impact">
+                Industry relevance: retention modelling, churn analysis, causal inference.
+              </p>
+            </article>
+
+            <article class="case-study">
+              <div class="case-study-header">
+                <p class="case-number">03</p>
+                <h3>Machine Learning under Distribution Shift</h3>
+              </div>
+              <p>
+                Improved model robustness when training and real-world data did not follow
+                the same distribution.
+              </p>
+              <ul>
+                <li>Trained Gradient Boosted Decision Trees and compared feature distributions.</li>
+                <li>Applied gradient-boosting-based reweighting before retraining.</li>
+                <li>Validated alignment at the feature level to improve downstream generalisation.</li>
+              </ul>
+              <p class="impact">
+                Industry relevance: domain adaptation, production ML, dataset shift handling.
+              </p>
+            </article>
+
+            <article class="case-study">
+              <div class="case-study-header">
+                <p class="case-number">04</p>
+                <h3>Sensor Signal Modelling and Reconstruction</h3>
+              </div>
+              <p>
+                Converted raw sensor signals into more accurate measurements while
+                separating different signal types.
+              </p>
+              <ul>
+                <li>Modelled the signal chain from energy deposition to electronic readout.</li>
+                <li>Analysed waveform structure and extracted discriminative pulse-shape features.</li>
+                <li>Improved resolution and classification through statistical signal modelling.</li>
+              </ul>
+              <p class="impact">
+                Industry relevance: sensor analytics, signal processing, IoT, embedded systems.
+              </p>
+            </article>
+
+            <article class="case-study">
+              <div class="case-study-header">
+                <p class="case-number">05</p>
+                <h3>Model Calibration and System Optimisation</h3>
+              </div>
+              <p>
+                Reduced bias and non-linearity in measurement systems through iterative
+                calibration and parameter tuning.
+              </p>
+              <ul>
+                <li>Analysed variable correlations and system response behaviour.</li>
+                <li>Applied transformations, calibration strategies, and simulation comparisons.</li>
+                <li>Improved measurement accuracy through repeated refinement loops.</li>
+              </ul>
+              <p class="impact">
+                Industry relevance: system calibration, digital twins, engineering optimisation.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="competencies">
+          <div class="section-heading">
+            <p class="eyebrow">Capabilities</p>
+            <h2>Key competencies demonstrated</h2>
+          </div>
+          <div class="competency-grid">
+            <div class="competency">Probabilistic modelling under uncertainty</div>
+            <div class="competency">Signal extraction without labels</div>
+            <div class="competency">Bias correction and calibration</div>
+            <div class="competency">Handling dataset shift</div>
+            <div class="competency">Iterative model refinement</div>
+            <div class="competency">Large-scale data processing</div>
+          </div>
+        </section>
+
+        <section class="section closing">
+          <div class="closing-panel">
+            <p class="eyebrow">Positioning</p>
+            <h2>Best fit for teams working with uncertainty, scale, and messy data.</h2>
+            <p>
+              This portfolio is strongest for data science, machine learning, quantitative
+              analysis, modelling, and analytics roles where robust inference matters more
+              than clean textbook data.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
