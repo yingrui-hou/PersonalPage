@@ -20,22 +20,28 @@
     <div class="resume-shell">
       <header class="resume-header">
         <div>
-          <p class="eyebrow">Resume</p>
+          <p class="eyebrow" data-i18n="resume_label">Resume</p>
           <h1>Yingrui Hou</h1>
           <p class="resume-location">Clermont-Ferrand, France</p>
         </div>
-        <div class="resume-links">
-          <a href="index.html">Back to Homepage</a>
+        <div class="resume-header-actions">
+          <div class="resume-lang-toggle" aria-label="Language switcher">
+            <button class="lang-toggle is-active" type="button" data-lang-btn="en">EN</button>
+            <button class="lang-toggle" type="button" data-lang-btn="fr">FR</button>
+          </div>
+          <div class="resume-links">
+            <a href="index.html" data-i18n="back_home">Back to Homepage</a>
+          </div>
         </div>
       </header>
 
       <section class="resume-card resume-summary">
-        <p>
+        <p data-i18n="summary_1">
           Numerical engineer and data scientist with a PhD in experimental particle
           physics, specialized in modelling, state estimation, and signal reconstruction
           from noisy measurement systems.
         </p>
-        <p>
+        <p data-i18n="summary_2">
           Experienced in extracting hidden physical quantities using probabilistic
           models, handling uncertainty, and calibrating models against real-world data.
           Strong background in Python/C++, large-scale data processing, and robust
@@ -46,7 +52,7 @@
       <div class="resume-grid">
         <aside class="resume-sidebar">
           <section class="resume-card">
-            <p class="sidebar-label">Contact</p>
+            <p class="sidebar-label" data-i18n="contact_label">Contact</p>
             <div class="contact-list">
               <a class="contact-link" href="mailto:yingrui.hou@outlook.com">
                 <span class="contact-icon" aria-hidden="true">
@@ -67,6 +73,7 @@
                   type="button"
                   data-reveal="phone"
                   data-value="+33(0)785396332"
+                  data-i18n-phone
                 >
                   Click to see
                 </button>
@@ -98,94 +105,94 @@
           </section>
 
           <section class="resume-card">
-            <p class="sidebar-label">Education</p>
+            <p class="sidebar-label" data-i18n="education_label">Education</p>
             <div class="resume-stack">
-              <p><strong>PhD in Particle Physics</strong></p>
+              <p data-i18n-html="edu_phd"><strong>PhD in Particle Physics</strong></p>
               <p>University of Chinese Academy of Sciences</p>
-              <p><strong>BSc in Applied Physics</strong></p>
+              <p data-i18n-html="edu_bsc"><strong>BSc in Applied Physics</strong></p>
               <p>China University of Mining and Technology</p>
             </div>
           </section>
 
           <section class="resume-card">
-            <p class="sidebar-label">Skills</p>
+            <p class="sidebar-label" data-i18n="skills_label">Skills</p>
             <div class="resume-stack">
-              <p><strong>Modelling &amp; Estimation</strong></p>
-              <p>State estimation and inverse problems</p>
-              <p>Probabilistic modelling and mixture models</p>
-              <p>Signal reconstruction from noisy measurements</p>
-              <p>Uncertainty quantification and propagation</p>
-              <p>Model calibration and bias correction</p>
+              <p data-i18n-html="skill_group_1"><strong>Modelling &amp; Estimation</strong></p>
+              <p data-i18n="skill_1">State estimation and inverse problems</p>
+              <p data-i18n="skill_2">Probabilistic modelling and mixture models</p>
+              <p data-i18n="skill_3">Signal reconstruction from noisy measurements</p>
+              <p data-i18n="skill_4">Uncertainty quantification and propagation</p>
+              <p data-i18n="skill_5">Model calibration and bias correction</p>
             </div>
             <div class="resume-stack">
-              <p><strong>Data Science &amp; Machine Learning</strong></p>
-              <p>Gradient Boosted Trees (CatBoost / XGBoost)</p>
-              <p>Feature engineering and selection</p>
-              <p>Domain adaptation and reweighting</p>
-              <p>Time-series modelling under noise</p>
+              <p data-i18n-html="skill_group_2"><strong>Data Science &amp; Machine Learning</strong></p>
+              <p data-i18n="skill_6">Gradient Boosted Trees (CatBoost / XGBoost)</p>
+              <p data-i18n="skill_7">Feature engineering and selection</p>
+              <p data-i18n="skill_8">Domain adaptation and reweighting</p>
+              <p data-i18n="skill_9">Time-series modelling under noise</p>
             </div>
             <div class="resume-stack">
-              <p><strong>Programming &amp; Engineering</strong></p>
-              <p>Python, C++</p>
-              <p>Large-scale data processing pipelines</p>
-              <p>Linux, Git, CI/CD</p>
-              <p>Numerical stability and performance optimisation</p>
+              <p data-i18n-html="skill_group_3"><strong>Programming &amp; Engineering</strong></p>
+              <p data-i18n="skill_10">Python, C++</p>
+              <p data-i18n="skill_11">Large-scale data processing pipelines</p>
+              <p data-i18n="skill_12">Linux, Git, CI/CD</p>
+              <p data-i18n="skill_13">Numerical stability and performance optimisation</p>
             </div>
           </section>
 
           <section class="resume-card">
-            <p class="sidebar-label">Languages</p>
+            <p class="sidebar-label" data-i18n="languages_label">Languages</p>
             <div class="resume-stack">
-              <p>Chinese: Native speaker</p>
-              <p>English: C1</p>
-              <p>French: B1 to B2</p>
+              <p data-i18n="lang_1">Chinese: Native speaker</p>
+              <p data-i18n="lang_2">English: C1</p>
+              <p data-i18n="lang_3">French: B1 to B2</p>
             </div>
           </section>
         </aside>
 
         <main class="resume-main">
           <section class="resume-card">
-            <p class="sidebar-label">Technical Highlights</p>
+            <p class="sidebar-label" data-i18n="highlights_label">Technical Highlights</p>
             <ul>
-              <li>Weak signal extraction using mixture models and likelihood-based inference</li>
-              <li>Time-series modelling with bias correction and uncertainty handling</li>
-              <li>Domain adaptation using gradient boosting reweighting</li>
-              <li>Large-scale data processing and numerical modelling</li>
+              <li data-i18n="highlight_1">Weak signal extraction using mixture models and likelihood-based inference</li>
+              <li data-i18n="highlight_2">Time-series modelling with bias correction and uncertainty handling</li>
+              <li data-i18n="highlight_3">Domain adaptation using gradient boosting reweighting</li>
+              <li data-i18n="highlight_4">Large-scale data processing and numerical modelling</li>
             </ul>
           </section>
 
           <section class="resume-card">
-            <p class="sidebar-label">Professional Experience [Postdoctoral Researcher (2021 - 2025)]</p>
+            <p class="sidebar-label" data-i18n="experience_label">Professional Experience [Postdoctoral Researcher (2021 - 2025)]</p>
             <div class="resume-entry">
               <div class="resume-entry-header">
-                <h2>Data Science — Numerical Modelling &amp; Data Analysis</h2>
+                <h2 data-i18n="exp_heading_1">Data Science - Numerical Modelling &amp; Data Analysis</h2>
               </div>
               <p class="resume-org">CNRS / CERN / LHCb Collaboration + GRAiNITA Collaboration</p>
               <ul>
-                <li>Extracted weak signals from high-noise datasets using probabilistic mixture models and maximum likelihood estimation.</li>
-                <li>Designed feature selection strategies to improve signal-to-noise ratio and stability of extracted parameters.</li>
-                <li>Evaluated model robustness using proxy metrics in the absence of per-event ground truth.</li>
-                <li>Modelled time-dependent processes to infer latent parameters from noisy temporal data.</li>
-                <li>Corrected measurement bias and resolution effects through calibration using simulation and control datasets.</li>
-                <li>Improved parameter stability through joint modelling across multiple datasets.</li>
-                <li>Corrected distribution mismatch between simulated and real data using gradient boosting-based reweighting.</li>
-                <li>Improved model generalisation and reduced systematic bias under dataset shift conditions.</li>
-                <li>Performed sensitivity analysis under model variation, noise, and selection bias.</li>
-                <li>Processed large-scale datasets using C++ and Python and built reproducible analysis pipelines.</li>
+                <li data-i18n="exp_1">Extracted weak signals from high-noise datasets using probabilistic mixture models and maximum likelihood estimation.</li>
+                <li data-i18n="exp_2">Designed feature selection strategies to improve signal-to-noise ratio and stability of extracted parameters.</li>
+                <li data-i18n="exp_3">Evaluated model robustness using proxy metrics in the absence of per-event ground truth.</li>
+                <li data-i18n="exp_4">Modelled time-dependent processes to infer latent parameters from noisy temporal data.</li>
+                <li data-i18n="exp_5">Corrected measurement bias and resolution effects through calibration using simulation and control datasets.</li>
+                <li data-i18n="exp_6">Improved parameter stability through joint modelling across multiple datasets.</li>
+                <li data-i18n="exp_7">Corrected distribution mismatch between simulated and real data using gradient boosting-based reweighting.</li>
+                <li data-i18n="exp_8">Improved model generalisation and reduced systematic bias under dataset shift conditions.</li>
+                <li data-i18n="exp_9">Performed sensitivity analysis under model variation, noise, and selection bias.</li>
+                <li data-i18n="exp_10">Processed large-scale datasets using C++ and Python and built reproducible analysis pipelines.</li>
               </ul>
             </div>
             <div class="resume-entry">
               <div class="resume-entry-header">
-                <h2>Detector R&amp;D — Signal Processing &amp; Sensor Modelling</h2>
+                <h2 data-i18n="exp_heading_2">Detector R&amp;D - Signal Processing &amp; Sensor Modelling</h2>
               </div>
               <p class="resume-org">CNRS / CERN / LHCb Collaboration + GRAiNITA Collaboration</p>
               <ul>
-                <li>Modelled the full signal chain from physical input to measured output.</li>
-                <li>Analysed correlations between measurement variables to improve resolution and reduce bias.</li>
-                <li>Developed signal discrimination methods based on waveform characteristics.</li>
-                <li>Investigated non-linear correlations in measurement systems and applied transformation strategies to improve accuracy.</li>
-                <li>Calibrated model parameters using simulation and experimental data.</li>
-                <li>Reduced bias and improved resolution across different system configurations.</li>
+                <li data-i18n="exp_11">Modelled the full signal chain from physical input to measured output.</li>
+                <li data-i18n="exp_12">Analysed correlations between measurement variables to improve resolution and reduce bias.</li>
+                <li data-i18n="exp_13">Developed signal discrimination methods based on waveform characteristics.</li>
+                <li data-i18n="exp_14">Investigated non-linear correlations in measurement systems and applied transformation strategies to improve accuracy.</li>
+                <li data-i18n="exp_15">Calibrated model parameters using simulation and experimental data.</li>
+                <li data-i18n="exp_16">Reduced bias and improved resolution across different system configurations.</li>
               </ul>
             </div>
           </section>
@@ -193,6 +200,174 @@
       </div>
     </div>
     <script>
+      const translations = {
+        en: {
+          title: "Yingrui Hou | Resume",
+          description:
+            "Resume of Yingrui Hou, numerical engineer and data scientist with a PhD in experimental particle physics.",
+          resume_label: "Resume",
+          back_home: "Back to Homepage",
+          summary_1:
+            "Numerical engineer and data scientist with a PhD in experimental particle physics, specialized in modelling, state estimation, and signal reconstruction from noisy measurement systems.",
+          summary_2:
+            "Experienced in extracting hidden physical quantities using probabilistic models, handling uncertainty, and calibrating models against real-world data. Strong background in Python/C++, large-scale data processing, and robust numerical methods.",
+          contact_label: "Contact",
+          education_label: "Education",
+          edu_phd: "<strong>PhD in Particle Physics</strong>",
+          edu_bsc: "<strong>BSc in Applied Physics</strong>",
+          skills_label: "Skills",
+          skill_group_1: "<strong>Modelling &amp; Estimation</strong>",
+          skill_1: "State estimation and inverse problems",
+          skill_2: "Probabilistic modelling and mixture models",
+          skill_3: "Signal reconstruction from noisy measurements",
+          skill_4: "Uncertainty quantification and propagation",
+          skill_5: "Model calibration and bias correction",
+          skill_group_2: "<strong>Data Science &amp; Machine Learning</strong>",
+          skill_6: "Gradient Boosted Trees (CatBoost / XGBoost)",
+          skill_7: "Feature engineering and selection",
+          skill_8: "Domain adaptation and reweighting",
+          skill_9: "Time-series modelling under noise",
+          skill_group_3: "<strong>Programming &amp; Engineering</strong>",
+          skill_10: "Python, C++",
+          skill_11: "Large-scale data processing pipelines",
+          skill_12: "Linux, Git, CI/CD",
+          skill_13: "Numerical stability and performance optimisation",
+          languages_label: "Languages",
+          lang_1: "Chinese: Native speaker",
+          lang_2: "English: C1",
+          lang_3: "French: B1 to B2",
+          highlights_label: "Technical Highlights",
+          highlight_1: "Weak signal extraction using mixture models and likelihood-based inference",
+          highlight_2: "Time-series modelling with bias correction and uncertainty handling",
+          highlight_3: "Domain adaptation using gradient boosting reweighting",
+          highlight_4: "Large-scale data processing and numerical modelling",
+          experience_label: "Professional Experience [Postdoctoral Researcher (2021 - 2025)]",
+          exp_heading_1: "Data Science - Numerical Modelling & Data Analysis",
+          exp_1: "Extracted weak signals from high-noise datasets using probabilistic mixture models and maximum likelihood estimation.",
+          exp_2: "Designed feature selection strategies to improve signal-to-noise ratio and stability of extracted parameters.",
+          exp_3: "Evaluated model robustness using proxy metrics in the absence of per-event ground truth.",
+          exp_4: "Modelled time-dependent processes to infer latent parameters from noisy temporal data.",
+          exp_5: "Corrected measurement bias and resolution effects through calibration using simulation and control datasets.",
+          exp_6: "Improved parameter stability through joint modelling across multiple datasets.",
+          exp_7: "Corrected distribution mismatch between simulated and real data using gradient boosting-based reweighting.",
+          exp_8: "Improved model generalisation and reduced systematic bias under dataset shift conditions.",
+          exp_9: "Performed sensitivity analysis under model variation, noise, and selection bias.",
+          exp_10: "Processed large-scale datasets using C++ and Python and built reproducible analysis pipelines.",
+          exp_heading_2: "Detector R&D - Signal Processing & Sensor Modelling",
+          exp_11: "Modelled the full signal chain from physical input to measured output.",
+          exp_12: "Analysed correlations between measurement variables to improve resolution and reduce bias.",
+          exp_13: "Developed signal discrimination methods based on waveform characteristics.",
+          exp_14: "Investigated non-linear correlations in measurement systems and applied transformation strategies to improve accuracy.",
+          exp_15: "Calibrated model parameters using simulation and experimental data.",
+          exp_16: "Reduced bias and improved resolution across different system configurations.",
+          phone_label: "Click to see",
+        },
+        fr: {
+          title: "Yingrui Hou | CV",
+          description:
+            "CV de Yingrui Hou, ingénieure en numérique et data scientist titulaire d'un doctorat en physique expérimentale des particules.",
+          resume_label: "CV",
+          back_home: "Retour à l'accueil",
+          summary_1:
+            "Ingénieure en numérique et data scientist, titulaire d'un doctorat en physique expérimentale des particules, spécialisée dans la modélisation, l'estimation d'état et la reconstruction de signaux à partir de systèmes de mesure bruités.",
+          summary_2:
+            "Expérience dans l'extraction de quantités physiques cachées à l'aide de modèles probabilistes, la gestion de l'incertitude et l'étalonnage de modèles sur des données réelles. Solide expérience en Python/C++, en traitement de données à grande échelle et en méthodes numériques robustes.",
+          contact_label: "Contact",
+          education_label: "Formation",
+          edu_phd: "<strong>Doctorat en physique des particules</strong>",
+          edu_bsc: "<strong>Licence en physique appliquée</strong>",
+          skills_label: "Compétences",
+          skill_group_1: "<strong>Modélisation &amp; estimation</strong>",
+          skill_1: "Estimation d'état et problèmes inverses",
+          skill_2: "Modélisation probabiliste et modèles de mélange",
+          skill_3: "Reconstruction de signaux à partir de mesures bruitées",
+          skill_4: "Quantification et propagation des incertitudes",
+          skill_5: "Étalonnage de modèles et correction des biais",
+          skill_group_2: "<strong>Data Science &amp; apprentissage automatique</strong>",
+          skill_6: "Arbres boostés (CatBoost / XGBoost)",
+          skill_7: "Ingénierie et sélection de variables",
+          skill_8: "Adaptation de domaine et repondération",
+          skill_9: "Modélisation de séries temporelles sous bruit",
+          skill_group_3: "<strong>Programmation &amp; ingénierie</strong>",
+          skill_10: "Python, C++",
+          skill_11: "Pipelines de traitement de données à grande échelle",
+          skill_12: "Linux, Git, CI/CD",
+          skill_13: "Stabilité numérique et optimisation des performances",
+          languages_label: "Langues",
+          lang_1: "Chinois : langue maternelle",
+          lang_2: "Anglais : C1",
+          lang_3: "Français : B1 à B2",
+          highlights_label: "Points techniques clés",
+          highlight_1: "Extraction de signaux faibles à l'aide de modèles de mélange et d'une inférence fondée sur le maximum de vraisemblance",
+          highlight_2: "Modélisation de séries temporelles avec correction de biais et prise en compte des incertitudes",
+          highlight_3: "Adaptation de domaine au moyen d'une repondération par gradient boosting",
+          highlight_4: "Traitement de données à grande échelle et modélisation numérique",
+          experience_label: "Expérience professionnelle [Postdoctorat (2021 - 2025)]",
+          exp_heading_1: "Data Science - Modélisation numérique et analyse de données",
+          exp_1: "Extraction de signaux faibles à partir de jeux de données très bruités à l'aide de modèles de mélange probabilistes et du maximum de vraisemblance.",
+          exp_2: "Conception de stratégies de sélection de variables pour améliorer le rapport signal sur bruit et la stabilité des paramètres extraits.",
+          exp_3: "Évaluation de la robustesse des modèles à l'aide de métriques de substitution en l'absence de vérité terrain au niveau événementiel.",
+          exp_4: "Modélisation de processus dépendant du temps afin d'inférer des paramètres latents à partir de données temporelles bruitées.",
+          exp_5: "Correction des biais de mesure et des effets de résolution par étalonnage sur simulation et jeux de données de contrôle.",
+          exp_6: "Amélioration de la stabilité des paramètres grâce à une modélisation conjointe sur plusieurs jeux de données.",
+          exp_7: "Correction des écarts de distribution entre simulation et données réelles à l'aide d'une repondération fondée sur le gradient boosting.",
+          exp_8: "Amélioration de la généralisation des modèles et réduction des biais systématiques en situation de dérive de distribution.",
+          exp_9: "Analyses de sensibilité sous variations de modèle, bruit et biais de sélection.",
+          exp_10: "Traitement de jeux de données à grande échelle en C++ et Python et construction de pipelines d'analyse reproductibles.",
+          exp_heading_2: "R&D détecteur - Traitement du signal et modélisation de capteurs",
+          exp_11: "Modélisation de la chaîne complète du signal, de l'entrée physique jusqu'à la mesure reconstruite.",
+          exp_12: "Analyse des corrélations entre variables de mesure pour améliorer la résolution et réduire les biais.",
+          exp_13: "Développement de méthodes de discrimination des signaux à partir des caractéristiques des formes d'onde.",
+          exp_14: "Étude de corrélations non linéaires dans les systèmes de mesure et application de stratégies de transformation pour améliorer la précision.",
+          exp_15: "Étalonnage des paramètres de modèle à partir de simulations et de données expérimentales.",
+          exp_16: "Réduction des biais et amélioration de la résolution sur différentes configurations système.",
+          phone_label: "Cliquer pour voir",
+        },
+      };
+
+      const descriptionMeta = document.querySelector('meta[name="description"]');
+      const langButtons = document.querySelectorAll("[data-lang-btn]");
+
+      function applyResumeLanguage(lang) {
+        const copy = translations[lang];
+        document.documentElement.lang = lang === "fr" ? "fr" : "en";
+        document.title = copy.title;
+        if (descriptionMeta) {
+          descriptionMeta.setAttribute("content", copy.description);
+        }
+
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+          const key = element.dataset.i18n;
+          if (copy[key]) {
+            element.textContent = copy[key];
+          }
+        });
+
+        document.querySelectorAll("[data-i18n-html]").forEach((element) => {
+          const key = element.dataset.i18nHtml;
+          if (copy[key]) {
+            element.innerHTML = copy[key];
+          }
+        });
+
+        const phoneButton = document.querySelector("[data-i18n-phone]");
+        if (phoneButton && !phoneButton.disabled) {
+          phoneButton.textContent = copy.phone_label;
+        }
+
+        langButtons.forEach((button) => {
+          button.classList.toggle("is-active", button.dataset.langBtn === lang);
+        });
+
+        window.localStorage.setItem("resume-lang", lang);
+      }
+
+      langButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          applyResumeLanguage(button.dataset.langBtn);
+        });
+      });
+
       document.querySelectorAll(".reveal-button").forEach((button) => {
         button.addEventListener("click", () => {
           button.textContent = button.dataset.value;
@@ -200,6 +375,8 @@
           button.disabled = true;
         });
       });
+
+      applyResumeLanguage(window.localStorage.getItem("resume-lang") || "en");
     </script>
   </body>
 </html>
