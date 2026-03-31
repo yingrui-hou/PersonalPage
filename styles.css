@@ -345,7 +345,8 @@ h3 {
 
 .icon-link-labeled {
   width: auto;
-  padding: 0 0.8rem;
+  min-width: 88px;
+  padding: 0 0.95rem;
   gap: 0.45rem;
 }
 
@@ -360,6 +361,42 @@ h3 {
   width: 22px;
   height: 22px;
   fill: currentColor;
+}
+
+.icon-link-linkedin {
+  color: #0a66c2;
+  border-color: rgba(10, 102, 194, 0.22);
+  background: rgba(10, 102, 194, 0.08);
+}
+
+.icon-link-linkedin:hover {
+  color: #0a66c2;
+  border-color: rgba(10, 102, 194, 0.38);
+  background: rgba(10, 102, 194, 0.14);
+}
+
+.icon-link-orcid {
+  color: #a6ce39;
+  border-color: rgba(166, 206, 57, 0.28);
+  background: rgba(166, 206, 57, 0.1);
+}
+
+.icon-link-orcid:hover {
+  color: #8fba22;
+  border-color: rgba(166, 206, 57, 0.42);
+  background: rgba(166, 206, 57, 0.16);
+}
+
+.icon-link-gitlab {
+  color: #fc6d26;
+  border-color: rgba(252, 109, 38, 0.24);
+  background: rgba(252, 109, 38, 0.1);
+}
+
+.icon-link-gitlab:hover {
+  color: #e45713;
+  border-color: rgba(252, 109, 38, 0.38);
+  background: rgba(252, 109, 38, 0.16);
 }
 
 .icon-link-text {
