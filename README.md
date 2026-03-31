@@ -21,9 +21,9 @@ If you name the repository `<your-github-username>.github.io`, your site will be
 
 `https://<your-github-username>.github.io/`
 
-Otherwise it will be published as a project page:
+Otherwise it will be published as a project page. For this repository, the published URL is:
 
-`https://<your-github-username>.github.io/PersonalPage/`
+`https://yingrui-hou.github.io/PersonalPage/`
 
 ## Recommended edits before publishing
 
