@@ -40,9 +40,10 @@ Experienced in extracting hidden physical quantities using probabilistic models,
 
 ## PROFESSIONAL EXPERIENCE
 
-### Postdoctoral Researcher — Numerical Modelling & Data Analysis
-CERN / LHCb Collaboration  
-2021 – 2025
+### Postdoctoral Researcher (2021 – 2025)
+CERN / LHCb Collaboration
+
+### Data Science — Numerical Modelling & Data Analysis
 
 - Extracted weak signals from high-noise datasets using probabilistic mixture models (signal + background) and maximum likelihood estimation
 - Designed feature selection strategies to improve signal-to-noise ratio and stability of extracted parameters
@@ -59,6 +60,8 @@ CERN / LHCb Collaboration
 - Ensured robustness of results under noise, model variation, and selection bias
 
 - Processed large-scale datasets using C++ and Python and built reproducible analysis pipelines
+
+### Detector R&D — Signal Processing & Sensor Modelling
 
 - Modelled full signal chain from physical input to measured output (energy → photons → electronic signal)
 - Analysed correlations between measurement variables to improve resolution and reduce bias
