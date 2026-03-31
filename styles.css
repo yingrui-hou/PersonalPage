@@ -48,6 +48,18 @@ body::before {
   padding: 1rem 0 4rem;
 }
 
+.resume-page {
+  background:
+    radial-gradient(circle at top left, rgba(201, 109, 61, 0.18), transparent 28%),
+    linear-gradient(180deg, #f8f3ea 0%, #efe7de 100%);
+}
+
+.resume-shell {
+  width: min(1160px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1rem 0 3rem;
+}
+
 .hero {
   position: relative;
   overflow: hidden;
@@ -58,6 +70,41 @@ body::before {
     linear-gradient(140deg, rgba(255, 253, 249, 0.9), rgba(245, 236, 225, 0.82)),
     rgba(255, 255, 255, 0.5);
   box-shadow: var(--shadow);
+}
+
+.resume-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 28px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.resume-location {
+  margin: 0.75rem 0 0;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.resume-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.resume-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.resume-links a:hover {
+  color: var(--accent-dark);
 }
 
 .hero::after {
@@ -153,6 +200,13 @@ body::before {
   box-shadow: var(--shadow);
 }
 
+.resume-card {
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 24px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
 .profile-panel {
   padding: 2rem;
 }
@@ -161,6 +215,25 @@ body::before {
   position: sticky;
   top: 1rem;
   padding: 1.75rem;
+}
+
+.resume-summary,
+.resume-main .resume-card,
+.resume-sidebar .resume-card {
+  padding: 1.5rem;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.28fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.resume-sidebar,
+.resume-main {
+  display: grid;
+  gap: 1.25rem;
 }
 
 .eyebrow {
@@ -348,6 +421,51 @@ h3 {
   padding: 4rem 0 0;
 }
 
+.resume-stack p,
+.resume-stack a {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.65;
+  text-decoration: none;
+}
+
+.resume-stack a:hover {
+  color: var(--accent-dark);
+}
+
+.resume-stack + .resume-stack {
+  margin-top: 1rem;
+}
+
+.resume-entry + .resume-entry {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.resume-entry-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.resume-entry-header h2 {
+  font-size: 1.45rem;
+}
+
+.resume-entry-header p,
+.resume-org {
+  margin: 0.45rem 0 0;
+  color: var(--text-muted);
+}
+
+.resume-main ul {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+  line-height: 1.7;
+}
+
 .intro {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
@@ -453,7 +571,8 @@ h3 {
 @media (max-width: 960px) {
   .case-study-grid,
   .intro,
-  .hero-layout {
+  .hero-layout,
+  .resume-grid {
     grid-template-columns: 1fr;
   }
 
@@ -468,6 +587,11 @@ h3 {
 
   .toc-panel {
     position: static;
+  }
+
+  .resume-header,
+  .resume-entry-header {
+    flex-direction: column;
   }
 
   h1 {
