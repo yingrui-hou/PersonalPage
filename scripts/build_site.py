@@ -268,7 +268,7 @@ def build_index(profile: dict) -> str:
             <div class="hero-copy">{render_markdown(intro["body"])}</div>
 
             <section class="sidebar-section">
-              <p class="sidebar-label">Seeking</p>
+              <p class="sidebar-label">Seeking opportunities as</p>
               <div class="sidebar-copy">{render_markdown(seeking["body"])}</div>
             </section>
 

@@ -1,6 +1,6 @@
 ---
 eyebrow: Overview
-title: Applied research translated for industry.
-map_label: Selected Work Map
+title: How can my research projects help in industry? 
+map_label: Selected Works
 ---
-Across these projects, the recurring pattern is consistent: infer what matters when observations are imperfect, assumptions are fragile, and validation must be earned. That is the same pattern behind production data science in fraud, forecasting, lifecycle analytics, signal processing, and decision systems.
+Across these projects, the recurring pattern is consistent: design and operate the measurement system for certain observables, infer what matters when observations are imperfect, assumptions are fragile, and validation must be earned. That is the same pattern behind industry R&D and production data science in fraud, forecasting, lifecycle analytics, signal processing, and decision systems.

@@ -1,6 +1,7 @@
+- Physics (classical/quantum)
 - Python
+- C/C++
 - Machine Learning
-- Gradient Boosted Trees
 - Probabilistic Modelling
 - Maximum Likelihood Estimation
 - Time-Series Analysis

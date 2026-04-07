@@ -409,6 +409,10 @@ h3 {
   text-wrap: pretty;
 }
 
+.toc-copy {
+  margin-top: 1.1rem;
+}
+
 .hero-copy p,
 .toc-copy p,
 .sidebar-copy p {
