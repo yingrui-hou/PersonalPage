@@ -81,7 +81,7 @@ body::before {
   justify-content: space-between;
   gap: 1rem;
   margin-bottom: 1.25rem;
-  padding: 1.5rem 1.75rem;
+  padding: 2.25rem 2.625rem;
   border: 1px solid rgba(255, 255, 255, 0.55);
   border-radius: 28px;
   background: var(--surface);
@@ -241,7 +241,7 @@ body::before {
   top: 1rem;
   z-index: 20;
   margin-bottom: 1.2rem;
-  padding: 0.85rem 1.1rem;
+  padding: 1.275rem 1.65rem;
   border: 1px solid var(--line-strong);
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.86);
@@ -314,17 +314,17 @@ body::before {
 }
 
 .profile-panel {
-  padding: 2rem 1.9rem;
+  padding: 3rem 2.85rem;
 }
 
 .toc-panel {
-  padding: 1.5rem;
+  padding: 2.25rem;
 }
 
 .resume-summary,
 .resume-main .resume-card,
 .resume-sidebar .resume-card {
-  padding: 1.5rem;
+  padding: 2.25rem;
 }
 
 .resume-grid {
@@ -863,7 +863,7 @@ h3 {
 
 .case-study {
   display: block;
-  padding: 1.55rem 1.65rem;
+  padding: 2.325rem 2.475rem;
 }
 
 .case-study-header {
@@ -963,7 +963,7 @@ h3 {
 }
 
 .closing-panel {
-  padding: 1.8rem;
+  padding: 2.7rem;
   border-left: 4px solid var(--accent);
   background: rgba(255, 255, 255, 0.84);
 }
