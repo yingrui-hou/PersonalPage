@@ -1,11 +1,5 @@
 ---
 eyebrow: Positioning
-title: A strong fit for data science, modelling, and simulation roles.
+title: Physics Modelling & Simulation | Data Scientist
 ---
-<!--
-HR / recruiter version
-title: A strong fit for data science, simulation, and collaborative roles.
-body: Well suited to data scientist and modelling positions, especially in teams that value rigorous analysis, practical problem solving, and clear cross-functional collaboration.
--->
-
-Well suited to data scientist positions, physics-related modelling and simulation work, and collaborative technical teams that need rigorous analysis, reliable models, and statistically-clearly explained results.
+Best suited to specialist roles in **physics-related modelling and simulation**, as well as **data scientist** positions, especially in collaborative technical teams that value **rigorous analysis**, **reliable models**, and **well-explained results under uncertainty**.

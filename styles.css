@@ -973,11 +973,6 @@ h3 {
 }
 
 .profile-positioning {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.8fr);
-  column-gap: 2.25rem;
-  row-gap: 0.9rem;
-  align-items: start;
   margin-bottom: 1.75rem;
   padding: 2.7rem 3rem 2.45rem;
   border-left: 0;
@@ -1010,45 +1005,32 @@ h3 {
 }
 
 .profile-positioning h2 {
-  grid-column: 1;
-  max-width: 18ch;
-  color: #142a32;
-  font-size: clamp(2.05rem, 2.45vw, 2.7rem);
-  line-height: 1.02;
-  letter-spacing: -0.04em;
+  max-width: 32ch;
+  color: #7a5848;
+  font-family: "Avenir Next", "Helvetica Neue", "Segoe UI", sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.8rem, 2.05vw, 2.2rem);
+  line-height: 1.1;
+  letter-spacing: -0.035em;
   text-wrap: balance;
+  white-space: nowrap;
 }
 
 .profile-positioning p {
-  grid-column: 2;
-  max-width: none;
-  margin: 0.35rem 0 0;
-  padding: 0 0 0 1.5rem;
-  border-top: 0;
-  border-left: 1px solid rgba(16, 38, 46, 0.08);
+  max-width: 74ch;
+  margin: 1.15rem 0 0;
+  padding: 1.05rem 0 0;
+  border-top: 1px solid rgba(16, 38, 46, 0.08);
+  border-left: 0;
   color: #314850;
-  font-size: 1rem;
-  line-height: 1.76;
+  font-size: 1.14rem;
+  line-height: 1.8;
   text-wrap: pretty;
 }
 
 @media (max-width: 1100px) {
-  .profile-positioning {
-    grid-template-columns: 1fr;
-    row-gap: 0.85rem;
-  }
-
-  .profile-positioning h2,
-  .profile-positioning p,
-  .profile-positioning .eyebrow {
-    grid-column: 1;
-  }
-
-  .profile-positioning p {
-    margin-top: 1rem;
-    padding: 1rem 0 0;
-    border-left: 0;
-    border-top: 1px solid rgba(16, 38, 46, 0.08);
+  .profile-positioning h2 {
+    white-space: normal;
   }
 }
 
