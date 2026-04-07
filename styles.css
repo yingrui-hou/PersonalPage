@@ -365,16 +365,19 @@ h1 {
   line-height: 0.95;
 }
 
+.profile-panel h1,
+.toc-panel h2 {
+  font-size: clamp(2.2rem, 3vw, 3.2rem);
+  line-height: 1.04;
+}
+
 .profile-panel h1 {
   max-width: none;
-  font-size: clamp(2.2rem, 3vw, 3.2rem);
   white-space: normal;
   text-wrap: balance;
 }
 
 .toc-panel h2 {
-  font-size: clamp(1.85rem, 2.15vw, 2.35rem);
-  line-height: 1.04;
   text-wrap: pretty;
 }
 
