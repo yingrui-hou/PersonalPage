@@ -432,6 +432,10 @@ h3 {
   border-top: 1px solid var(--line);
 }
 
+.profile-panel > .sidebar-section:first-of-type {
+  margin-top: 1.55rem;
+}
+
 .sidebar-label {
   margin: 0 0 0.65rem;
   color: var(--accent-dark);
