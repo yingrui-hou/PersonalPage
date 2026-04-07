@@ -66,6 +66,13 @@ def render_markdown(markdown: str) -> str:
 
     while index < len(lines):
         line = lines[index].strip()
+
+        if line.startswith("<!--"):
+            while index < len(lines) and "-->" not in lines[index]:
+                index += 1
+            index += 1
+            continue
+
         if not line:
             index += 1
             continue
@@ -263,7 +270,6 @@ def build_index(profile: dict) -> str:
         <div class="hero-layout" id="top">
           <section class="profile-panel">
             <div class="closing-panel profile-positioning">
-              <p class="eyebrow">{escape(positioning["attributes"].get("eyebrow", "Positioning"))}</p>
               <h2>{escape(positioning["attributes"].get("title", ""))}</h2>
               {render_markdown(positioning["body"])}
             </div>
