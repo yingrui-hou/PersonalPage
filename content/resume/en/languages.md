@@ -1,0 +1,3 @@
+- Chinese: Native speaker
+- English: C1
+- French: B1 to B2

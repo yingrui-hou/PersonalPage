@@ -1,0 +1,3 @@
+- Chinois : langue maternelle
+- Anglais : C1
+- Français : niveau professionnel intermédiaire (B1-B2)

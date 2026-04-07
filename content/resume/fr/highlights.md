@@ -1,0 +1,4 @@
+- Extraction de signaux faibles par modèles de mélange et inférence par maximum de vraisemblance
+- Modélisation temporelle avec correction des biais et maîtrise des incertitudes
+- Adaptation de domaine par repondération via gradient boosting
+- Traitement de données à grande échelle et modélisation numérique

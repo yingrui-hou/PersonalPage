@@ -1,0 +1,4 @@
+- Weak signal extraction using mixture models and likelihood-based inference
+- Time-series modelling with bias correction and uncertainty handling
+- Domain adaptation using gradient boosting reweighting
+- Large-scale data processing and numerical modelling

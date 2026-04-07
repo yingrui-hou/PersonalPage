@@ -400,6 +400,18 @@ h3 {
   margin: 0.8rem 0 0;
 }
 
+.hero-copy p,
+.toc-copy p,
+.sidebar-copy p {
+  margin: 0;
+}
+
+.hero-copy p + p,
+.toc-copy p + p,
+.sidebar-copy p + p {
+  margin-top: 0.8rem;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -657,8 +669,59 @@ h3 {
   fill: currentColor;
 }
 
-.resume-stack + .resume-stack {
-  margin-top: 1rem;
+.resume-summary p {
+  margin: 0;
+}
+
+.resume-summary p + p {
+  margin-top: 0.9rem;
+}
+
+.resume-markdown > *:first-child {
+  margin-top: 0;
+}
+
+.resume-markdown > *:last-child {
+  margin-bottom: 0;
+}
+
+.resume-markdown p,
+.resume-markdown li {
+  color: var(--text);
+  line-height: 1.65;
+}
+
+.resume-markdown p {
+  margin: 0.45rem 0 0;
+}
+
+.resume-markdown ul {
+  margin: 0.75rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.resume-markdown li + li {
+  margin-top: 0.35rem;
+}
+
+.resume-sidebar-markdown h3 {
+  margin: 1rem 0 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.98rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.45;
+}
+
+.resume-main-markdown h3 {
+  margin: 1.35rem 0 0;
+  font-size: 1.45rem;
+  letter-spacing: -0.03em;
+}
+
+.resume-main-markdown h3 + p {
+  margin-top: 0.45rem;
+  color: var(--text-muted);
 }
 
 .resume-reveal-row {

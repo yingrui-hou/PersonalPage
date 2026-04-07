@@ -7,6 +7,11 @@ Free personal portfolio site for GitHub Pages.
 - `index.html`: main portfolio page
 - `styles.css`: site styling
 - `portfolio.md`: source content in Markdown
+- `content/shared/profile.md`: shared personal info used by both pages
+- `content/index/*.md`: homepage content modules
+- `content/resume/en/*.md`: English resume content modules
+- `content/resume/fr/*.md`: French resume content modules
+- `assets/js/content-loader.js`: shared markdown/module loader
 
 ## Publish on GitHub Pages
 
@@ -36,7 +41,7 @@ Otherwise it will be published as a project page. For this repository, the publi
 
 ## Local preview
 
-Open `index.html` directly in a browser, or run a simple static server such as:
+Because the pages now load Markdown modules with `fetch`, open them through a local static server instead of double-clicking the HTML file:
 
 ```bash
 python3 -m http.server
