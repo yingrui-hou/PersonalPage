@@ -11,7 +11,16 @@ Free personal portfolio site for GitHub Pages.
 - `content/index/*.md`: homepage content modules
 - `content/resume/en/*.md`: English resume content modules
 - `content/resume/fr/*.md`: French resume content modules
+- `content/templates/*.md`: copyable module templates
+- `content/MODULES.md`: module format and mapping guide
 - `assets/js/content-loader.js`: shared markdown/module loader
+
+## Editing workflow
+
+1. Find the module you want to change in `content/`.
+2. If you are adding a new block, start from the matching file in `content/templates/`.
+3. Keep front matter keys consistent with `content/MODULES.md`.
+4. Preview locally with a static server before pushing.
 
 ## Publish on GitHub Pages
 
