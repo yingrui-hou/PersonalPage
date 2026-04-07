@@ -205,7 +205,6 @@ body::before {
   display: none;
 }
 
-.topbar,
 .hero-layout,
 .section,
 .closing-panel {
@@ -241,7 +240,7 @@ body::before {
   position: sticky;
   top: 1rem;
   z-index: 20;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   padding: 0.85rem 1.1rem;
   border: 1px solid var(--line-strong);
   border-radius: 18px;
