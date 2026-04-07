@@ -20,8 +20,10 @@
     <div class="page-shell">
       <nav class="topbar">
         <div class="topbar-identity">
-          <a class="brand" href="#top" id="profile-name-link">Yingrui Hou</a>
-          <div class="icon-links topbar-links" aria-label="Personal links" id="topbar-links"></div>
+          <a class="brand" href="#top">Yingrui Hou</a>
+          <div class="icon-links topbar-links" aria-label="Personal links">
+            <a class="icon-link" href="mailto:yingrui.hou@outlook.com" aria-label="Email" title="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25Zm1.5.56v9.94c0 .14.11.25.25.25h14.5a.25.25 0 0 0 .25-.25V7.31l-7.04 5.16a.75.75 0 0 1-.88 0Zm14.7-.81H4.8L12 11.78Z" /></svg></a><a class="icon-link icon-link-linkedin" href="https://www.linkedin.com/in/yingrui-hou" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1M5.7 9.75h2.5V18H5.7zm4.06 0h2.4v1.13h.04c.33-.63 1.15-1.3 2.37-1.3 2.54 0 3.01 1.67 3.01 3.84V18h-2.5v-4.04c0-.96-.02-2.2-1.34-2.2-1.35 0-1.56 1.06-1.56 2.14V18h-2.5z" /></svg></a><a class="icon-link icon-link-orcid" href="https://orcid.org/0000-0001-6454-278X" aria-label="ORCID" title="ORCID"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.35 5.5a1.35 1.35 0 1 1 0 2.7 1.35 1.35 0 0 1 0-2.7M6.3 9.4h2.1v7.6H6.3zm3.65 0h3.06c2.85 0 4.75 1.61 4.75 3.8 0 2.39-1.82 3.8-4.82 3.8H9.95Zm2.1 1.74v4.12h.78c1.69 0 2.76-.77 2.76-2.06 0-1.32-1-2.06-2.71-2.06Z" /></svg></a><a class="icon-link icon-link-gitlab" href="https://gitlab.com/hyrsophie" aria-label="GitLab" title="GitLab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 18.9 2.94-9.04H9.06Zm0 0-9.12-6.63 2.55-7.85a.46.46 0 0 1 .87 0l2.76 8.48Zm0 0 9.12-6.63-2.55-7.85a.46.46 0 0 0-.87 0l-2.76 8.48Z" /></svg></a><a class="icon-link icon-link-gitlab icon-link-labeled" href="https://gitlab.cern.ch/yihou" aria-label="CERN GitLab" title="CERN GitLab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 18.9 2.94-9.04H9.06Zm0 0-9.12-6.63 2.55-7.85a.46.46 0 0 1 .87 0l2.76 8.48Zm0 0 9.12-6.63-2.55-7.85a.46.46 0 0 0-.87 0l-2.76 8.48Z" /></svg><span class="icon-link-text">CERN</span></a>
+          </div>
         </div>
         <div class="nav-links">
           <a href="#overview">Overview</a>
@@ -34,23 +36,32 @@
       <header class="hero">
         <div class="hero-layout" id="top">
           <section class="profile-panel">
-            <div id="intro-module"></div>
+            <p class="eyebrow">Personal Introduction</p>
+            <h1>Turning noisy systems into reliable decisions.</h1>
+            <p class="hero-about">PhD and postdoctoral researcher in high energy particle physics, with a strong problem-solving mindset and a focus on translating complex data into practical insight.</p>
+            <div class="hero-copy"><p>I work on extracting reliable signals from noisy systems, correcting bias, and validating models when direct ground truth is limited or unavailable.</p></div>
 
             <section class="sidebar-section">
               <p class="sidebar-label">Seeking</p>
-              <div class="sidebar-copy" id="seeking-module"></div>
+              <div class="sidebar-copy"><p>Numerical engineering, data science, and modelling roles involving noisy measurement systems, uncertainty, and large-scale data analysis.</p></div>
             </section>
 
             <section class="sidebar-section" id="competencies">
               <p class="sidebar-label">Skills &amp; Tools</p>
-              <div class="skill-list" id="skills-module"></div>
+              <div class="skill-list">
+                <span class="skill-pill">Python</span><span class="skill-pill">Machine Learning</span><span class="skill-pill">Gradient Boosted Trees</span><span class="skill-pill">Probabilistic Modelling</span><span class="skill-pill">Maximum Likelihood Estimation</span><span class="skill-pill">Time-Series Analysis</span><span class="skill-pill">Bias Correction</span><span class="skill-pill">Calibration</span><span class="skill-pill">Signal Processing</span><span class="skill-pill">Domain Adaptation</span><span class="skill-pill">Statistical Inference</span><span class="skill-pill">Large-Scale Data Analysis</span>
+              </div>
             </section>
           </section>
 
           <aside class="toc-panel" id="overview" aria-label="Overview and selected work index">
-            <div id="overview-module"></div>
-            <p class="sidebar-label" id="work-map-label">Selected Work Map</p>
-            <ol class="toc-list" id="work-map-list"></ol>
+            <p class="eyebrow">Overview</p>
+            <h2>Applied research translated for industry.</h2>
+            <div class="toc-copy"><p>Across these projects, the recurring pattern is consistent: infer what matters when observations are imperfect, assumptions are fragile, and validation must be earned. That is the same pattern behind production data science in fraud, forecasting, lifecycle analytics, signal processing, and decision systems.</p></div>
+            <p class="sidebar-label">Selected Work Map</p>
+            <ol class="toc-list">
+              <li><a href="#work-1">Weak Signal Extraction in Noisy Data</a></li><li><a href="#work-2">Time-Series Modelling with Bias Correction</a></li><li><a href="#work-3">Machine Learning under Distribution Shift</a></li><li><a href="#work-4">Sensor Signal Modelling and Reconstruction</a></li><li><a href="#work-5">Model Calibration and System Optimisation</a></li>
+            </ol>
           </aside>
         </div>
       </header>
@@ -62,14 +73,93 @@
             <h2>Selected work</h2>
           </div>
 
-          <div class="case-study-grid" id="selected-work-grid"></div>
+          <div class="case-study-grid">
+            <article class="case-study" id="work-1">
+  <div class="case-study-header">
+    <p class="case-number">01</p>
+    <h3>Weak Signal Extraction in Noisy Data</h3>
+  </div>
+  <div class="case-tags" aria-label="Skills and tools used"><span class="case-tag">Mixture Models</span><span class="case-tag">Maximum Likelihood</span><span class="case-tag">Feature Selection</span><span class="case-tag">Statistical Validation</span></div>
+  <p>Identified meaningful signals in datasets dominated by background noise, even without per-event ground truth.</p><ul><li>Built probabilistic mixture models with signal and background components.</li><li>Used maximum likelihood estimation and feature-based selection strategies.</li><li>Validated with proxy metrics such as signal yield, width, and dataset stability.</li></ul>
+  <p class="case-meta"><strong>Methods:</strong> mixture models, likelihood fitting, feature selection</p>
+  <p class="impact-note"><strong>Impact:</strong> improved reliability of weak-signal detection under low signal-to-noise conditions.</p>
+  <p class="impact">Industry relevance: fraud detection, anomaly detection, weak supervision.</p>
+  <div class="case-evidence">
+  <p class="case-evidence-title">Selected evidence from project work</p>
+  <ul class="case-evidence-list"><li>A 2022 mass fit produced a narrow peak near 1019 MeV with about 1.9k signal candidates over a smooth background component.</li><li>Signal yield, fitted width, and stability across selections were used as proxy quality metrics when event-level truth was unavailable.</li></ul>
+</div>
+</article>
+<article class="case-study" id="work-2">
+  <div class="case-study-header">
+    <p class="case-number">02</p>
+    <h3>Time-Series Modelling with Bias Correction</h3>
+  </div>
+  <div class="case-tags" aria-label="Skills and tools used"><span class="case-tag">Time-Series Modelling</span><span class="case-tag">Bias Correction</span><span class="case-tag">Calibration</span><span class="case-tag">Joint Fitting</span></div>
+  <p>Inferred latent dynamics from noisy temporal data affected by measurement resolution and selection bias.</p><ul><li>Built time-dependent probabilistic models across multiple datasets.</li><li>Corrected for resolution effects, acceptance bias, and noise dilution.</li><li>Used calibration samples and control datasets to reduce systematic error.</li></ul>
+  <p class="case-meta"><strong>Methods:</strong> time-dependent modelling, calibration, joint fitting</p>
+  <p class="impact-note"><strong>Impact:</strong> increased parameter stability and reduced systematic uncertainty across datasets.</p>
+  <p class="impact">Industry relevance: retention modelling, churn analysis, causal inference.</p>
+  <div class="case-evidence">
+  <p class="case-evidence-title">Selected evidence from project work</p>
+  <ul class="case-evidence-list"><li>Run 1 and Run 2 proper-time acceptance curves were modelled separately rather than assuming a single shared temporal response.</li><li>Control-channel data, MC acceptance ratios, and GB-reweighting were combined to reduce bias in time-dependent inference.</li></ul>
+</div>
+</article>
+<article class="case-study" id="work-3">
+  <div class="case-study-header">
+    <p class="case-number">03</p>
+    <h3>Machine Learning under Distribution Shift</h3>
+  </div>
+  <div class="case-tags" aria-label="Skills and tools used"><span class="case-tag">GBDT</span><span class="case-tag">XGBoost</span><span class="case-tag">Reweighting</span><span class="case-tag">Feature Validation</span></div>
+  <p>Improved model robustness when training and real-world data did not follow the same distribution.</p><ul><li>Trained Gradient Boosted Decision Trees and compared feature distributions.</li><li>Applied gradient-boosting-based reweighting before retraining.</li><li>Validated alignment at the feature level to improve downstream generalisation.</li></ul>
+  <p class="case-meta"><strong>Methods:</strong> GBDT, reweighting, feature-distribution validation</p>
+  <p class="impact-note"><strong>Impact:</strong> reduced dataset mismatch and improved downstream model generalisation.</p>
+  <p class="impact">Industry relevance: domain adaptation, production ML, dataset shift handling.</p>
+  <div class="case-evidence">
+  <p class="case-evidence-title">Selected evidence from project work</p>
+  <ul class="case-evidence-list"><li>Train/test BDT response comparisons were used to verify score separation before downstream threshold tuning.</li><li>Reweighting was treated as part of the validation loop whenever calibration and signal-like samples differed in kinematics.</li></ul>
+</div>
+</article>
+<article class="case-study" id="work-4">
+  <div class="case-study-header">
+    <p class="case-number">04</p>
+    <h3>Sensor Signal Modelling and Reconstruction</h3>
+  </div>
+  <div class="case-tags" aria-label="Skills and tools used"><span class="case-tag">Signal Processing</span><span class="case-tag">Waveform Analysis</span><span class="case-tag">Pulse Shape Discrimination</span><span class="case-tag">Statistical Reconstruction</span></div>
+  <p>Converted raw sensor signals into more accurate measurements while separating different signal types.</p><ul><li>Modelled the signal chain from energy deposition to electronic readout.</li><li>Analysed waveform structure and extracted discriminative pulse-shape features.</li><li>Improved resolution and classification through statistical signal modelling.</li></ul>
+  <p class="case-meta"><strong>Methods:</strong> waveform analysis, pulse-shape discrimination, statistical reconstruction</p>
+  <p class="impact-note"><strong>Impact:</strong> improved measurement resolution and signal-type discrimination for complex sensor data.</p>
+  <p class="impact">Industry relevance: sensor analytics, signal processing, IoT, embedded systems.</p>
+  <div class="case-evidence">
+  <p class="case-evidence-title">Selected evidence from project work</p>
+  <ul class="case-evidence-list"><li>Beam-test efficiency maps and Geant4 shower simulations were combined to study how non-uniform light collection affects reconstructed energy.</li><li>Energy resolution was fitted from 1 to 34 GeV, with a baseline constant term reported at about 0.63% for the beam-test map.</li></ul>
+</div>
+</article>
+<article class="case-study" id="work-5">
+  <div class="case-study-header">
+    <p class="case-number">05</p>
+    <h3>Model Calibration and System Optimisation</h3>
+  </div>
+  <div class="case-tags" aria-label="Skills and tools used"><span class="case-tag">Calibration Loops</span><span class="case-tag">Correlation Analysis</span><span class="case-tag">Simulation Comparison</span><span class="case-tag">System Optimisation</span></div>
+  <p>Reduced bias and non-linearity in measurement systems through iterative calibration and parameter tuning.</p><ul><li>Analysed variable correlations and system response behaviour.</li><li>Applied transformations, calibration strategies, and simulation comparisons.</li><li>Improved measurement accuracy through repeated refinement loops.</li></ul>
+  <p class="case-meta"><strong>Methods:</strong> correlation analysis, calibration loops, simulation comparison</p>
+  <p class="impact-note"><strong>Impact:</strong> reduced system bias and improved accuracy in non-linear measurement settings.</p>
+  <p class="impact">Industry relevance: system calibration, digital twins, engineering optimisation.</p>
+  <div class="case-evidence">
+  <p class="case-evidence-title">Selected evidence from project work</p>
+  <ul class="case-evidence-list"><li>A clear correlation between the response parameter <code>a</code> and energy was tracked across operating points instead of being treated as noise.</li><li>That trend was then used to define a rotation-based correction for a more stable normalized response.</li></ul>
+</div>
+</article>
+          </div>
         </section>
 
         <section class="section closing">
-          <div class="closing-panel" id="positioning-module"></div>
+          <div class="closing-panel">
+            <p class="eyebrow">Positioning</p>
+            <h2>Best fit for teams working with uncertainty, scale, and messy data.</h2>
+            <p>This portfolio is strongest for data science, machine learning, quantitative analysis, modelling, and analytics roles where robust inference matters more than clean textbook data.</p>
+          </div>
         </section>
       </main>
     </div>
-    <script type="module" src="assets/js/index-page.js"></script>
   </body>
 </html>

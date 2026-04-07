@@ -13,14 +13,15 @@ Free personal portfolio site for GitHub Pages.
 - `content/resume/fr/*.md`: French resume content modules
 - `content/templates/*.md`: copyable module templates
 - `content/MODULES.md`: module format and mapping guide
-- `assets/js/content-loader.js`: shared markdown/module loader
+- `scripts/build_site.py`: builds `index.html` and `resume.html` from the markdown modules
 
 ## Editing workflow
 
 1. Find the module you want to change in `content/`.
 2. If you are adding a new block, start from the matching file in `content/templates/`.
 3. Keep front matter keys consistent with `content/MODULES.md`.
-4. Preview locally with a static server before pushing.
+4. Run `python3 scripts/build_site.py` to regenerate `index.html` and `resume.html`.
+5. Preview locally with a static server before pushing.
 
 ## Publish on GitHub Pages
 
@@ -50,7 +51,13 @@ Otherwise it will be published as a project page. For this repository, the publi
 
 ## Local preview
 
-Because the pages now load Markdown modules with `fetch`, open them through a local static server instead of double-clicking the HTML file:
+After updating any module, rebuild the generated pages:
+
+```bash
+python3 scripts/build_site.py
+```
+
+Then preview locally with a static server:
 
 ```bash
 python3 -m http.server

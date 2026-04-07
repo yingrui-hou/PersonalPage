@@ -1,6 +1,6 @@
 # Content Modules
 
-This site is now driven by Markdown modules. The HTML files only define layout.
+This site is driven by Markdown modules, but `index.html` and `resume.html` are generated with full content.
 
 ## Shared data
 
@@ -81,6 +81,12 @@ Copy from `content/templates/` when creating a new module:
 
 ## Editing notes
 
+- After changing any module, rebuild the generated HTML files:
+
+```bash
+python3 scripts/build_site.py
+```
+
 - Front matter must be wrapped in:
 
 ```md
@@ -96,4 +102,8 @@ key: value
 tags: XGBoost | Reweighting | Feature Validation
 ```
 
-- Local preview must run through a static server because the pages load Markdown with `fetch`.
+- Preview locally with a static server after rebuilding:
+
+```bash
+python3 -m http.server
+```
