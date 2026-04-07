@@ -354,7 +354,7 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-family: "Fraunces", serif;
+  font-family: "Times New Roman", Times, serif;
   line-height: 1;
 }
 
@@ -373,7 +373,7 @@ h1 {
 
 .profile-panel h1 {
   max-width: none;
-  font-size: clamp(1.95rem, 2.2vw, 2.45rem);
+  font-size: clamp(2.1rem, 2.35vw, 2.7rem);
   white-space: nowrap;
   text-wrap: pretty;
 }
@@ -406,11 +406,12 @@ h3 {
 .hero-about {
   max-width: none;
   margin: 1.1rem 0 0;
-  font-size: 1rem;
-  line-height: 1.72;
-  color: var(--text);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #7a5848;
   font-weight: 500;
   font-style: italic;
+  white-space: nowrap;
   text-wrap: pretty;
 }
 
@@ -1041,6 +1042,10 @@ h3 {
 
 @media (max-width: 1100px) {
   .profile-positioning h2 {
+    white-space: normal;
+  }
+
+  .hero-about {
     white-space: normal;
   }
 }
