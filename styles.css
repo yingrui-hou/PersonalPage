@@ -973,7 +973,52 @@ h3 {
 }
 
 .profile-positioning {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
+  padding: 2.95rem 3rem 2.7rem;
+  border-left: 0;
+  background:
+    linear-gradient(135deg, rgba(255, 247, 239, 0.98), rgba(255, 252, 248, 0.9));
+  box-shadow:
+    0 12px 28px rgba(24, 33, 37, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.55);
+}
+
+.profile-positioning::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 8px;
+  background: linear-gradient(180deg, #c7744a 0%, #a4532c 100%);
+}
+
+.profile-positioning .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  margin-bottom: 1.1rem;
+  padding: 0.2rem 0.8rem;
+  border: 1px solid rgba(186, 100, 57, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--accent-dark);
+}
+
+.profile-positioning h2 {
+  max-width: 15ch;
+  color: #142a32;
+  font-size: clamp(2.35rem, 3.4vw, 3.55rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  text-wrap: balance;
+}
+
+.profile-positioning p {
+  max-width: 58ch;
+  margin: 1.25rem 0 0;
+  color: #284049;
+  font-size: 1.04rem;
+  line-height: 1.78;
+  text-wrap: pretty;
 }
 
 main {
