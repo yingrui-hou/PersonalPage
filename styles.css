@@ -366,6 +366,12 @@ h1 {
   line-height: 0.95;
 }
 
+.profile-panel h1 {
+  max-width: none;
+  font-size: clamp(2.2rem, 4.1vw, 4rem);
+  white-space: nowrap;
+}
+
 h2 {
   font-size: clamp(2rem, 3vw, 3rem);
   letter-spacing: -0.04em;
@@ -983,6 +989,10 @@ main {
 
   h1 {
     max-width: 12ch;
+  }
+
+  .profile-panel h1 {
+    white-space: normal;
   }
 }
 
