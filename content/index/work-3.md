@@ -1,18 +1,27 @@
 ---
 number: 03
+homepage_order: 7
+collapsible: true
 title: Domain Adaptation for ML
-tags: GBDT | XGBoost | Reweighting | Feature Validation
-methods: BDT validation, gradient-boosting reweighting, calibration-sample alignment
-impact: reduced kinematic mismatch between calibration and signal-like samples before downstream modelling and selection.
-industry: Domain Adaptation | Production ML | Dataset Shift
-evidence_title: Selected evidence from project work
+tags: GBDT | CatBoost | Reweighting | Feature Validation
+methods: CatBoost training, train-test diagnostics, gradient-boosting reweighting
+impact: improved downstream model reliability by treating dataset mismatch and overtraining checks as part of the production workflow.
+industry: Domain Adaptation | Applied ML | Dataset Shift
 ---
-Improved model robustness under distribution shift by validating score behaviour and reweighting samples before downstream use.
+**Built an ML validation and sample-alignment workflow in a shared analysis environment for noisy selection problems under dataset shift.**
 
-- Used train-test BDT score comparisons to check separation quality and overtraining behaviour.
-- Reweighted calibration and control samples so their kinematics better matched the target signal sample.
-- Treated reweighting as part of the validation loop whenever downstream inference depended on sample agreement.
+![Background veto performance](assets/selected-work/work-3/bkg_veto_performance.png "Background is strongly reduced after applying the final GBDT selection model.")
+![Train-test GBDT response comparison](assets/selected-work/work-3/train-test.png "Train and test response curves remain aligned for both classes, providing a direct overtraining check before threshold tuning.")
+![Feature importance ranking](assets/selected-work/work-3/feature_importance.png "Feature-importance ranking of the final model after iterative refinement.")
 
-## Evidence
-- The `Run2_Bs2PhiGamma_TestTrain.pdf` plot explicitly compares signal/background train and test BDT responses, providing a direct diagnostic of model behaviour before threshold optimisation.
-- In the time-dependent note, calibration decays in both data and simulation were reweighted with a GBR so observables such as `pT(B)` and `eta(B)` matched the signal channel more closely.
+### Problem
+The ML problem was not only to classify noisy events, but to do so under dataset shift, where calibration and control samples do not naturally match the target sample. Without explicit validation and alignment, model scores would look good in training while degrading downstream inference.
+
+### Workflow
+- Trained CatBoost-based classifiers and used train-test response comparisons to check separation quality and overtraining behaviour before optimising thresholds.
+- Reweighted calibration and control samples so their kinematics better matched the target signal sample before downstream inference.
+- Treated reweighting, score validation, threshold scans, job configuration, and saved model outputs as one integrated workflow rather than isolated model-training steps.
+
+### Result
+- Improved downstream model reliability by making dataset mismatch and overtraining checks part of the production pipeline instead of optional diagnostics.
+- Kept train and test response curves aligned for both classes, providing a direct validation that the classifier behaviour remained stable before selection tuning.

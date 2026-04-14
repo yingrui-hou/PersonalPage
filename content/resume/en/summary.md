@@ -1,3 +1,7 @@
-Numerical engineer and data scientist with a PhD in experimental particle physics, specialized in modelling, state estimation, and signal reconstruction from noisy measurement systems.
+R&D-oriented simulation and data scientist with a background in experimental physics and several years of experience building reusable Python/C++ workflows for calibration, validation, and inference on noisy measurement systems.
 
-Experienced in extracting hidden physical quantities using probabilistic models, handling uncertainty, and calibrating models against real-world data. Strong background in Python/C++, large-scale data processing, and robust numerical methods.
+Core strength: turning imperfect simulations and biased measurements into decision-ready models through simulation-to-data alignment, correction workflows, uncertainty handling, and robust validation.
+
+**Best fit:** industrial R&D teams working on physical systems, instrumented tests, sensor data, model credibility, and simulation-informed engineering decisions.
+
+**Track record:** delivered validation and correction workflows that fed calibration updates, software fixes, and quantified model improvements under uncertainty.

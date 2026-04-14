@@ -39,9 +39,15 @@ This site is driven by Markdown modules, but `index.html` and `resume.html` are 
 - `content/index/overview.md`
   Controls the right-side overview panel and the `Selected Work Map` label.
 
+- `content/index/outcomes.md`
+  Controls the short `Selected Outcomes` proof block on the homepage.
+
+- `content/index/additional-methods.md`
+  Controls the secondary homepage section used for more statistical or academic case studies.
+
 - `content/index/work-*.md`
   One file per case study.
-  Any number of `work-*.md` files can be used; they are rendered in numeric order.
+  Any number of `work-*.md` files can be used.
   Required front matter:
   - `number`
   - `title`
@@ -51,6 +57,9 @@ This site is driven by Markdown modules, but `index.html` and `resume.html` are 
   - `industry`
   Optional:
   - `evidence_title`
+  - `homepage_order` to control homepage display order without renaming files
+  - `homepage_group: secondary` to move a case into the secondary homepage grouping
+  - `collapsible: true` to show only title, tags, summary, and preview image until the reader clicks `Read more`
   - `homepage: false` to keep a work file in the repo but hide it from the homepage
   Body structure:
   - short intro paragraph
@@ -71,6 +80,7 @@ Files:
 - `shell.md`
   Labels, metadata, and UI strings in front matter.
 - `summary.md`
+- `outcomes.md`
 - `education.md`
 - `skills.md`
   Currently not used for rendering. Resume skills are generated from `content/index/skills.md`.

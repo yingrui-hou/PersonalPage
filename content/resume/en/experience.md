@@ -1,21 +1,18 @@
-### Data Science - Numerical Modelling & Data Analysis
+### Inference, Validation & Analysis Workflows
 CNRS / CERN / LHCb Collaboration + GRAiNITA Collaboration
-- Extracted weak signals from high-noise datasets using probabilistic mixture models and maximum likelihood estimation.
-- Designed feature selection strategies to improve signal-to-noise ratio and stability of extracted parameters.
-- Evaluated model robustness using proxy metrics in the absence of per-event ground truth.
-- Modelled time-dependent processes to infer latent parameters from noisy temporal data.
-- Corrected measurement bias and resolution effects through calibration using simulation and control datasets.
-- Improved parameter stability through joint modelling across multiple datasets.
-- Corrected distribution mismatch between simulated and real data using gradient boosting-based reweighting.
-- Improved model generalisation and reduced systematic bias under dataset shift conditions.
-- Performed sensitivity analysis under model variation, noise, and selection bias.
-- Processed large-scale datasets using C++ and Python and built reproducible analysis pipelines.
+- Built reusable C++/Python/ROOT workflows for weak-signal extraction, time-dependent inference, and validation on noisy datasets where direct event-level truth was unavailable.
+- Implemented likelihood-based models and joint fits to estimate latent parameters under sample mismatch, finite resolution, and biased observation conditions.
+- Developed CatBoost-based selection and validation pipelines, including train/test diagnostics, scan studies, and reproducible model application.
+- Aligned simulated and observed datasets through gradient-boosting reweighting and control-sample calibration before downstream inference and selection decisions.
+- Contributed reusable fit components and uncertainty-stress checks for advanced weighted and unbinned inference workflows.
+- Worked in large technical collaborations with shared codebases and review discipline, with validation outputs feeding calibration and model decisions.
 
-### Detector R&D - Signal Processing & Sensor Modelling
+### Simulation, Calibration & Test-Data Interpretation
 CNRS / CERN / LHCb Collaboration + GRAiNITA Collaboration
-- Modelled the full signal chain from physical input to measured output.
-- Analysed correlations between measurement variables to improve resolution and reduce bias.
-- Developed signal discrimination methods based on waveform characteristics.
-- Investigated non-linear correlations in measurement systems and applied transformation strategies to improve accuracy.
-- Calibrated model parameters using simulation and experimental data.
-- Reduced bias and improved resolution across different system configurations.
+- Built and adapted Geant4/C++ simulation code for optical-response and detector studies, including geometry, stepping, and analysis outputs.
+- Combined beam-test data, simulation, and response maps to model measurement-chain behaviour and quantify non-uniformity effects on system resolution, including a quantified constant-term contribution below `1%`.
+- Built time-resolved signal-analysis workflows that recovered component fractions from scintillation timing and improved reconstructed-energy resolution by about a factor of `2` in representative PSD studies.
+- Developed ROOT/C++ calibration and correction workflows to reduce structured bias and compare performance before and after correction across operating conditions.
+- Built benchmark-based monitoring workflows to validate reconstruction and calibration quality, then traced anomalies to detector behaviour or software issues instead of stopping at descriptive analysis.
+- Identified concrete issues that led to follow-up actions, including detector-specific anomalies and a missing-energy software problem later fixed in reconstruction software.
+- Implemented event-level model-correction tooling inside collaboration frameworks to improve fast-model realism using measured constraints.

@@ -1,13 +1,15 @@
-- Physics (classical/quantum)
 - Python
 - C/C++
-- Machine Learning
+- ROOT / RooFit
+- Geant4
+- CatBoost / Gradient Boosting
 - Probabilistic Modelling
+- Statistical Inference
 - Maximum Likelihood Estimation
-- Time-Series Analysis
-- Bias Correction
-- Calibration
+- Model Validation
+- Calibration & Bias Correction
+- Simulation-to-Data Alignment
 - Signal Processing
 - Domain Adaptation
-- Statistical Inference
+- Workflow Automation (YAML / Shell / CMake)
 - Large-Scale Data Analysis

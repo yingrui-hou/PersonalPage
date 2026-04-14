@@ -1,3 +1,7 @@
-Spécialiste en modélisation numérique et data science, titulaire d'un doctorat en physique expérimentale des particules, avec une expertise en modélisation, estimation d'état et reconstruction de signaux issus de systèmes de mesure bruités.
+Ingénieure R&D orientée simulation et data science, issue de la physique expérimentale, avec plusieurs années d'expérience dans le développement de workflows réutilisables en Python/C++ pour la calibration, la validation et l'inférence sur des systèmes de mesure bruités.
 
-Expérience confirmée dans l'extraction de signaux faibles par modèles probabilistes, la gestion de l'incertitude et la calibration de modèles sur données réelles. Solide maîtrise de Python/C++, du traitement de données à grande échelle et des méthodes numériques robustes.
+Point fort principal : transformer des simulations imparfaites et des mesures biaisées en modèles exploitables pour la décision grâce à l'alignement simulation-données, aux workflows de correction, à la maîtrise de l'incertitude et à une validation robuste.
+
+**Meilleur positionnement :** équipes R&D industrielles travaillant sur des systèmes physiques, des essais instrumentés, des données capteurs, la crédibilité des modèles et des décisions d'ingénierie guidées par la simulation.
+
+**Expérience concrète :** livraison de workflows de validation et de correction ayant alimenté des mises à jour de calibration, des correctifs logiciels et des améliorations de modèles quantifiées sous incertitude.

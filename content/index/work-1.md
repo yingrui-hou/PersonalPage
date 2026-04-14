@@ -1,18 +1,26 @@
 ---
 number: 01
+homepage_order: 8
+homepage_group: secondary
+collapsible: true
 title: Weak-Signal Inference
 tags: Mixture Models | Maximum Likelihood | Feature Selection | Statistical Validation
-methods: mass fitting, control-channel validation, proxy-metric checks
-impact: validated rare-signal extraction in low signal-to-noise data with control measurements and stability checks.
-industry: Fraud Detection | Anomaly Detection | Weakly Supervised Learning
-evidence_title: Selected evidence from project work
+methods: likelihood fitting, control-sample validation, production yield workflows
+impact: turned rare-signal extraction into a reproducible workflow with stability checks and auditable validation logic.
+industry: Rare Event Analytics | Anomaly Detection | Weakly Labeled Systems
 ---
-Built a weak-signal inference workflow for data where event-level truth is unavailable and background dominates the observable space.
+**Built a reusable C++/Python/ROOT workflow for weak-signal extraction in data where background dominates and event-level truth is unavailable.**
 
-- Built signal-plus-background likelihood fits to separate rare signal from combinatorial background.
-- Validated the extraction strategy against a higher-yield control decay rather than relying on one fit in isolation.
-- Monitored yield, width, and fit stability across runs and selections to test robustness under changing conditions.
+![Weak-signal mass fit case 2](assets/selected-work/work-1/BToVG.png "A narrow signal peak is recovered from dominant background through an explicit signal-plus-background fit.")
 
-## Evidence
-- In the radiative-decay note, the mass-fit strategy was important enough to be validated through a dedicated branching-ratio measurement, not treated as a black box.
-- The Run 2 sample was expected to give about five times the signal yield of Run 1, so consistency across years was a practical validation target as well as a statistical advantage.
+### Problem
+The analysis problem was to recover a weak signal from dominant combinatorial background without having reliable event-level truth labels. That makes simple cut-based counting fragile and forces the extraction logic to carry its own validation.
+
+### Workflow
+- Implemented signal-plus-background likelihood fits to separate rare signal from background and extract stable yields under low signal-to-noise conditions.
+- Automated yield extraction, preselection, and branching-ratio cross-checks through analysis-production scripts and structured inputs rather than relying on one-off notebooks.
+- Validated the strategy against a higher-yield control decay and monitored yield, width, and fit stability across runs and selection settings.
+
+### Result
+- Turned the mass-fit strategy into reusable production tooling rather than a one-off fit tuned to a single dataset.
+- Demonstrated that the extraction logic was robust enough to support a dedicated branching-ratio measurement, which is a stronger validation than simply showing a visible peak.

@@ -1,18 +1,26 @@
 ---
 number: 08
-title: Fourier-Based Inference for Complex Signals
-tags: Statistical Inference | Fourier Methods | Complex-Valued Modelling | Joint Fitting
-methods: Fourier expansion, weighted observables, joint fitting, pseudoexperiment validation
-impact: transformed a difficult high-dimensional inference problem into a tractable weighted-fit workflow with controlled statistical and systematic behaviour.
-industry: Advanced Analytics | Signal Modelling | Inverse Problems
-evidence_title: Selected evidence from project work
+homepage_order: 7
+homepage_group: secondary
+collapsible: true
+title: Advanced Inference Workflow Validation
+tags: Advanced Statistical Modelling | Basis-Function Methods | Latent-Parameter Estimation | Collaborative R&D
+methods: basis expansion, covariance-aware joint fitting, pseudoexperiment validation, statistical background subtraction
+impact: helped move a novel inference method into a realistic workflow by testing robustness against background, efficiency, and resolution effects and by preparing purified real-data inputs.
+industry: Advanced Modelling | Inverse Problems | Signal Analytics | Collaborative Method Development
 ---
-Designed a model-independent inference workflow that uses a Fourier basis to represent structured signal variation and recover latent parameters through weighted fitting.
+**Contributed the proof-of-principle validation needed to move a new basis-expansion inference idea from theory toward a usable workflow under realistic measurement conditions.**
 
-- Replaced a coarse binned description with an optimal Fourier expansion of signal variation across phase space.
-- Constructed weighted observables from heterogeneous datasets and solved for latent parameters through a single joint fit.
-- Validated the method with pseudoexperiments, covariance-aware fitting, and higher-order expansion checks to test stability against modelling and truncation effects.
+![Sensitivity maps for the weighted inference method](assets/selected-work/work-8/fourier-weights.png "The weighting maps show how the method concentrates statistical sensitivity in the most informative regions while accounting for real measurement effects.")
 
-## Evidence
-- The 2026 papers describe the method as a `novel approach` based on the `optimal Fourier method`, where the strong-phase difference is expanded in Fourier components and the resulting weighted observables are used in a joint fit.
-- The analysis explicitly checks robustness through pseudoexperiments, covariance propagation, systematic variations, and higher-order Fourier expansions, showing that the fitted parameters remain stable as the basis is extended.
+### Problem
+The method problem was not only to propose a new structured inference strategy, but to show that it remained usable once real measurement effects were introduced. Background contamination, reconstruction efficiency, and detector resolution all had to be tested explicitly before the method could be trusted in a collaborative measurement.
+
+### Workflow
+- Evaluated how experimental background, reconstruction efficiency, and detector resolution affect an unbinned basis-expansion inference strategy for extracting latent parameters.
+- Prepared a real-data signal sample end to end, including reconstruction, event selection, and statistical background subtraction, so the method could be tested on realistic inputs rather than idealised samples.
+- Contributed within a broader collaborative method effort by connecting the weighting-function idea to fit-ready inputs, covariance-aware validation, pseudoexperiments, and robustness studies required for a full joint measurement.
+
+### Result
+- Helped turn a novel inference idea into a realistic analysis workflow instead of leaving it as a purely formal method proposal.
+- Anchored the method in practical validation work: weighted Fourier observables, joint fitting over latent parameters, and explicit checks under background, efficiency, resolution, and higher-order modelling variations.

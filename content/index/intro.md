@@ -1,8 +1,10 @@
 ---
 eyebrow: Personal Introduction
-title: From measurements to physic-reliable decisions
-about: PhD and former postdoctoral researcher focused on modelling, uncertainty, and translating complex data into solid decisions.
+title: From noisy measurements to reliable model decisions
+about: I build calibrated models from noisy measurements and imperfect simulations for physical systems.
 ---
-I've worked on extracting reliable signals and physical observables from complex detector systems, understanding and correcting bias, and validating models when direct ground truth is limited or unavailable.
+I build calibrated models from noisy measurements and imperfect simulations. My core strength is designing modelling, calibration, and validation strategies that extract reliable conclusions when the true state is only indirectly observed.
 
-Across research and detector-development projects, that has meant generating simulation samples, calibrating measurement effects, and testing whether conclusions stay stable when assumptions change. The same pattern carries directly into industry work on noisy customer data, weak labels, operational monitoring, and decision systems where robustness and systematic understanding matter more than clean textbook datasets.
+In postdoctoral work, that meant building reusable C++/Python/ROOT/Geant4 workflows for simulation-to-test alignment, calibration, monitoring, time-dependent inference, and model correction in large shared technical environments. The value came from turning validation results into calibration updates, software follow-up actions, and more credible modelling decisions.
+
+This profile is strongest in industrial R&D environments working on complex physical systems, where instrumented tests, imperfect models, and engineering decisions must stay aligned under uncertainty.

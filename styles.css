@@ -318,9 +318,14 @@ body::before {
 }
 
 .resume-summary,
+.resume-outcomes,
 .resume-main .resume-card,
 .resume-sidebar .resume-card {
   padding: 2.25rem;
+}
+
+.resume-outcomes {
+  margin-top: 1rem;
 }
 
 .resume-grid {
@@ -419,6 +424,23 @@ h3 {
 
 .toc-copy {
   margin-top: 1.1rem;
+}
+
+.outcomes-list {
+  margin-top: 0.2rem;
+}
+
+.outcomes-list ul,
+.section-copy ul {
+  margin: 0.75rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--text);
+  line-height: 1.62;
+}
+
+.outcomes-list li + li,
+.section-copy li + li {
+  margin-top: 0.45rem;
 }
 
 .hero-copy p,
@@ -709,6 +731,11 @@ h3 {
   margin-top: 0.9rem;
 }
 
+.resume-summary p strong {
+  color: #b6403a;
+  font-weight: 700;
+}
+
 .resume-markdown > *:first-child {
   margin-top: 0;
 }
@@ -853,6 +880,10 @@ h3 {
   margin-top: 1.1rem;
 }
 
+.toc-secondary-label {
+  margin-top: 1.35rem;
+}
+
 .toc-list li + li {
   margin-top: 0.9rem;
 }
@@ -871,6 +902,118 @@ h3 {
 .case-study {
   display: block;
   padding: 2.325rem 2.475rem;
+}
+
+.case-preview > *:first-child,
+.case-details > *:first-child {
+  margin-top: 0;
+}
+
+.case-preview {
+  margin-top: 0.2rem;
+}
+
+.case-preview .markdown-figure {
+  max-width: 720px;
+}
+
+.case-preview p strong,
+.case-study > p strong {
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+.case-study > p,
+.case-study > ul,
+.case-preview > p,
+.case-details > p,
+.case-details > ul {
+  max-width: 76ch;
+}
+
+.case-study > .markdown-figure,
+.case-preview > .markdown-figure,
+.case-details > .markdown-figure {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-study > .markdown-gallery,
+.case-preview > .markdown-gallery,
+.case-details > .markdown-gallery {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.case-study em,
+.case-details em {
+  color: var(--accent-dark);
+}
+
+.case-details {
+  margin-top: 1rem;
+}
+
+.case-study > h3,
+.case-details h3 {
+  margin: 1.45rem 0 0;
+  color: var(--accent-dark);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.case-details > *:first-child {
+  margin-top: 0;
+}
+
+.case-study > h3 + p,
+.case-study > h3 + ul,
+.case-study > h3 + .markdown-gallery,
+.case-study > h3 + .markdown-figure,
+.case-details h3 + p,
+.case-details h3 + ul,
+.case-details h3 + .markdown-gallery,
+.case-details h3 + .markdown-figure {
+  margin-top: 0.6rem;
+}
+
+.case-study > h3 + ul,
+.case-details h3 + ul {
+  padding-left: 1.2rem;
+}
+
+.case-toggle {
+  margin-top: 1.1rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent-dark);
+  font: inherit;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+}
+
+.case-toggle:hover {
+  color: var(--accent);
+}
+
+.case-toggle-less {
+  display: none;
+}
+
+.case-study-collapsible.is-expanded .case-toggle-more {
+  display: none;
+}
+
+.case-study-collapsible.is-expanded .case-toggle-less {
+  display: inline;
 }
 
 .case-study-header {
@@ -938,10 +1081,35 @@ h3 {
   margin: 1.2rem 0 0;
 }
 
+.markdown-gallery {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.markdown-gallery .markdown-figure {
+  margin-top: 0;
+}
+
+.markdown-gallery-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.markdown-gallery-3 {
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  align-items: start;
+}
+
+.markdown-gallery-3 .markdown-figure:nth-child(3) {
+  grid-column: 1 / -1;
+}
+
 .markdown-image {
   display: block;
   width: 100%;
   height: auto;
+  max-height: 430px;
+  object-fit: contain;
   border: 1px solid var(--line);
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.72);
@@ -949,9 +1117,42 @@ h3 {
 
 .markdown-figure figcaption {
   margin-top: 0.65rem;
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--text-muted);
   font-size: 0.9rem;
   line-height: 1.55;
+}
+
+.case-preview .markdown-image {
+  max-height: 360px;
+}
+
+#work-1 .case-preview .markdown-figure,
+#work-6 .case-preview .markdown-figure {
+  max-width: 820px;
+}
+
+#work-3 .case-preview .markdown-figure,
+#work-4 .case-preview .markdown-figure,
+#work-5 .case-preview .markdown-figure {
+  max-width: 680px;
+}
+
+#work-8 .case-preview .markdown-figure {
+  max-width: 620px;
+}
+
+@media (max-width: 900px) {
+  .markdown-gallery-2,
+  .markdown-gallery-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .markdown-gallery-3 .markdown-figure:nth-child(3) {
+    grid-column: auto;
+  }
 }
 
 .case-evidence {
@@ -1072,6 +1273,18 @@ main {
 
 .section {
   padding: 1.6rem 0 0;
+}
+
+.section-secondary {
+  padding-top: 2rem;
+}
+
+.section-secondary .section-heading h2 {
+  font-size: clamp(1.9rem, 2.45vw, 2.5rem);
+}
+
+.section-secondary .section-copy {
+  max-width: 76ch;
 }
 
 @media (max-width: 960px) {

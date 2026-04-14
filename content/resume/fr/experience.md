@@ -1,21 +1,18 @@
-### Data Science - Modélisation numérique et analyse de données
+### Inférence, validation et workflows d'analyse
 CNRS / CERN / LHCb Collaboration + GRAiNITA Collaboration
-- Extraction de signaux faibles dans des jeux de données très bruités au moyen de modèles de mélange probabilistes et du maximum de vraisemblance.
-- Conception de stratégies de sélection de variables pour améliorer le rapport signal/bruit et la stabilité des paramètres estimés.
-- Évaluation de la robustesse des modèles à l'aide d'indicateurs indirects en l'absence de vérité terrain au niveau événement.
-- Modélisation de processus dépendant du temps afin d'inférer des paramètres latents à partir de données temporelles bruitées.
-- Correction des biais de mesure et des effets de résolution par calibration sur simulation et échantillons de contrôle.
-- Renforcement de la stabilité des paramètres grâce à une modélisation conjointe sur plusieurs jeux de données.
-- Correction des écarts de distribution entre simulation et données réelles à l'aide d'une repondération basée sur le gradient boosting.
-- Amélioration de la généralisation des modèles et réduction des biais systématiques en contexte de dérive de distribution.
-- Réalisation d'analyses de sensibilité face aux variations de modèle, au bruit et aux biais de sélection.
-- Traitement de volumes de données importants en C++ et Python et mise en place de pipelines d'analyse reproductibles.
+- Développement de workflows réutilisables en C++/Python/ROOT pour l'extraction de signaux faibles, l'inférence dépendante du temps et la validation sur données bruitées sans vérité terrain directe au niveau événement.
+- Mise en oeuvre de modèles de vraisemblance et de fits conjoints pour estimer des paramètres latents sous effets de biais, de résolution finie et de désaccord entre échantillons.
+- Développement de pipelines CatBoost pour la sélection et la validation, avec diagnostics train/test, études de scan et application reproductible des modèles.
+- Alignement simulation-données par repondération et calibration sur échantillons de contrôle avant les décisions d'inférence et de sélection aval.
+- Contribution à des composants de fit réutilisables et à des tests de robustesse pour des workflows d'inférence pondérée et non binée.
+- Travail dans de grandes collaborations techniques avec bases de code partagées et discipline de revue, avec des résultats de validation réinjectés dans des décisions de calibration et de modélisation.
 
-### R&D détecteurs - Traitement du signal et modélisation de capteurs
+### Simulation, calibration et interprétation des données d'essai
 CNRS / CERN / LHCb Collaboration + GRAiNITA Collaboration
-- Modélisation de l'ensemble de la chaîne du signal, de l'entrée physique jusqu'à la mesure reconstruite.
-- Analyse des corrélations entre variables de mesure afin d'améliorer la résolution et de réduire les biais.
-- Développement de méthodes de discrimination des signaux à partir des caractéristiques des formes d'onde.
-- Étude de corrélations non linéaires dans les systèmes de mesure et mise en oeuvre de transformations pour améliorer la précision.
-- Calibration des paramètres de modèle à partir de simulations et de données expérimentales.
-- Réduction des biais et amélioration de la résolution sur différentes configurations instrumentales.
+- Développement et adaptation de code Geant4/C++ pour des études de réponse optique et détecteur, incluant géométrie, stepping et sorties d'analyse.
+- Combinaison de données de test-beam, de simulation et de cartes de réponse pour modéliser la chaîne de mesure et quantifier l'effet des non-uniformités sur la résolution, avec une contribution au terme constant inférieure à `1%`.
+- Développement de workflows d'analyse temporelle du signal permettant de récupérer des fractions de composantes à partir de la scintillation et d'améliorer la résolution en énergie d'environ un facteur `2` dans des études PSD représentatives.
+- Développement de workflows ROOT/C++ de calibration et de correction pour réduire les biais structurés et comparer les performances avant/après correction selon les conditions de fonctionnement.
+- Mise en place de workflows de monitoring par canaux de référence afin de valider la reconstruction et la calibration, puis de remonter les anomalies à des causes détecteur ou logicielles au lieu de s'arrêter à une analyse descriptive.
+- Identification d'anomalies concrètes menant à des actions correctives, dont un problème logiciel d'énergie manquante ensuite corrigé dans la reconstruction.
+- Implémentation d'outils de correction événement par événement dans des frameworks de collaboration afin d'améliorer le réalisme de modèles rapides à partir de contraintes mesurées.

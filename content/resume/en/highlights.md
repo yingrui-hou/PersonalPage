@@ -1,4 +1,5 @@
-- Weak signal extraction using mixture models and likelihood-based inference
-- Time-series modelling with bias correction and uncertainty handling
-- Domain adaptation using gradient boosting reweighting
-- Large-scale data processing and numerical modelling
+- Model validation and uncertainty quantification for noisy measurement systems
+- Simulation-to-measurement alignment through calibration, reweighting, and correction workflows
+- Sensor and system modelling with Geant4, ROOT, Python, and C++
+- Test-data analytics, anomaly tracing, and root-cause diagnosis
+- ML validation under dataset shift for decision-facing pipelines

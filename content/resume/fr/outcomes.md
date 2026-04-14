@@ -1,0 +1,3 @@
+- Quantification d'une contribution des non-uniformités à la résolution inférieure à `1%` dans une étude détaillée de détecteur
+- Amélioration d'environ `2x` de la résolution en énergie reconstruite dans des études PSD représentatives
+- Développement de workflows de validation ayant mis en évidence des problèmes détecteur et logiciels, dont un bug d'énergie manquante corrigé ensuite en aval

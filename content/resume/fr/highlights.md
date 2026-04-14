@@ -1,4 +1,5 @@
-- Extraction de signaux faibles par modèles de mélange et inférence par maximum de vraisemblance
-- Modélisation temporelle avec correction des biais et maîtrise des incertitudes
-- Adaptation de domaine par repondération via gradient boosting
-- Traitement de données à grande échelle et modélisation numérique
+- Validation de modèles et quantification de l'incertitude pour systèmes de mesure bruités
+- Alignement simulation-mesure par calibration, repondération et workflows de correction
+- Modélisation capteur et système avec Geant4, ROOT, Python et C++
+- Analyse de données d'essai, traçage d'anomalies et diagnostic de causes racines
+- Validation ML sous décalage de distribution pour pipelines orientés décision

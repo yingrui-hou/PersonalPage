@@ -19,18 +19,20 @@ ICON_PATHS = {
 }
 
 RESUME_SKILLS_FR = {
-    "Physics (classical/quantum)": "Physique (classique / quantique)",
     "Python": "Python",
     "C/C++": "C/C++",
-    "Machine Learning": "Machine learning",
+    "ROOT / RooFit": "ROOT / RooFit",
+    "Geant4": "Geant4",
+    "CatBoost / Gradient Boosting": "CatBoost / Gradient Boosting",
     "Probabilistic Modelling": "Modélisation probabiliste",
+    "Statistical Inference": "Inférence statistique",
     "Maximum Likelihood Estimation": "Estimation par maximum de vraisemblance",
-    "Time-Series Analysis": "Analyse de séries temporelles",
-    "Bias Correction": "Correction des biais",
-    "Calibration": "Calibration",
+    "Model Validation": "Validation de modèles",
+    "Calibration & Bias Correction": "Calibration et correction des biais",
+    "Simulation-to-Data Alignment": "Alignement simulation-données",
     "Signal Processing": "Traitement du signal",
     "Domain Adaptation": "Adaptation de domaine",
-    "Statistical Inference": "Inférence statistique",
+    "Workflow Automation (YAML / Shell / CMake)": "Automatisation de workflows (YAML / Shell / CMake)",
     "Large-Scale Data Analysis": "Analyse de données à grande échelle",
 }
 
@@ -48,7 +50,7 @@ def parse_module(path: Path) -> dict:
             attributes = parse_front_matter(raw[4:end])
             body = raw[end + 5 :].strip() if raw[end : end + 5] == "\n---\n" else ""
 
-    return {"attributes": attributes, "body": body}
+    return {"attributes": attributes, "body": body, "path": path, "stem": path.stem}
 
 
 def parse_front_matter(raw: str) -> dict:
@@ -71,6 +73,7 @@ def render_inline(text: str) -> str:
     html = escape(text)
     html = re.sub(r"`([^`]+)`", r"<code>\1</code>", html)
     html = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", html)
+    html = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", r"<em>\1</em>", html)
     html = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2">\1</a>', html)
     return html
 
@@ -95,19 +98,33 @@ def render_markdown(markdown: str) -> str:
 
         image_match = re.match(r'^!\[([^\]]*)\]\((\S+?)(?:\s+"([^"]+)")?\)$', line)
         if image_match:
-            alt_text = image_match.group(1)
-            image_path = image_match.group(2)
-            caption = image_match.group(3)
-            figure = (
-                f'<figure class="markdown-figure">'
-                f'<img class="markdown-image" src="{escape(image_path, quote=True)}" '
-                f'alt="{escape(alt_text, quote=True)}" loading="lazy" />'
-            )
-            if caption:
-                figure += f'<figcaption>{escape(caption)}</figcaption>'
-            figure += "</figure>"
-            blocks.append(figure)
-            index += 1
+            figures = []
+            while index < len(lines):
+                current = lines[index].strip()
+                current_match = re.match(r'^!\[([^\]]*)\]\((\S+?)(?:\s+"([^"]+)")?\)$', current)
+                if not current_match:
+                    break
+
+                alt_text = current_match.group(1)
+                image_path = current_match.group(2)
+                caption = current_match.group(3)
+                figure = (
+                    f'<figure class="markdown-figure">'
+                    f'<img class="markdown-image" src="{escape(image_path, quote=True)}" '
+                    f'alt="{escape(alt_text, quote=True)}" loading="lazy" />'
+                )
+                if caption:
+                    figure += f'<figcaption>{escape(caption)}</figcaption>'
+                figure += "</figure>"
+                figures.append(figure)
+                index += 1
+
+            if len(figures) == 1:
+                blocks.append(figures[0])
+            else:
+                blocks.append(
+                    f'<div class="markdown-gallery markdown-gallery-{len(figures)}">{"".join(figures)}</div>'
+                )
             continue
 
         heading_match = re.match(r"^(#{1,3})\s+(.+)$", line)
@@ -172,9 +189,59 @@ def render_bullet_markdown(items: list[str]) -> str:
     return render_markdown("\n".join(f"- {item}" for item in items))
 
 
+def split_lead_paragraph(markdown: str) -> tuple[str, str]:
+    lines = markdown.replace("\r\n", "\n").split("\n")
+    lead = []
+    index = 0
+
+    while index < len(lines) and not lines[index].strip():
+        index += 1
+
+    while index < len(lines):
+        current = lines[index].strip()
+        if not current:
+            break
+        if current.startswith("- ") or re.match(r"^(#{1,3})\s+", current):
+            break
+        if re.match(r'^!\[([^\]]*)\]\((\S+?)(?:\s+"([^"]+)")?\)$', current):
+            break
+        lead.append(current)
+        index += 1
+
+    remaining = "\n".join(lines[index:]).strip()
+    return ("\n".join(lead).strip(), remaining)
+
+
+def split_first_image(markdown: str) -> tuple[str, str]:
+    lines = markdown.replace("\r\n", "\n").split("\n")
+    image_index = None
+    image_line = ""
+
+    for idx, line in enumerate(lines):
+        if re.match(r'^!\[([^\]]*)\]\((\S+?)(?:\s+"([^"]+)")?\)$', line.strip()):
+            image_index = idx
+            image_line = line.strip()
+            break
+
+    if image_index is None:
+        return ("", markdown.strip())
+
+    remaining_lines = lines[:image_index] + lines[image_index + 1 :]
+    return (image_line, "\n".join(remaining_lines).strip())
+
+
 def work_sort_key(path: Path) -> tuple[int, str]:
     match = re.search(r"work-(\d+)$", path.stem)
     return (int(match.group(1)) if match else 10**9, path.stem)
+
+
+def module_homepage_order(module: dict) -> tuple[int, tuple[int, str]]:
+    raw = module["attributes"].get("homepage_order")
+    try:
+        order = int(str(raw))
+    except (TypeError, ValueError):
+        order = 10**9
+    return (order, work_sort_key(module["path"]))
 
 
 def icon_link(href: str, aria_label: str, title: str, icon: str, class_name: str, label: str = "") -> str:
@@ -233,23 +300,69 @@ def render_case_study(module: dict, index: int) -> str:
     sections = split_sections(module["body"])
     attrs = module["attributes"]
     tags = "".join(f'<span class="case-tag">{escape(tag)}</span>' for tag in attrs.get("tags", []))
+    default_markdown = sections.get("default", "")
+    summary_markdown, detail_markdown = split_lead_paragraph(default_markdown)
+    preview_image_markdown = ""
+    evidence_markdown = sections.get("evidence", "")
+    collapsible = str(attrs.get("collapsible", "false")).lower() == "true"
+    if collapsible:
+        if evidence_markdown:
+            preview_image_markdown, evidence_markdown = split_first_image(evidence_markdown)
+        elif detail_markdown:
+            preview_image_markdown, detail_markdown = split_first_image(detail_markdown)
+
+    preview_html = render_markdown(summary_markdown) if summary_markdown else ""
+    preview_image_html = render_markdown(preview_image_markdown) if preview_image_markdown else ""
+
     evidence_html = ""
-    if "evidence" in sections:
+    if evidence_markdown:
         evidence_html = f"""
 <div class="case-evidence">
   <p class="case-evidence-title">{escape(attrs.get("evidence_title", "Selected evidence from project work"))}</p>
-  {render_markdown(sections["evidence"]).replace("<ul>", '<ul class="case-evidence-list">', 1)}
+  {render_markdown(evidence_markdown).replace("<ul>", '<ul class="case-evidence-list">', 1)}
 </div>
 """.strip()
 
-    return f"""
-<article class="case-study" id="work-{index + 1}">
+    detail_html = f"""
+  {render_markdown(detail_markdown) if detail_markdown else ""}
+  <p class="case-meta"><strong>Methods:</strong> {escape(attrs.get("methods", ""))}</p>
+  <p class="impact-note"><strong>Impact:</strong> {escape(attrs.get("impact", ""))}</p>
+  <p class="impact">Industry relevance: {escape(attrs.get("industry", ""))}</p>
+  {evidence_html}
+""".strip()
+
+    article_classes = "case-study case-study-collapsible" if collapsible else "case-study"
+
+    if collapsible:
+        return f"""
+<article class="{article_classes}" id="{escape(module['stem'])}">
   <div class="case-study-header">
-    <p class="case-number">{escape(attrs.get("number", str(index + 1).zfill(2)))}</p>
+    <p class="case-number">{str(index + 1).zfill(2)}</p>
     <h3>{escape(attrs.get("title", f"Work {index + 1}"))}</h3>
   </div>
   <div class="case-tags" aria-label="Skills and tools used">{tags}</div>
-  {render_markdown(sections.get("default", ""))}
+  <div class="case-preview">
+    {preview_html}
+    {preview_image_html}
+  </div>
+  <div class="case-details" hidden>
+    {detail_html}
+  </div>
+  <button class="case-toggle" type="button" data-read-toggle aria-expanded="false">
+    <span class="case-toggle-more">Read more</span>
+    <span class="case-toggle-less">Read less</span>
+  </button>
+</article>
+""".strip()
+
+    return f"""
+<article class="{article_classes}" id="{escape(module['stem'])}">
+  <div class="case-study-header">
+    <p class="case-number">{str(index + 1).zfill(2)}</p>
+    <h3>{escape(attrs.get("title", f"Work {index + 1}"))}</h3>
+  </div>
+  <div class="case-tags" aria-label="Skills and tools used">{tags}</div>
+  {render_markdown(default_markdown)}
   <p class="case-meta"><strong>Methods:</strong> {escape(attrs.get("methods", ""))}</p>
   <p class="impact-note"><strong>Impact:</strong> {escape(attrs.get("impact", ""))}</p>
   <p class="impact">Industry relevance: {escape(attrs.get("industry", ""))}</p>
@@ -263,16 +376,49 @@ def build_index(profile: dict) -> str:
     seeking = parse_module(CONTENT / "index/seeking.md")
     skills = parse_module(CONTENT / "index/skills.md")
     overview = parse_module(CONTENT / "index/overview.md")
+    outcomes = parse_module(CONTENT / "index/outcomes.md")
+    additional_methods = parse_module(CONTENT / "index/additional-methods.md")
     positioning = parse_module(CONTENT / "index/positioning.md")
     works = [parse_module(path) for path in sorted((CONTENT / "index").glob("work-*.md"), key=work_sort_key)]
+    works.sort(key=module_homepage_order)
     visible_works = [work for work in works if str(work["attributes"].get("homepage", "true")).lower() != "false"]
+    primary_works = [work for work in visible_works if str(work["attributes"].get("homepage_group", "")).lower() != "secondary"]
+    secondary_works = [work for work in visible_works if str(work["attributes"].get("homepage_group", "")).lower() == "secondary"]
 
     skill_pills = "".join(f'<span class="skill-pill">{escape(item)}</span>' for item in parse_bullets(skills["body"]))
-    work_map = "".join(
-        f'<li><a href="#work-{index + 1}">{escape(work["attributes"]["title"])}</a></li>'
-        for index, work in enumerate(visible_works)
+    primary_work_map = "".join(
+        f'<li><a href="#{escape(work["stem"])}">{escape(work["attributes"]["title"])}</a></li>'
+        for work in primary_works
     )
-    work_cards = "\n".join(render_case_study(work, index) for index, work in enumerate(visible_works))
+    secondary_work_map = "".join(
+        f'<li><a href="#{escape(work["stem"])}">{escape(work["attributes"]["title"])}</a></li>'
+        for work in secondary_works
+    )
+    work_cards = "\n".join(render_case_study(work, index) for index, work in enumerate(primary_works))
+    secondary_work_cards = "\n".join(render_case_study(work, index) for index, work in enumerate(secondary_works))
+    outcomes_html = render_markdown(outcomes["body"])
+    secondary_section = ""
+    secondary_map = ""
+    if secondary_works:
+        secondary_map = f"""
+            <p class="sidebar-label toc-secondary-label">{escape(additional_methods["attributes"].get("eyebrow", "Additional Statistical Methods"))}</p>
+            <ol class="toc-list toc-list-secondary">
+              {secondary_work_map}
+            </ol>
+        """.strip()
+        secondary_section = f"""
+        <section class="section section-secondary" id="additional-methods">
+          <div class="section-heading">
+            <p class="eyebrow">{escape(additional_methods["attributes"].get("eyebrow", "Additional Statistical Methods"))}</p>
+            <h2>{escape(additional_methods["attributes"].get("title", ""))}</h2>
+            <div class="section-copy">{render_markdown(additional_methods["body"])}</div>
+          </div>
+
+          <div class="case-study-grid">
+            {secondary_work_cards}
+          </div>
+        </section>
+        """.rstrip()
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -282,7 +428,7 @@ def build_index(profile: dict) -> str:
     <title>{escape(profile["name"])} | Selected Work</title>
     <meta
       name="description"
-      content="Selected work by {escape(profile['name'])}, focused on data science, probabilistic modelling, signal extraction, bias correction, and machine learning under uncertainty."
+      content="Selected work by {escape(profile['name'])}, focused on simulation-to-measurement alignment, calibration, model validation, and data science for physical systems."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -339,10 +485,15 @@ def build_index(profile: dict) -> str:
             <p class="eyebrow">{escape(overview["attributes"].get("eyebrow", "Overview"))}</p>
             <h2>{escape(overview["attributes"].get("title", ""))}</h2>
             <div class="toc-copy">{render_markdown(overview["body"])}</div>
+            <p class="sidebar-label">{escape(outcomes["attributes"].get("label", "Selected Outcomes"))}</p>
+            <div class="outcomes-list">
+              {outcomes_html}
+            </div>
             <p class="sidebar-label">{escape(overview["attributes"].get("map_label", "Selected Work Map"))}</p>
             <ol class="toc-list">
-              {work_map}
+              {primary_work_map}
             </ol>
+            {secondary_map}
           </aside>
         </div>
       </header>
@@ -357,7 +508,22 @@ def build_index(profile: dict) -> str:
             {work_cards}
           </div>
         </section>
+        {secondary_section}
       </main>
+      <script>
+        const caseToggles = document.querySelectorAll("[data-read-toggle]");
+        caseToggles.forEach((button) => {{
+          const article = button.closest(".case-study-collapsible");
+          const details = article?.querySelector(".case-details");
+          if (!article || !details) return;
+
+          button.addEventListener("click", () => {{
+            const expanded = article.classList.toggle("is-expanded");
+            details.hidden = !expanded;
+            button.setAttribute("aria-expanded", expanded ? "true" : "false");
+          }});
+        }});
+      </script>
     </div>
   </body>
 </html>
@@ -373,7 +539,7 @@ def build_resume(profile: dict) -> str:
     sections = {
         lang: {
             name: parse_module(CONTENT / f"resume/{lang}/{name}.md")
-            for name in ("summary", "education", "languages", "highlights", "experience")
+            for name in ("summary", "outcomes", "education", "languages", "highlights", "experience")
         }
         for lang in ("en", "fr")
     }
@@ -389,9 +555,11 @@ def build_resume(profile: dict) -> str:
             "education_label": shell[lang]["education_label"],
             "skills_label": shell[lang]["skills_label"],
             "languages_label": shell[lang]["languages_label"],
+            "outcomes_label": shell[lang]["outcomes_label"],
             "highlights_label": shell[lang]["highlights_label"],
             "experience_label": shell[lang]["experience_label"],
             "summary_html": render_markdown(sections[lang]["summary"]["body"]),
+            "outcomes_html": render_markdown(sections[lang]["outcomes"]["body"]),
             "contact_html": render_resume_contact(profile, shell[lang]["phone_label"]),
             "education_html": render_markdown(sections[lang]["education"]["body"]),
             "skills_html": render_bullet_markdown(
@@ -456,6 +624,10 @@ def build_resume(profile: dict) -> str:
       </header>
 
       <section class="resume-card resume-summary" id="resume-summary">{initial["summary_html"]}</section>
+      <section class="resume-card resume-outcomes">
+        <p class="sidebar-label" id="outcomes-label">{escape(initial["outcomes_label"])}</p>
+        <div class="resume-markdown resume-main-markdown" id="resume-outcomes">{initial["outcomes_html"]}</div>
+      </section>
 
       <div class="resume-grid">
         <aside class="resume-sidebar">
@@ -508,9 +680,11 @@ def build_resume(profile: dict) -> str:
         educationLabel: document.getElementById("education-label"),
         skillsLabel: document.getElementById("skills-label"),
         languagesLabel: document.getElementById("languages-label"),
+        outcomesLabel: document.getElementById("outcomes-label"),
         highlightsLabel: document.getElementById("highlights-label"),
         experienceLabel: document.getElementById("experience-label"),
         summary: document.getElementById("resume-summary"),
+        outcomes: document.getElementById("resume-outcomes"),
         contact: document.getElementById("resume-contact"),
         education: document.getElementById("resume-education"),
         skills: document.getElementById("resume-skills"),
@@ -546,9 +720,11 @@ def build_resume(profile: dict) -> str:
         dom.educationLabel.textContent = copy.education_label;
         dom.skillsLabel.textContent = copy.skills_label;
         dom.languagesLabel.textContent = copy.languages_label;
+        dom.outcomesLabel.textContent = copy.outcomes_label;
         dom.highlightsLabel.textContent = copy.highlights_label;
         dom.experienceLabel.textContent = copy.experience_label;
         dom.summary.innerHTML = copy.summary_html;
+        dom.outcomes.innerHTML = copy.outcomes_html;
         dom.contact.innerHTML = copy.contact_html;
         dom.education.innerHTML = copy.education_html;
         dom.skills.innerHTML = copy.skills_html;
