@@ -24,3 +24,6 @@ The core problem was to infer latent time-dependent behaviour from observations 
 ### Result
 - Converted a bias-sensitive time-series problem into a controlled inference workflow with dataset-specific corrections and auditable assumptions.
 - Propagated residual mismodelling as quantified uncertainty rather than hiding it inside nominal fit parameters, which made the method reusable across datasets and reviews.
+
+### Publications & Reports
+- [Internal note: *Measurement of the mixing-induced and CP-violating observables in Bs0 → ϕγ decays with Run1 and Run2 data*] documents the acceptance modelling, resolution calibration, GB-reweighting, and joint-fit structure behind this inference workflow.

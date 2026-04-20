@@ -66,6 +66,7 @@ This site is driven by Markdown modules, but `index.html` and `resume.html` are 
   - bullet list
   - optional standalone Markdown image lines such as `![Alt text](assets/example.png)` or `![Alt text](assets/example.png "Caption")`
   - optional `## Evidence` section with bullets
+  - optional inline `### Publications & Reports` subsection inside the main body for paper or report links; use `###`, not `##`, so the content stays inside the rendered case card
 
 - `content/index/positioning.md`
   Controls the closing block at the bottom of the homepage.

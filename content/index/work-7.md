@@ -21,3 +21,7 @@ The simplified fast simulation was good enough for most kinematic behaviour, but
 ### Result
 - Turned measured constraints into a reusable event-level correction package for improving simplified simulation realism.
 - Kept the event-level behaviour explicit and auditable: each event receives a correction factor and is accepted or rejected through a simple stochastic rule, which makes the method portable, reviewable, and suitable for shared technical environments.
+
+### Publications & Reports
+- [Technical note: *Feasibility study of determining charm mixing and CP violation parameters in super tau-charm factory*] documents the `QCFilterAlg` package and the event-level correction workflow used to restore missing correlation structure in fast simulation.
+- Related publication: *CP violation studies at Super Tau-Charm Facility*. DOI: [10.48550/arXiv.2502.08907](https://doi.org/10.48550/arXiv.2502.08907)

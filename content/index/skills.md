@@ -1,4 +1,9 @@
 - Python
+- NumPy
+- pandas
+- scikit-learn
+- statsmodels
+- matplotlib / seaborn
 - C/C++
 - ROOT / RooFit
 - Geant4

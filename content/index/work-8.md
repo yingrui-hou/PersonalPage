@@ -24,3 +24,7 @@ The method problem was not only to propose a new structured inference strategy, 
 ### Result
 - Helped turn a novel inference idea into a realistic analysis workflow instead of leaving it as a purely formal method proposal.
 - Anchored the method in practical validation work: weighted Fourier observables, joint fitting over latent parameters, and explicit checks under background, efficiency, resolution, and higher-order modelling variations.
+
+### Publications & Reports
+- Publication: *Measurement of the CKM angle γ in B± → D(→ KS0h′+h′−)h± decays with a novel approach*. DOI: [10.48550/arXiv.2604.05701](https://doi.org/10.48550/arXiv.2604.05701)
+- Publication: *Precise measurement of the CKM angle γ with a novel approach*. DOI: [10.48550/arXiv.2604.05712](https://doi.org/10.48550/arXiv.2604.05712)

@@ -24,3 +24,6 @@ The analysis problem was to recover a weak signal from dominant combinatorial ba
 ### Result
 - Turned the mass-fit strategy into reusable production tooling rather than a one-off fit tuned to a single dataset.
 - Demonstrated that the extraction logic was robust enough to support a dedicated branching-ratio measurement, which is a stronger validation than simply showing a visible peak.
+
+### Publications & Reports
+- [Internal note: *Measurement of the branching fraction ratio between B0 → K∗0γ and Bs0 → ϕγ decays using the full LHCb dataset*] documents the signal-plus-background fits, validation logic, and final branching-ratio extraction supported by this workflow.

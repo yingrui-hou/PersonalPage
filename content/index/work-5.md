@@ -26,3 +26,6 @@ The problem was to recover useful composition information from scintillation tim
 - Showed that the PSD-based correction improves deposited-energy resolution, with one representative rotation-based study reducing the resolution term by about a factor of `2`.
 - Demonstrated that the time-profile fit can recover the dominant EM component with usable accuracy, for example `F_em = 0.740 +/- 0.055` for a reference value of `0.738` in one validation study.
 - Identified a practical design constraint rather than just a positive result: one material candidate (`BGO`) did not separate proton-like and electron-like timing strongly enough for accurate EM-fraction extraction, while `ZnWO4` retained more distinguishable time shapes and therefore offered a more credible PSD route.
+
+### Publications & Reports
+- [Internal report: *PSD study update*] summarizes the time-profile fitting, EM-fraction recovery, and resolution-improvement studies behind this PSD workflow.

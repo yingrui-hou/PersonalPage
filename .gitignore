@@ -1,0 +1,7 @@
+CV_related/
+tmp/
+.DS_Store
+scripts/__pycache__/
+assets/.DS_Store
+assets/selected-work/.DS_Store
+assets/selected-work/work-4/.DS_Store

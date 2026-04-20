@@ -13,6 +13,7 @@ CONTENT = ROOT / "content"
 ICON_PATHS = {
     "email": 'M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25Zm1.5.56v9.94c0 .14.11.25.25.25h14.5a.25.25 0 0 0 .25-.25V7.31l-7.04 5.16a.75.75 0 0 1-.88 0Zm14.7-.81H4.8L12 11.78Z',
     "phone": 'M6.62 10.79a15.5 15.5 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.4 11.4 0 0 0 3.58.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.49a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.58 1 1 0 0 1-.24 1.01Z',
+    "link": 'M13.06 10.94a.75.75 0 0 1 0-1.06l2.47-2.47a3.25 3.25 0 1 1 4.6 4.6l-3.89 3.9a3.25 3.25 0 0 1-4.6 0 .75.75 0 1 1 1.06-1.06 1.75 1.75 0 0 0 2.48 0l3.88-3.89a1.75 1.75 0 0 0-2.47-2.47l-2.47 2.47a.75.75 0 0 1-1.06 0m-2.12 2.12a.75.75 0 0 1 0 1.06l-2.47 2.47a3.25 3.25 0 0 1-4.6-4.6l3.89-3.9a3.25 3.25 0 0 1 4.6 0 .75.75 0 1 1-1.06 1.06 1.75 1.75 0 0 0-2.48 0l-3.88 3.89a1.75 1.75 0 1 0 2.47 2.47l2.47-2.47a.75.75 0 0 1 1.06 0',
     "linkedin": 'M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1M5.7 9.75h2.5V18H5.7zm4.06 0h2.4v1.13h.04c.33-.63 1.15-1.3 2.37-1.3 2.54 0 3.01 1.67 3.01 3.84V18h-2.5v-4.04c0-.96-.02-2.2-1.34-2.2-1.35 0-1.56 1.06-1.56 2.14V18h-2.5z',
     "orcid": 'M7.35 5.5a1.35 1.35 0 1 1 0 2.7 1.35 1.35 0 0 1 0-2.7M6.3 9.4h2.1v7.6H6.3zm3.65 0h3.06c2.85 0 4.75 1.61 4.75 3.8 0 2.39-1.82 3.8-4.82 3.8H9.95Zm2.1 1.74v4.12h.78c1.69 0 2.76-.77 2.76-2.06 0-1.32-1-2.06-2.71-2.06Z',
     "gitlab": 'm12 18.9 2.94-9.04H9.06Zm0 0-9.12-6.63 2.55-7.85a.46.46 0 0 1 .87 0l2.76 8.48Zm0 0 9.12-6.63-2.55-7.85a.46.46 0 0 0-.87 0l-2.76 8.48Z',
@@ -20,6 +21,11 @@ ICON_PATHS = {
 
 RESUME_SKILLS_FR = {
     "Python": "Python",
+    "NumPy": "NumPy",
+    "pandas": "pandas",
+    "scikit-learn": "scikit-learn",
+    "statsmodels": "statsmodels",
+    "matplotlib / seaborn": "matplotlib / seaborn",
     "C/C++": "C/C++",
     "ROOT / RooFit": "ROOT / RooFit",
     "Geant4": "Geant4",
@@ -254,6 +260,10 @@ def icon_link(href: str, aria_label: str, title: str, icon: str, class_name: str
     )
 
 
+def short_url(url: str) -> str:
+    return url.replace("https://", "").replace("http://", "").replace("www.", "").rstrip("/")
+
+
 def render_topbar_links(profile: dict) -> str:
     return "".join(
         [
@@ -287,6 +297,12 @@ def render_resume_contact(profile: dict, phone_label: str) -> str:
   </span>
   <button class="reveal-button" type="button" data-reveal="phone" data-value="{escape(profile['phone'], quote=True)}">{escape(phone_label)}</button>
 </div>
+{f'''<a class="contact-link" href="{escape(profile["homepage"], quote=True)}" target="_blank" rel="noopener noreferrer">
+  <span class="contact-icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24"><path d="{ICON_PATHS['link']}" /></svg>
+  </span>
+  <span>{escape(short_url(profile["homepage"]))}</span>
+</a>''' if profile.get("homepage") else ""}
 <div class="resume-icon-links" aria-label="Profile links">
   {icon_link(profile["linkedin"], "LinkedIn", "LinkedIn", "linkedin", "icon-link icon-link-linkedin")}
   {icon_link(profile["orcid"], "ORCID", "ORCID", "orcid", "icon-link icon-link-orcid")}

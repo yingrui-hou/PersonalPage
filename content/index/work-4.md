@@ -27,3 +27,7 @@ The key question was how much detector non-uniformity would degrade the energy r
 ### Result
 - Turned a beam-test measurement into a usable simulation input rather than leaving it as a standalone detector study.
 - Showed explicitly that non-flat response maps worsen the reconstructed energy resolution relative to a flat-response reference, with a non-uniformity-driven constant term less than `1.0%` in the detailed study, which strengthens confidence in simulation-informed design decisions.
+
+### Publications & Reports
+- Publication: *Studying the GRAiNITA concept: first test beam results*. DOI: [10.1088/1748-0221/21/03/P03048](https://doi.org/10.1088/1748-0221/21/03/P03048)
+- [Technical note: *GRAiNiTA: June 2024 Test beam*] documents the beam-test setup, light-collection measurements, and the response-map construction later injected into simulation.

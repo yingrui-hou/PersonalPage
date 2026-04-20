@@ -23,3 +23,7 @@ The early Run 3 reconstruction chain needed validation before performance discre
 ### Result
 - Turned validation discrepancies into concrete follow-up actions, including detector checks, calibration/alignment validation, and software fixes.
 - Documented specific findings rather than generic monitoring noise, including an abnormal bump linked to a specific calorimeter cell, detector-region asymmetries in photon distributions, energy miscalibration, and a missing-energy software issue later fixed in reconstruction.
+
+### Publications & Reports
+- [Internal note: *Run3 performance check with photon-involved channels*] documents the benchmark-channel validation strategy, selection checks, and reconstruction issues tracked in this work.
+- Publication: *Monitoring reconstruction software in LHCb*. DOI: [10.1051/epjconf/202125103044](https://doi.org/10.1051/epjconf/202125103044)

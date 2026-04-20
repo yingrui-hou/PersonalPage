@@ -25,3 +25,6 @@ The ML problem was not only to classify noisy events, but to do so under dataset
 ### Result
 - Improved downstream model reliability by making dataset mismatch and overtraining checks part of the production pipeline instead of optional diagnostics.
 - Kept train and test response curves aligned for both classes, providing a direct validation that the classifier behaviour remained stable before selection tuning.
+
+### Publications & Reports
+- [Internal note: *Measurement of the branching fraction ratio between B0 → K∗0γ and Bs0 → ϕγ decays using the full LHCb dataset*] includes the CatBoost training setup, simulation-to-data reweighting, feature validation, and overtraining checks used in this ML workflow.
