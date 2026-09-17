@@ -1,0 +1,304 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Times-Roman >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Times-Bold >>
+endobj
+3 0 obj
+<< /Length 3936 >>
+stream
+BT /F2 17 Tf 1 0 0 1 58 776 Tm (Yingrui Hou - Portfolio and Resume) Tj ET
+BT /F2 15 Tf 1 0 0 1 58 734 Tm (Yingrui Hou - Portfolio and Resume) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 710 Tm (Clermont-Ferrand, France | yingrui.hou@outlook.com | +33\(0\)785396332 LinkedIn:) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 695 Tm (https://www.linkedin.com/in/yingrui-hou | ORCID: https://orcid.org/0000-0001-6454-278X |) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 680 Tm (Personal GitLab: https://gitlab.com/hyrsophie | CERN GitLab: https://gitlab.cern.ch/yihou) Tj ET
+BT /F2 13 Tf 1 0 0 1 58 654 Tm (Positioning) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 634 Tm (Simulation & Data Science Engineer for Physical Systems) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 616 Tm (Best fit for industrial R&D teams working on physical systems, especially where simulation-) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 601 Tm (to-measurement alignment, calibration, model validation, and uncertainty-aware analysis are) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 586 Tm (central to the work. Strongest value comes when the goal is not generic analytics, but) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 571 Tm (making models trustworthy enough to support engineering decisions.) Tj ET
+BT /F2 13 Tf 1 0 0 1 58 545 Tm (Personal Introduction) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 525 Tm (From noisy measurements to reliable model decisions) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 507 Tm (I build calibrated models from noisy measurements and imperfect simulations for physical) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 492 Tm (systems.) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 474 Tm (I build calibrated models from noisy measurements and imperfect simulations. My core) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 459 Tm (strength is designing modelling, calibration, and validation strategies that extract) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 444 Tm (reliable conclusions when the true state is only indirectly observed.) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 426 Tm (In postdoctoral work, that meant building reusable C++/Python/ROOT/Geant4 workflows for) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 411 Tm (simulation-to-test alignment, calibration, monitoring, time-dependent inference, and model) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 396 Tm (correction in large shared technical environments. The value came from turning validation) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 381 Tm (results into calibration updates, software follow-up actions, and more credible modelling) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 366 Tm (decisions.) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 348 Tm (This profile is strongest in industrial R&D environments working on complex physical) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 333 Tm (systems, where instrumented tests, imperfect models, and engineering decisions must stay) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 318 Tm (aligned under uncertainty.) Tj ET
+BT /F2 13 Tf 1 0 0 1 58 292 Tm (Seeking) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 272 Tm (Simulation & Data Science Engineer for Physical Systems, with strongest fit in model) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 257 Tm (validation, test-data analytics, and simulation-to-measurement alignment roles where) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 242 Tm (calibrated models and robust technical decisions matter.) Tj ET
+BT /F2 13 Tf 1 0 0 1 58 216 Tm (Overview) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 196 Tm (What this work supports in industrial R&D) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 178 Tm (Across these projects, the recurring pattern is consistent: build the workflow, correct) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 163 Tm (mismatch between simulation and measurement, validate aggressively before trusting the) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 148 Tm (result, and make the final model usable for decisions rather than just analysis. That is the) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 133 Tm (same pattern behind industrial R&D teams working on physical systems, test-data) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 118 Tm (interpretation, monitoring, calibration, model credibility, and simulation-informed design) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 103 Tm (iteration.) Tj ET
+endstream
+endobj
+4 0 obj
+<< /Type /Page /Parent 15 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 3 0 R >>
+endobj
+5 0 obj
+<< /Length 4138 >>
+stream
+BT /F2 17 Tf 1 0 0 1 58 776 Tm (Yingrui Hou - Portfolio and Resume) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 744 Tm (The strongest proof repeats across multiple cases: test data used to calibrate model) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 729 Tm (response, structured bias removed through reusable correction logic, anomalies traced to) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 714 Tm (instrument behaviour or software rather than left unexplained, and quantified performance) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 699 Tm (changes used to support calibration choices, software fixes, and simulation updates before a) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 684 Tm (result is trusted for engineering decisions.) Tj ET
+BT /F2 13 Tf 1 0 0 1 58 658 Tm (Selected Outcomes) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 638 Tm (- Quantified response non-uniformity contribution to resolution below 1% in a detailed) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 623 Tm (  detector study) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 606 Tm (- Improved reconstructed-energy resolution by about 2x in representative PSD-based) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 591 Tm (  studies) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 574 Tm (- Built validation workflows that exposed detector and software issues, including a) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 559 Tm (  missing-energy bug later fixed downstream) Tj ET
+BT /F2 13 Tf 1 0 0 1 58 534 Tm (Selected Work) Tj ET
+BT /F2 12 Tf 1 0 0 1 58 508 Tm (Sensor Simulation & Reconstruction) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 490 Tm (Tags: Signal Processing, Simulation Calibration, Digital Twins) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 472 Tm (Built a simulation-and-measurement workflow to quantify how detector non-uniformity affects) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 457 Tm (energy resolution, using beam-test data to constrain the model instead of assuming ideal) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 442 Tm (sensor response.) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 424 Tm (Methods: Geant4 simulation, beam-test analysis, response-map reconstruction Impact: linked) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 409 Tm (measured non-uniformity to system-level resolution through both simulation code and) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 394 Tm (experimental validation. Industry relevance: Sensor Analytics | Measurement Systems |) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 379 Tm (Simulation-Assisted Design) Tj ET
+BT /F2 12 Tf 1 0 0 1 58 355 Tm (Pulse-Shape Discrimination for Energy Reconstruction) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 337 Tm (Tags: Pulse Shape Discrimination, Detector Simulation, Time-Resolved Signal Analysis,) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 322 Tm (Resolution Optimisation) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 304 Tm (Built a PSD-oriented simulation and analysis workflow to extract shower composition from) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 289 Tm (scintillation time profiles and use it to improve reconstructed energy.) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 271 Tm (Methods: particle-dependent timing models, component fitting, correlation-based correction) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 256 Tm (Impact: showed that PSD-derived shower fractions can improve reconstructed energy and help) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 241 Tm (judge which detector materials remain usable for timing-based separation. Industry) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 226 Tm (relevance: Time-Resolved Sensing | Signal Decomposition | Measurement-System Design) Tj ET
+BT /F2 12 Tf 1 0 0 1 58 202 Tm (Model Correction Workflow) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 184 Tm (Tags: Scientific Software, Event Filtering, Simulation Correction, Framework Integration) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 166 Tm (Developed simulation-correction tooling that turns measured physics constraints into an) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 151 Tm (event-level resampling workflow.) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 133 Tm (Methods: Gaudi-package development, event-level correction, framework integration Impact:) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 118 Tm (turned measured constraints into a reusable event-level correction package for improving) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 103 Tm (simplified simulation realism. Industry relevance: Simulation Platforms | Scientific) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 88 Tm (Computing | Model Correction) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 15 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 4140 >>
+stream
+BT /F2 17 Tf 1 0 0 1 58 776 Tm (Yingrui Hou - Portfolio and Resume) Tj ET
+BT /F2 12 Tf 1 0 0 1 58 738 Tm (Test-Data Validation & Root-Cause Analysis) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 720 Tm (Tags: Monitoring, Data Validation, Performance Diagnostics, Root-Cause Analysis) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 702 Tm (Built a production-style validation workflow for early Run 3 photon reconstruction, focused) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 687 Tm (on finding actionable detector and software issues.) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 669 Tm (Methods: benchmark-channel checks, MC-data comparison, detector-level diagnostics Impact:) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 654 Tm (translated validation discrepancies into concrete calibration, detector, and software) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 639 Tm (follow-ups before they became accepted bias. Industry relevance: Production Monitoring |) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 624 Tm (Model Validation | Observability | Quality Assurance) Tj ET
+BT /F2 12 Tf 1 0 0 1 58 600 Tm (Time-Series Inference) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 582 Tm (Tags: Time-Series Modelling, Bias Correction, Calibration, Joint Fitting) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 564 Tm (Built a bias-corrected time-series inference workflow for data affected by selection) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 549 Tm (effects, detector resolution, and sample mismatch.) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 531 Tm (Methods: acceptance modelling, resolution calibration, custom fit components, joint fitting) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 516 Tm (Impact: converted a bias-sensitive latent-dynamics problem into a controlled inference) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 501 Tm (workflow with dataset-specific corrections. Industry relevance: Durability Modelling | State) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 486 Tm (Estimation | Latent-Dynamics Inference) Tj ET
+BT /F2 12 Tf 1 0 0 1 58 462 Tm (Domain Adaptation for ML) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 444 Tm (Tags: GBDT, CatBoost, Reweighting, Feature Validation) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 426 Tm (Built an ML validation and sample-alignment workflow in a shared analysis environment for) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 411 Tm (noisy selection problems under dataset shift.) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 393 Tm (Methods: CatBoost training, train-test diagnostics, gradient-boosting reweighting Impact:) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 378 Tm (improved downstream model reliability by treating dataset mismatch and overtraining checks) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 363 Tm (as part of the production workflow. Industry relevance: Domain Adaptation | Applied ML |) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 348 Tm (Dataset Shift) Tj ET
+BT /F2 13 Tf 1 0 0 1 58 322 Tm (Additional Statistical Methods) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 302 Tm (These cases show deeper statistical-method development alongside the more immediately) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 287 Tm (industry-facing simulation, calibration, and test-data workflows above.) Tj ET
+BT /F2 12 Tf 1 0 0 1 58 263 Tm (Advanced Inference Workflow Validation) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 245 Tm (Tags: Advanced Statistical Modelling, Basis-Function Methods, Latent-Parameter Estimation,) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 230 Tm (Collaborative R&D) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 212 Tm (Contributed the proof-of-principle validation needed to move a new basis-expansion inference) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 197 Tm (idea from theory toward a usable workflow under realistic measurement conditions.) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 179 Tm (Methods: basis expansion, covariance-aware joint fitting, pseudoexperiment validation,) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 164 Tm (statistical background subtraction Impact: helped move a novel inference method into a) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 149 Tm (realistic workflow by testing robustness against background, efficiency, and resolution) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 134 Tm (effects and by preparing purified real-data inputs. Industry relevance: Advanced Modelling |) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 119 Tm (Inverse Problems | Signal Analytics | Collaborative Method Development) Tj ET
+BT /F2 12 Tf 1 0 0 1 58 95 Tm (Weak-Signal Inference) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 15 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 3479 >>
+stream
+BT /F2 17 Tf 1 0 0 1 58 776 Tm (Yingrui Hou - Portfolio and Resume) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 744 Tm (Tags: Mixture Models, Maximum Likelihood, Feature Selection, Statistical Validation) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 726 Tm (Built a reusable C++/Python/ROOT workflow for weak-signal extraction in data where) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 711 Tm (background dominates and event-level truth is unavailable.) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 693 Tm (Methods: likelihood fitting, control-sample validation, production yield workflows Impact:) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 678 Tm (turned rare-signal extraction into a reproducible workflow with stability checks and) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 663 Tm (auditable validation logic. Industry relevance: Rare Event Analytics | Anomaly Detection |) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 648 Tm (Weakly Labeled Systems) Tj ET
+BT /F2 13 Tf 1 0 0 1 58 622 Tm (Resume) Tj ET
+BT /F2 12 Tf 1 0 0 1 58 596 Tm (Summary) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 578 Tm (R&D-oriented simulation and data scientist with a background in experimental physics and) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 563 Tm (several years of experience building reusable Python/C++ workflows for calibration,) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 548 Tm (validation, and inference on noisy measurement systems.) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 530 Tm (Core strength: turning imperfect simulations and biased measurements into decision-ready) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 515 Tm (models through simulation-to-data alignment, correction workflows, uncertainty handling, and) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 500 Tm (robust validation.) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 482 Tm (Best fit: industrial R&D teams working on physical systems, instrumented tests, sensor data,) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 467 Tm (model credibility, and simulation-informed engineering decisions.) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 449 Tm (Track record: delivered validation and correction workflows that fed calibration updates,) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 434 Tm (software fixes, and quantified model improvements under uncertainty.) Tj ET
+BT /F2 12 Tf 1 0 0 1 58 410 Tm (Selected Outcomes) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 392 Tm (- Quantified response non-uniformity contribution to resolution below 1% in a detailed) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 377 Tm (  detector study) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 360 Tm (- Improved reconstructed-energy resolution by about 2x in representative PSD-based) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 345 Tm (  studies) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 328 Tm (- Built validation workflows that exposed detector and software issues, including a) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 313 Tm (  missing-energy bug later fixed downstream) Tj ET
+BT /F2 12 Tf 1 0 0 1 58 290 Tm (Skills) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 272 Tm (- Python) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 255 Tm (- C/C++) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 238 Tm (- ROOT / RooFit) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 221 Tm (- Geant4) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 204 Tm (- CatBoost / Gradient Boosting) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 187 Tm (- Probabilistic Modelling) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 170 Tm (- Statistical Inference) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 153 Tm (- Maximum Likelihood Estimation) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 136 Tm (- Model Validation) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 119 Tm (- Calibration & Bias Correction) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 102 Tm (- Simulation-to-Data Alignment) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 85 Tm (- Signal Processing) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 15 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Length 4001 >>
+stream
+BT /F2 17 Tf 1 0 0 1 58 776 Tm (Yingrui Hou - Portfolio and Resume) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 744 Tm (- Domain Adaptation) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 727 Tm (- Workflow Automation \(YAML / Shell / CMake\)) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 710 Tm (- Large-Scale Data Analysis) Tj ET
+BT /F2 12 Tf 1 0 0 1 58 687 Tm (Technical Highlights) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 669 Tm (- Model validation and uncertainty quantification for noisy measurement systems) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 652 Tm (- Simulation-to-measurement alignment through calibration, reweighting, and correction) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 637 Tm (  workflows) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 620 Tm (- Sensor and system modelling with Geant4, ROOT, Python, and C++) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 603 Tm (- Test-data analytics, anomaly tracing, and root-cause diagnosis) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 586 Tm (- ML validation under dataset shift for decision-facing pipelines) Tj ET
+BT /F2 12 Tf 1 0 0 1 58 563 Tm (Professional Experience [Postdoctoral Researcher \(2021 - 2025\)]) Tj ET
+BT /F2 12 Tf 1 0 0 1 58 539 Tm (Inference, Validation & Analysis Workflows) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 521 Tm (CNRS / CERN / LHCb Collaboration + GRAiNITA Collaboration) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 503 Tm (- Built reusable C++/Python/ROOT workflows for weak-signal extraction, time-dependent) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 488 Tm (  inference, and validation on noisy datasets where direct event-level truth was) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 473 Tm (  unavailable.) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 456 Tm (- Implemented likelihood-based models and joint fits to estimate latent parameters) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 441 Tm (  under sample mismatch, finite resolution, and biased observation conditions.) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 424 Tm (- Developed CatBoost-based selection and validation pipelines, including train/test) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 409 Tm (  diagnostics, scan studies, and reproducible model application.) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 392 Tm (- Aligned simulated and observed datasets through gradient-boosting reweighting and) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 377 Tm (  control-sample calibration before downstream inference and selection decisions.) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 360 Tm (- Contributed reusable fit components and uncertainty-stress checks for advanced) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 345 Tm (  weighted and unbinned inference workflows.) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 328 Tm (- Worked in large technical collaborations with shared codebases and review) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 313 Tm (  discipline, with validation outputs feeding calibration and model decisions.) Tj ET
+BT /F2 12 Tf 1 0 0 1 58 290 Tm (Simulation, Calibration & Test-Data Interpretation) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 272 Tm (CNRS / CERN / LHCb Collaboration + GRAiNITA Collaboration) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 254 Tm (- Built and adapted Geant4/C++ simulation code for optical-response and detector) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 239 Tm (  studies, including geometry, stepping, and analysis outputs.) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 222 Tm (- Combined beam-test data, simulation, and response maps to model measurement-chain) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 207 Tm (  behaviour and quantify non-uniformity effects on system resolution, including a) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 192 Tm (  quantified constant-term contribution below 1%.) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 175 Tm (- Built time-resolved signal-analysis workflows that recovered component fractions) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 160 Tm (  from scintillation timing and improved reconstructed-energy resolution by about a) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 145 Tm (  factor of 2 in representative PSD studies.) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 128 Tm (- Developed ROOT/C++ calibration and correction workflows to reduce structured bias) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 113 Tm (  and compare performance before and after correction across operating conditions.) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 15 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 11 0 R >>
+endobj
+13 0 obj
+<< /Length 1479 >>
+stream
+BT /F2 17 Tf 1 0 0 1 58 776 Tm (Yingrui Hou - Portfolio and Resume) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 744 Tm (- Built benchmark-based monitoring workflows to validate reconstruction and) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 729 Tm (  calibration quality, then traced anomalies to detector behaviour or software issues) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 714 Tm (  instead of stopping at descriptive analysis.) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 697 Tm (- Identified concrete issues that led to follow-up actions, including detector-) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 682 Tm (  specific anomalies and a missing-energy software problem later fixed in) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 667 Tm (  reconstruction software.) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 650 Tm (- Implemented event-level model-correction tooling inside collaboration frameworks to) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 635 Tm (  improve fast-model realism using measured constraints.) Tj ET
+BT /F2 12 Tf 1 0 0 1 58 612 Tm (Education) Tj ET
+BT /F2 12 Tf 1 0 0 1 58 588 Tm (PhD in Particle Physics) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 570 Tm (University of Chinese Academy of Sciences) Tj ET
+BT /F2 12 Tf 1 0 0 1 58 546 Tm (BSc in Applied Physics) Tj ET
+BT /F1 11 Tf 1 0 0 1 58 528 Tm (China University of Mining and Technology) Tj ET
+BT /F2 12 Tf 1 0 0 1 58 504 Tm (Languages) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 486 Tm (- Chinese: Native speaker) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 469 Tm (- English: C1) Tj ET
+BT /F1 11 Tf 1 0 0 1 74 452 Tm (- French: B1 to B2) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 15 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 13 0 R >>
+endobj
+15 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R 10 0 R 12 0 R 14 0 R] /Count 6 >>
+endobj
+16 0 obj
+<< /Type /Catalog /Pages 15 0 R >>
+endobj
+17 0 obj
+<< /Title (Yingrui Hou - Portfolio and Resume) /Author (OpenAI Codex) /Creator (generate_application_pdfs.py) >>
+endobj
+xref
+0 18
+0000000000 65535 f 
+0000000015 00000 n 
+0000000087 00000 n 
+0000000158 00000 n 
+0000004146 00000 n 
+0000004283 00000 n 
+0000008473 00000 n 
+0000008610 00000 n 
+0000012802 00000 n 
+0000012939 00000 n 
+0000016470 00000 n 
+0000016608 00000 n 
+0000020662 00000 n 
+0000020801 00000 n 
+0000022333 00000 n 
+0000022472 00000 n 
+0000022563 00000 n 
+0000022614 00000 n 
+trailer
+<< /Size 18 /Root 16 0 R /Info 17 0 R >>
+startxref
+22743
+%%EOF
