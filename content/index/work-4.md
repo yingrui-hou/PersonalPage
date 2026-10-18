@@ -1,6 +1,6 @@
 ---
 number: 04
-homepage_order: 1
+homepage_order: 2
 collapsible: true
 title: Sensor Simulation & Reconstruction
 tags: Signal Processing | Simulation Calibration | Digital Twins

@@ -1,1 +1,1 @@
-**Simulation & Data Science Engineer for Physical Systems**, with strongest fit in **model validation**, **test-data analytics**, and **simulation-to-measurement alignment** roles where calibrated models and robust technical decisions matter.
+Data Scientist · Scientific Data Engineer · Simulation & Validation Engineer · R&D Engineer for digital twin applications. Based in Clermont-Ferrand, France; open to relocation in Europe.

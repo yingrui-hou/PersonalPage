@@ -1,14 +1,14 @@
 ---
 number: 06
-homepage_order: 4
+homepage_order: 3
 collapsible: true
 title: Test-Data Validation & Root-Cause Analysis
 tags: Monitoring | Data Validation | Performance Diagnostics | Root-Cause Analysis
 methods: benchmark-channel checks, MC-data comparison, detector-level diagnostics
 impact: translated validation discrepancies into concrete calibration, detector, and software follow-ups before they became accepted bias.
-industry: Production Monitoring | Model Validation | Observability | Quality Assurance
+industry: Research Monitoring | Model Validation | Observability | Quality Assurance
 ---
-**Built a production-style validation workflow for early Run 3 photon reconstruction, focused on finding actionable detector and software issues.**
+**Built a research validation workflow for early Run 3 photon reconstruction, focused on finding actionable detector and software issues.**
 
 ### Problem
 The early Run 3 reconstruction chain needed validation before performance discrepancies hardened into accepted bias. The main challenge was to distinguish normal modelling differences from issues that were actually actionable at detector, calibration, or software level.

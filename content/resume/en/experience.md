@@ -1,18 +1,12 @@
-### Inference, Validation & Analysis Workflows
-CNRS / CERN / LHCb Collaboration + GRAiNITA Collaboration
-- Built reusable C++/Python/ROOT workflows for weak-signal extraction, time-dependent inference, and validation on noisy datasets where direct event-level truth was unavailable.
-- Implemented likelihood-based models and joint fits to estimate latent parameters under sample mismatch, finite resolution, and biased observation conditions.
-- Developed CatBoost-based selection and validation pipelines, including train/test diagnostics, scan studies, and reproducible model application.
-- Aligned simulated and observed datasets through gradient-boosting reweighting and control-sample calibration before downstream inference and selection decisions.
-- Contributed reusable fit components and uncertainty-stress checks for advanced weighted and unbinned inference workflows.
-- Worked in large technical collaborations with shared codebases and review discipline, with validation outputs feeding calibration and model decisions.
-
-### Simulation, Calibration & Test-Data Interpretation
-CNRS / CERN / LHCb Collaboration + GRAiNITA Collaboration
-- Built and adapted Geant4/C++ simulation code for optical-response and detector studies, including geometry, stepping, and analysis outputs.
-- Combined beam-test data, simulation, and response maps to model measurement-chain behaviour and quantify non-uniformity effects on system resolution, including a quantified constant-term contribution below `1%`.
-- Built time-resolved signal-analysis workflows that recovered component fractions from scintillation timing and improved reconstructed-energy resolution by about a factor of `2` in representative PSD studies.
-- Developed ROOT/C++ calibration and correction workflows to reduce structured bias and compare performance before and after correction across operating conditions.
-- Built benchmark-based monitoring workflows to validate reconstruction and calibration quality, then traced anomalies to detector behaviour or software issues instead of stopping at descriptive analysis.
-- Identified concrete issues that led to follow-up actions, including detector-specific anomalies and a missing-energy software problem later fixed in reconstruction software.
-- Implemented event-level model-correction tooling inside collaboration frameworks to improve fast-model realism using measured constraints.
+### Postdoctoral Researcher | 2021–2025
+Research in CNRS/CERN environments; LHCb and GRAiNITA collaborations.
+- Developed reusable Python/C++/ROOT workflows connecting data preparation, statistical inference, calibration and validation.
+- Built CatBoost selection workflows with train/test diagnostics and threshold studies; aligned control and target samples through gradient-boosting reweighting.
+- Connected beam-test measurements, response-map construction and Geant4 simulation to evaluate detector response under measured conditions.
+- Investigated discrepancies in reconstruction and calibration, tracing findings to detector behaviour or software and supporting corrective follow-up.
+- Organised linked analysis tasks from experimental inputs to validated outputs; worked with shared code and collaboration review practices.
+- Presented research at GDR-InF 2022 and the 5th FCC/DRD France Workshop in 2025, including a GRAiNITA presentation on behalf of the group.
+### Doctoral research training | 2016–2021
+Joint Master and PhD in Particle Physics, University of Chinese Academy of Sciences.
+- Developed the mathematical, experimental and computational foundation for modelling noisy measurements, evaluating assumptions and communicating scientific results.
+- Research training provides a method for learning unfamiliar technical problems: study the physical system, implement an analysis, test it against data and document its limits.

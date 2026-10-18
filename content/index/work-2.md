@@ -1,6 +1,6 @@
 ---
 number: 02
-homepage_order: 6
+homepage_order: 5
 collapsible: true
 title: Time-Series Inference
 tags: Time-Series Modelling | Bias Correction | Calibration | Joint Fitting

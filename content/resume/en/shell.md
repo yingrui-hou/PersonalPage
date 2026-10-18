@@ -8,7 +8,7 @@ education_label: Education
 skills_label: Skills
 languages_label: Languages
 outcomes_label: Selected Outcomes
-highlights_label: Technical Highlights
-experience_label: Professional Experience [Postdoctoral Researcher (2021 - 2025)]
+highlights_label: Transferable engineering capabilities
+experience_label: Research experience
 phone_label: Click to see
 ---

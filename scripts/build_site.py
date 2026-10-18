@@ -312,7 +312,7 @@ def render_resume_contact(profile: dict, phone_label: str) -> str:
 """.strip()
 
 
-def render_case_study(module: dict, index: int) -> str:
+def render_case_study(module: dict, index: int, lang: str = "en") -> str:
     sections = split_sections(module["body"])
     attrs = module["attributes"]
     tags = "".join(f'<span class="case-tag">{escape(tag)}</span>' for tag in attrs.get("tags", []))
@@ -341,9 +341,9 @@ def render_case_study(module: dict, index: int) -> str:
 
     detail_html = f"""
   {render_markdown(detail_markdown) if detail_markdown else ""}
-  <p class="case-meta"><strong>Methods:</strong> {escape(attrs.get("methods", ""))}</p>
-  <p class="impact-note"><strong>Impact:</strong> {escape(attrs.get("impact", ""))}</p>
-  <p class="impact">Industry relevance: {escape(attrs.get("industry", ""))}</p>
+  <p class="case-meta"><strong>{('Méthodes :' if lang == 'fr' else 'Methods:')}</strong> {escape(attrs.get("methods", ""))}</p>
+  <p class="impact-note"><strong>{('Résultat :' if lang == 'fr' else 'Impact:')}</strong> {escape(attrs.get("impact", ""))}</p>
+  <p class="impact">{('Applications en ingénierie :' if lang == 'fr' else 'Industry relevance:')} {escape(attrs.get("industry", ""))}</p>
   {evidence_html}
 """.strip()
 
@@ -356,7 +356,7 @@ def render_case_study(module: dict, index: int) -> str:
     <p class="case-number">{str(index + 1).zfill(2)}</p>
     <h3>{escape(attrs.get("title", f"Work {index + 1}"))}</h3>
   </div>
-  <div class="case-tags" aria-label="Skills and tools used">{tags}</div>
+  <div class="case-tags" aria-label="{('Compétences et outils utilisés' if lang == 'fr' else 'Skills and tools used')}">{tags}</div>
   <div class="case-preview">
     {preview_html}
     {preview_image_html}
@@ -365,8 +365,8 @@ def render_case_study(module: dict, index: int) -> str:
     {detail_html}
   </div>
   <button class="case-toggle" type="button" data-read-toggle aria-expanded="false">
-    <span class="case-toggle-more">Read more</span>
-    <span class="case-toggle-less">Read less</span>
+    <span class="case-toggle-more">{('Lire la suite' if lang == 'fr' else 'Read more')}</span>
+    <span class="case-toggle-less">{('Réduire' if lang == 'fr' else 'Read less')}</span>
   </button>
 </article>
 """.strip()
@@ -377,25 +377,37 @@ def render_case_study(module: dict, index: int) -> str:
     <p class="case-number">{str(index + 1).zfill(2)}</p>
     <h3>{escape(attrs.get("title", f"Work {index + 1}"))}</h3>
   </div>
-  <div class="case-tags" aria-label="Skills and tools used">{tags}</div>
+  <div class="case-tags" aria-label="{('Compétences et outils utilisés' if lang == 'fr' else 'Skills and tools used')}">{tags}</div>
   {render_markdown(default_markdown)}
-  <p class="case-meta"><strong>Methods:</strong> {escape(attrs.get("methods", ""))}</p>
-  <p class="impact-note"><strong>Impact:</strong> {escape(attrs.get("impact", ""))}</p>
-  <p class="impact">Industry relevance: {escape(attrs.get("industry", ""))}</p>
+  <p class="case-meta"><strong>{('Méthodes :' if lang == 'fr' else 'Methods:')}</strong> {escape(attrs.get("methods", ""))}</p>
+  <p class="impact-note"><strong>{('Résultat :' if lang == 'fr' else 'Impact:')}</strong> {escape(attrs.get("impact", ""))}</p>
+  <p class="impact">{('Applications en ingénierie :' if lang == 'fr' else 'Industry relevance:')} {escape(attrs.get("industry", ""))}</p>
   {evidence_html}
 </article>
 """.strip()
 
 
-def build_index(profile: dict) -> str:
-    intro = parse_module(CONTENT / "index/intro.md")
-    seeking = parse_module(CONTENT / "index/seeking.md")
-    skills = parse_module(CONTENT / "index/skills.md")
-    overview = parse_module(CONTENT / "index/overview.md")
-    outcomes = parse_module(CONTENT / "index/outcomes.md")
-    additional_methods = parse_module(CONTENT / "index/additional-methods.md")
-    positioning = parse_module(CONTENT / "index/positioning.md")
-    works = [parse_module(path) for path in sorted((CONTENT / "index").glob("work-*.md"), key=work_sort_key)]
+def render_downloads(lang: str) -> str:
+    title = "Two-page CVs" if lang == "en" else "CV de deux pages"
+    roles = [("DataScience", "Data science & engineering", "Data science et ingénierie des données"),
+             ("DigitalTwin", "Digital twin & simulation engineering", "Jumeaux numériques et ingénierie de simulation")]
+    cards = []
+    for slug, en, fr in roles:
+        links = " · ".join(f'<a href="assets/cv/CV_YingruiHou_{slug}_{code.upper()}.pdf" download>{label} (PDF)</a>' for code, label in [("en", "English"), ("fr", "Français")])
+        cards.append(f'<div class="cv-download"><h3>{escape(en if lang == "en" else fr)}</h3><p>{links}</p></div>')
+    return f'<section class="resume-card cv-downloads" aria-label="{title}"><h2>{title}</h2>{"".join(cards)}</section>'
+
+
+def build_index(profile: dict, lang: str = "en") -> str:
+    base = CONTENT / ("index/fr" if lang == "fr" else "index")
+    intro = parse_module(base / "intro.md")
+    seeking = parse_module(base / "seeking.md")
+    skills = parse_module(base / "skills.md")
+    overview = parse_module(base / "overview.md")
+    outcomes = parse_module(base / "outcomes.md")
+    additional_methods = parse_module(base / "additional-methods.md")
+    positioning = parse_module(base / "positioning.md")
+    works = [parse_module(path) for path in sorted(base.glob("work-*.md"), key=work_sort_key)]
     works.sort(key=module_homepage_order)
     visible_works = [work for work in works if str(work["attributes"].get("homepage", "true")).lower() != "false"]
     primary_works = [work for work in visible_works if str(work["attributes"].get("homepage_group", "")).lower() != "secondary"]
@@ -410,8 +422,8 @@ def build_index(profile: dict) -> str:
         f'<li><a href="#{escape(work["stem"])}">{escape(work["attributes"]["title"])}</a></li>'
         for work in secondary_works
     )
-    work_cards = "\n".join(render_case_study(work, index) for index, work in enumerate(primary_works))
-    secondary_work_cards = "\n".join(render_case_study(work, index) for index, work in enumerate(secondary_works))
+    work_cards = "\n".join(render_case_study(work, index, lang) for index, work in enumerate(primary_works))
+    secondary_work_cards = "\n".join(render_case_study(work, index, lang) for index, work in enumerate(secondary_works))
     outcomes_html = render_markdown(outcomes["body"])
     secondary_section = ""
     secondary_map = ""
@@ -437,14 +449,14 @@ def build_index(profile: dict) -> str:
         """.rstrip()
 
     return f"""<!DOCTYPE html>
-<html lang="en">
+<html lang="{lang}">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{escape(profile["name"])} | Selected Work</title>
+    <title>{escape(profile["name"])} | {"Projets et compétences" if lang == "fr" else "Projects & Engineering Skills"}</title>
     <meta
       name="description"
-      content="Selected work by {escape(profile['name'])}, focused on simulation-to-measurement alignment, calibration, model validation, and data science for physical systems."
+      content="{escape("Data science, simulation, validation et compétences transférables de Yingrui Hou." if lang == "fr" else "Data science, simulation, validation and transferable engineering skills of Yingrui Hou.")}"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -464,10 +476,11 @@ def build_index(profile: dict) -> str:
           </div>
         </div>
         <div class="nav-links">
-          <a href="#overview">Overview</a>
-          <a href="#selected-work">Selected Work</a>
-          <a href="#competencies">Skills</a>
-          <a href="resume.html" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a href="#overview">{('Vue d’ensemble' if lang == 'fr' else 'Overview')}</a>
+          <a href="#selected-work">{('Projets' if lang == 'fr' else 'Selected Work')}</a>
+          <a href="#competencies">{('Compétences' if lang == 'fr' else 'Skills')}</a>
+          <a href="{'resume-fr.html' if lang == 'fr' else 'resume.html'}">{'CV' if lang == 'fr' else 'Resume'}</a>
+          <a href="{'index.html' if lang == 'fr' else 'index-fr.html'}" lang="{'en' if lang == 'fr' else 'fr'}" aria-label="{'Read in English' if lang == 'fr' else 'Lire en français'}">{'EN' if lang == 'fr' else 'FR'}</a>
         </div>
       </nav>
 
@@ -485,12 +498,12 @@ def build_index(profile: dict) -> str:
             <div class="hero-copy">{render_markdown(intro["body"])}</div>
 
             <section class="sidebar-section">
-              <p class="sidebar-label">Seeking opportunities as</p>
+              <p class="sidebar-label">{('Postes recherchés' if lang == 'fr' else 'Seeking opportunities as')}</p>
               <div class="sidebar-copy">{render_markdown(seeking["body"])}</div>
             </section>
 
             <section class="sidebar-section" id="competencies">
-              <p class="sidebar-label">Skills &amp; Tools</p>
+              <p class="sidebar-label">{('Compétences et outils' if lang == 'fr' else 'Skills &amp; Tools')}</p>
               <div class="skill-list">
                 {skill_pills}
               </div>
@@ -515,9 +528,14 @@ def build_index(profile: dict) -> str:
       </header>
 
       <main>
+        <section class="section" id="capabilities">
+          <div class="section-heading"><p class="eyebrow">{"Compétences transférables" if lang == "fr" else "Transferable capabilities"}</p></div>
+          <div class="resume-card">{render_markdown(parse_module(base / "capabilities.md")["body"].replace("index.html#", "#").replace("index-fr.html#", "#"))}</div>
+        </section>
+        {render_downloads(lang)}
         <section class="section" id="selected-work">
           <div class="section-heading">
-            <p class="eyebrow">Selected Work</p>
+            <p class="eyebrow">{('Projets' if lang == 'fr' else 'Selected Work')}</p>
           </div>
 
           <div class="case-study-grid">
@@ -527,6 +545,7 @@ def build_index(profile: dict) -> str:
         {secondary_section}
       </main>
       <script>
+        try {{ localStorage.setItem("resume-lang", "{lang}"); }} catch (_) {{}}
         const caseToggles = document.querySelectorAll("[data-read-toggle]");
         caseToggles.forEach((button) => {{
           const article = button.closest(".case-study-collapsible");
@@ -546,8 +565,7 @@ def build_index(profile: dict) -> str:
 """
 
 
-def build_resume(profile: dict) -> str:
-    shared_skills = parse_bullets(parse_module(CONTENT / "index/skills.md")["body"])
+def build_resume(profile: dict, initial_lang: str = "en") -> str:
     shell = {
         lang: parse_module(CONTENT / f"resume/{lang}/shell.md")["attributes"]
         for lang in ("en", "fr")
@@ -555,7 +573,7 @@ def build_resume(profile: dict) -> str:
     sections = {
         lang: {
             name: parse_module(CONTENT / f"resume/{lang}/{name}.md")
-            for name in ("summary", "outcomes", "education", "languages", "highlights", "experience")
+            for name in ("summary", "outcomes", "education", "skills", "languages", "highlights", "experience")
         }
         for lang in ("en", "fr")
     }
@@ -578,19 +596,18 @@ def build_resume(profile: dict) -> str:
             "outcomes_html": render_markdown(sections[lang]["outcomes"]["body"]),
             "contact_html": render_resume_contact(profile, shell[lang]["phone_label"]),
             "education_html": render_markdown(sections[lang]["education"]["body"]),
-            "skills_html": render_bullet_markdown(
-                shared_skills if lang == "en" else [RESUME_SKILLS_FR.get(item, item) for item in shared_skills]
-            ),
+            "skills_html": render_markdown(sections[lang]["skills"]["body"]),
+            "downloads_html": render_downloads(lang),
             "languages_html": render_markdown(sections[lang]["languages"]["body"]),
             "highlights_html": render_markdown(sections[lang]["highlights"]["body"]),
             "experience_html": render_markdown(sections[lang]["experience"]["body"]),
         }
 
     payload = json.dumps(resume_content, ensure_ascii=False)
-    initial = resume_content["en"]
+    initial = resume_content[initial_lang]
 
     return f"""<!DOCTYPE html>
-<html lang="en">
+<html lang="{initial_lang}">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -630,7 +647,7 @@ def build_resume(profile: dict) -> str:
         </div>
         <div class="resume-header-actions">
           <div class="resume-links">
-            <a href="index.html" id="back-home-link">{escape(initial["back_home"])}</a>
+            <a href="{'index-fr.html' if initial_lang == 'fr' else 'index.html'}" id="back-home-link">{escape(initial["back_home"])}</a>
           </div>
           <div class="resume-flag-switcher" aria-label="Language switcher">
             <button class="lang-flag is-active" type="button" data-lang-btn="en" aria-label="English CV" title="English CV">🇬🇧</button>
@@ -645,6 +662,7 @@ def build_resume(profile: dict) -> str:
         <div class="resume-markdown resume-main-markdown" id="resume-outcomes">{initial["outcomes_html"]}</div>
       </section>
 
+      <div id="resume-downloads">{initial["downloads_html"]}</div>
       <div class="resume-grid">
         <aside class="resume-sidebar">
           <section class="resume-card">
@@ -723,6 +741,7 @@ def build_resume(profile: dict) -> str:
       }}
 
       function applyResumeLanguage(lang) {{
+        if (!resumeContent[lang]) lang = "{initial_lang}";
         const copy = resumeContent[lang];
         dom.html.lang = lang;
         document.title = copy.title;
@@ -732,6 +751,8 @@ def build_resume(profile: dict) -> str:
 
         dom.eyebrow.textContent = copy.eyebrow;
         dom.backHomeLink.textContent = copy.back_home;
+        dom.backHomeLink.href = lang === "fr" ? "index-fr.html" : "index.html";
+        document.getElementById("resume-downloads").innerHTML = copy.downloads_html;
         dom.contactLabel.textContent = copy.contact_label;
         dom.educationLabel.textContent = copy.education_label;
         dom.skillsLabel.textContent = copy.skills_label;
@@ -752,9 +773,13 @@ def build_resume(profile: dict) -> str:
 
         langButtons.forEach((button) => {{
           button.classList.toggle("is-active", button.dataset.langBtn === lang);
+          button.setAttribute("aria-pressed", button.dataset.langBtn === lang ? "true" : "false");
         }});
 
-        window.localStorage.setItem("resume-lang", lang);
+        try {{ window.localStorage.setItem("resume-lang", lang); }} catch (_) {{}}
+        const url = new URL(window.location.href);
+        url.searchParams.set("lang", lang);
+        history.replaceState(null, "", url);
       }}
 
       langButtons.forEach((button) => {{
@@ -789,7 +814,7 @@ def build_resume(profile: dict) -> str:
         }});
       }}
 
-      applyResumeLanguage(window.localStorage.getItem("resume-lang") || "en");
+      applyResumeLanguage(new URLSearchParams(location.search).get("lang") || "{initial_lang}");
     </script>
   </body>
 </html>
@@ -800,6 +825,11 @@ def main():
     profile = parse_module(CONTENT / "shared/profile.md")["attributes"]
     (ROOT / "index.html").write_text(build_index(profile), encoding="utf-8")
     (ROOT / "resume.html").write_text(build_resume(profile), encoding="utf-8")
+    (ROOT / "index-fr.html").write_text(build_index(profile, "fr"), encoding="utf-8")
+    (ROOT / "resume-fr.html").write_text(build_resume(profile, "fr"), encoding="utf-8")
+    for name in ("index.html", "index-fr.html", "resume.html", "resume-fr.html"):
+        path = ROOT / name
+        path.write_text("\n".join(line.rstrip() for line in path.read_text().splitlines()) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 ---
+title: Data Science & Simulation Engineering
 eyebrow: Positioning
-title: Simulation & Data Science Engineer for Physical Systems
 ---
-Best fit for **industrial R&D teams working on physical systems**, especially where **simulation-to-measurement alignment**, **calibration**, **model validation**, and **uncertainty-aware analysis** are central to the work. Strongest value comes when the goal is not generic analytics, but making models trustworthy enough to support engineering decisions.
+I bring statistical inference, reliable data workflows and measurement-informed simulation to **data science and engineering** and **digital twin development**. My contribution is grounded in research software, experimental validation and explaining how model assumptions affect decisions.

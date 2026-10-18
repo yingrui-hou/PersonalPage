@@ -1,7 +1,1 @@
-R&D-oriented simulation and data scientist with a background in experimental physics and several years of experience building reusable Python/C++ workflows for calibration, validation, and inference on noisy measurement systems.
-
-Core strength: turning imperfect simulations and biased measurements into decision-ready models through simulation-to-data alignment, correction workflows, uncertainty handling, and robust validation.
-
-**Best fit:** industrial R&D teams working on physical systems, instrumented tests, sensor data, model credibility, and simulation-informed engineering decisions.
-
-**Track record:** delivered validation and correction workflows that fed calibration updates, software fixes, and quantified model improvements under uncertainty.
+Physicist with doctoral and postdoctoral research experience connecting data, statistical models and experimental systems. I develop Python/C++ workflows for analysis, calibration, machine learning and model validation. Across LHCb and GRAiNITA projects, I have adapted methods to new problems, organised connected analysis tasks and presented results in international collaborations.

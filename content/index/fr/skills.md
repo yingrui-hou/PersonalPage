@@ -1,0 +1,20 @@
+- Python
+- NumPy
+- pandas
+- scikit-learn
+- statsmodels
+- matplotlib / seaborn
+- C/C++
+- ROOT / RooFit
+- Geant4
+- CatBoost / Gradient Boosting
+- Modélisation probabiliste
+- Inférence statistique
+- Estimation par maximum de vraisemblance
+- Validation de modèles
+- Calibration et correction des biais
+- Alignement simulation-données
+- Traitement du signal
+- Adaptation de domaine
+- Automatisation (YAML / Shell / CMake)
+- Analyse de données à grande échelle

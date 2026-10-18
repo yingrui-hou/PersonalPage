@@ -1,6 +1,6 @@
 ---
 number: 07
-homepage_order: 3
+homepage_order: 6
 collapsible: true
 title: Model Correction Workflow
 tags: Scientific Software | Event Filtering | Simulation Correction | Framework Integration

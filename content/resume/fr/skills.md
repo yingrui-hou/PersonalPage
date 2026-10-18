@@ -1,18 +1,9 @@
-### Modélisation & estimation
-- Estimation d'état et problèmes inverses
-- Modélisation probabiliste et modèles de mélange
-- Reconstruction de signaux à partir de mesures bruitées
-- Quantification et propagation des incertitudes
-- Calibration de modèles et correction des biais
-
-### Data Science & machine learning
-- Arbres de décision boostés (CatBoost / XGBoost)
-- Feature engineering et sélection de variables
-- Adaptation de domaine et repondération
-- Modélisation de séries temporelles sous bruit
-
-### Programmation & ingénierie
-- Python, C++
-- Pipelines de traitement de données à grande échelle
-- Linux, Git, CI/CD
-- Stabilité numérique et optimisation des performances
+### Analyse de données & apprentissage automatique
+- Python, NumPy, pandas, scikit-learn, statsmodels ; CatBoost et gradient boosting.
+- Inférence statistique, modèles de vraisemblance, sélection de variables, validation entraînement/test et repondération des distributions.
+### Logiciel scientifique & chaînes de données
+- C/C++, ROOT/RooFit, Linux ; automatisation avec Shell, YAML et CMake.
+- Composants de traitement réutilisables, revue de code partagé et configurations d’analyse reproductibles.
+### Simulation & mesure
+- Modèles de détecteurs Geant4, cartes de réponse, calibration et validation simulation-mesure.
+- Analyse temporelle des signaux, correction des biais et interprétation tenant compte des incertitudes.

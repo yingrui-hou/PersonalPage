@@ -1,5 +1,5 @@
-- Validation de modèles et quantification de l'incertitude pour systèmes de mesure bruités
-- Alignement simulation-mesure par calibration, repondération et workflows de correction
-- Modélisation capteur et système avec Geant4, ROOT, Python et C++
-- Analyse de données d'essai, traçage d'anomalies et diagnostic de causes racines
-- Validation ML sous décalage de distribution pour pipelines orientés décision
+- **Adaptation et apprentissage :** application d’ajustements statistiques, de CatBoost et de Geant4 à différentes problématiques d’analyse et de détecteurs. [Exemples](index-fr.html#work-3).
+- **Coordination de travaux de recherche :** articulation des données d’essai, cartes de réponse, simulation et validation en livrables réutilisables. [Chaîne mesure-modèle](index-fr.html#work-4).
+- **Présentation :** communication des méthodes et résultats au GDR-InF 2022 et à FCC/DRD France 2025 ; cette dernière au nom de GRAiNITA.
+- **Collaboration internationale :** contributions à LHCb et GRAiNITA, avec code partagé et revues. [Validation collaborative](index-fr.html#work-8).
+- **Transfert vers l’ingénierie :** méthodes applicables aux produits de données, à l’analyse capteur et aux jumeaux numériques fondés sur la mesure ; le déploiement industriel constitue un domaine d’application visé.

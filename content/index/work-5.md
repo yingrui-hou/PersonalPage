@@ -1,6 +1,6 @@
 ---
 number: 05
-homepage_order: 2
+homepage_order: 4
 collapsible: true
 title: Pulse-Shape Discrimination for Energy Reconstruction
 tags: Pulse Shape Discrimination | Detector Simulation | Time-Resolved Signal Analysis | Resolution Optimisation

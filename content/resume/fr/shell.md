@@ -8,7 +8,7 @@ education_label: Formation
 skills_label: Compétences
 languages_label: Langues
 outcomes_label: Résultats clés
-highlights_label: Points forts techniques
-experience_label: Expérience professionnelle [Postdoctorat (2021 - 2025)]
+highlights_label: Compétences transférables en ingénierie
+experience_label: Expérience de recherche
 phone_label: Cliquer pour voir
 ---

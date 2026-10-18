@@ -4,11 +4,12 @@ Free personal portfolio site for GitHub Pages.
 
 ## Files
 
-- `index.html`: main portfolio page
+- `index.html` / `index-fr.html`: English / French portfolio pages
 - `styles.css`: site styling
 - `portfolio.md`: source content in Markdown
 - `content/shared/profile.md`: shared personal info used by both pages
 - `content/index/*.md`: homepage content modules
+- `content/index/fr/*.md`: French homepage and project evidence
 - `content/resume/en/*.md`: English resume content modules
 - `content/resume/fr/*.md`: French resume content modules
 - `content/templates/*.md`: copyable module templates
@@ -62,3 +63,7 @@ Then preview locally with a static server:
 ```bash
 python3 -m http.server
 ```
+
+## Career CVs
+
+Four two-page PDFs are available in `assets/cv/` and linked on the homepage and resume pages: Data Science / Scientific Data Engineering and Digital Twin / Simulation, each in English and French. Editable paired claims, Markdown, layout files and review outputs are kept locally in `CV_related/career_profiles_2026/`.

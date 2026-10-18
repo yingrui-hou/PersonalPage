@@ -31,10 +31,8 @@ This site is driven by Markdown modules, but `index.html` and `resume.html` are 
 
 - `content/index/skills.md`
   Use one bullet per skill/tool.
-  This file now drives both:
-  - homepage `Skills & Tools`
-  - resume `Skills` section
-  The French resume uses the same source list through a translation map in `scripts/build_site.py`.
+  This file drives the English homepage `Skills & Tools`; the French homepage uses `content/index/fr/skills.md`.
+  Resume skills use the grouped `content/resume/<language>/skills.md` modules.
 
 - `content/index/overview.md`
   Controls the right-side overview panel and the `Selected Work Map` label.
@@ -84,7 +82,7 @@ Files:
 - `outcomes.md`
 - `education.md`
 - `skills.md`
-  Currently not used for rendering. Resume skills are generated from `content/index/skills.md`.
+  Grouped, language-specific engineering skills rendered directly on the resume.
 - `languages.md`
 - `highlights.md`
 - `experience.md`
@@ -126,3 +124,10 @@ tags: XGBoost | Reweighting | Feature Validation
 ```bash
 python3 -m http.server
 ```
+
+## Bilingual career content
+
+- English homepage modules: `content/index/`; French counterparts: `content/index/fr/`.
+- `capabilities.md` connects transferable skills to public project evidence.
+- Build outputs: `index.html`, `index-fr.html`, `resume.html`, `resume-fr.html`. Each has complete static content; resume buttons also switch language interactively.
+- Four two-page PDFs are linked from both pages under `assets/cv/`. Editable bilingual CV sources and layout files live in `CV_related/career_profiles_2026/`.

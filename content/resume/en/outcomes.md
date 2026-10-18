@@ -1,3 +1,3 @@
-- Quantified response non-uniformity contribution to resolution below `1%` in a detailed detector study
-- Improved reconstructed-energy resolution by about `2x` in representative PSD-based studies
-- Built validation workflows that exposed detector and software issues, including a missing-energy bug later fixed downstream
+- Connected measured response maps to simulation; quantified a non-uniformity contribution below **1%** to the energy-resolution constant term in the first GRAiNITA prototype study.
+- Reduced an energy-resolution term by approximately **2×** in one representative rotation-based PSD study; this is a study-specific result.
+- Identified reconstruction discrepancies that led to calibration and software follow-up, including a missing-energy issue later fixed downstream.

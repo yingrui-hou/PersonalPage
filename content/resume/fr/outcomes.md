@@ -1,3 +1,3 @@
-- Quantification d'une contribution des non-uniformités à la résolution inférieure à `1%` dans une étude détaillée de détecteur
-- Amélioration d'environ `2x` de la résolution en énergie reconstruite dans des études PSD représentatives
-- Développement de workflows de validation ayant mis en évidence des problèmes détecteur et logiciels, dont un bug d'énergie manquante corrigé ensuite en aval
+- Intégration de cartes de réponse mesurées dans la simulation ; contribution des non-uniformités au terme constant de résolution en énergie inférieure à **1 %** dans l’étude du premier prototype GRAiNITA.
+- Réduction d’environ un facteur **2** d’un terme de résolution en énergie dans une étude PSD représentative fondée sur une rotation ; résultat propre à cette étude.
+- Identification d’écarts de reconstruction ayant conduit à un suivi de calibration et de correction logicielle, dont un problème d’énergie manquante corrigé ensuite en aval.

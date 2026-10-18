@@ -1,10 +1,6 @@
 ---
-eyebrow: Personal Introduction
-title: From noisy measurements to reliable model decisions
-about: I build calibrated models from noisy measurements and imperfect simulations for physical systems.
+eyebrow: Research experience, engineering capabilities
+title: From measurements to validated models
+about: Data Science & Simulation Engineering
 ---
-I build calibrated models from noisy measurements and imperfect simulations. My core strength is designing modelling, calibration, and validation strategies that extract reliable conclusions when the true state is only indirectly observed.
-
-In postdoctoral work, that meant building reusable C++/Python/ROOT/Geant4 workflows for simulation-to-test alignment, calibration, monitoring, time-dependent inference, and model correction in large shared technical environments. The value came from turning validation results into calibration updates, software follow-up actions, and more credible modelling decisions.
-
-This profile is strongest in industrial R&D environments working on complex physical systems, where instrumented tests, imperfect models, and engineering decisions must stay aligned under uncertainty.
+Physicist with doctoral and postdoctoral research experience connecting data, statistical models and experimental systems. I develop Python/C++ workflows for analysis, calibration, machine learning and model validation. Across LHCb and GRAiNITA projects, I have adapted methods to new problems, organised connected analysis tasks and presented results in international collaborations.

@@ -1,0 +1,5 @@
+- **Adaptability and learning:** applied statistical fitting, CatBoost and Geant4 to different analysis and detector problems. [Examples](index.html#work-3).
+- **Research project coordination:** connected test data, response maps, simulation and validation into reusable deliverables. [Measurement-to-model workflow](index.html#work-4).
+- **Presentation:** explained methods and results at GDR-InF 2022 and FCC/DRD France 2025; the latter on behalf of GRAiNITA.
+- **International teamwork:** contributed within LHCb and GRAiNITA using shared code and review practices. [Collaborative inference validation](index.html#work-8).
+- **Engineering transfer:** these methods support data products, sensor analytics and measurement-informed digital twins; industrial deployment is a target application.
