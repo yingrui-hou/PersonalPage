@@ -1,5 +1,5 @@
-### Chercheuse postdoctorale | 2021–2025
-Recherche dans les environnements CNRS/CERN ; collaborations LHCb et GRAiNITA.
+### Chercheuse postdoctorale | 2021–2026
+CNRS — LAPP, Annecy (2021–2023) ; LPC/LPCA, Clermont-Ferrand (2023.12.01–2026.05.31). Recherche au sein des collaborations LHCb et GRAiNITA.
 - Développement de chaînes réutilisables Python/C++/ROOT reliant préparation des données, inférence statistique, calibration et validation.
 - Construction de chaînes de sélection CatBoost avec diagnostics entraînement/test et études de seuils ; alignement d’échantillons de contrôle et cibles par repondération avec gradient boosting.
 - Intégration de mesures sous faisceau, de cartes de réponse et de simulations Geant4 pour évaluer le détecteur dans des conditions mesurées.

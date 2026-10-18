@@ -1,5 +1,5 @@
-### Postdoctoral Researcher | 2021–2025
-Research in CNRS/CERN environments; LHCb and GRAiNITA collaborations.
+### Postdoctoral Researcher | 2021–2026
+CNRS — LAPP, Annecy (2021–2023); LPC/LPCA, Clermont-Ferrand (2023.12.01–2026.05.31). Research in LHCb and GRAiNITA collaborations.
 - Developed reusable Python/C++/ROOT workflows connecting data preparation, statistical inference, calibration and validation.
 - Built CatBoost selection workflows with train/test diagnostics and threshold studies; aligned control and target samples through gradient-boosting reweighting.
 - Connected beam-test measurements, response-map construction and Geant4 simulation to evaluate detector response under measured conditions.
