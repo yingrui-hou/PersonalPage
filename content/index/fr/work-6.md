@@ -2,18 +2,20 @@
 number: 06
 homepage_order: 3
 collapsible: true
-title: Validation des données et diagnostic des causes
-tags: Monitoring | Calibration | Diagnostic logiciel
+title: Validation de modèles de reconnaissance d’images et performance ECAL
+tags: Reconnaissance d’images | Données réelles | Optimisation | Diagnostic
 methods: Canaux de référence, comparaison données-simulation, analyse instrumentale
 impact: Transformation d’écarts de validation en actions de calibration et de correction.
 industry: Qualité des données | Validation de modèles | Diagnostic
 ---
-**Construction d’une chaîne de validation de la reconstruction des photons au début de Run 3, centrée sur les écarts exploitables.**
+**Évaluation et optimisation, à partir de données réelles, d’un modèle de reconnaissance d’images pour le clustering de l’ECAL de LHCb au Run 3, dans une chaîne de validation de la reconstruction des photons.**
 
 ### Réalisation personnelle
 - Utilisation de plusieurs canaux de référence à différentes impulsions.
 - Comparaison de la simulation et des données selon les sélections et les flux de déclenchement.
 - Investigation des causes instrumentales et logicielles pour orienter les actions correctives.
+- Contrôles et optimisation des performances du modèle de reconnaissance d’images utilisé pour le clustering, à partir de données réelles.
+- Participation aux discussions de construction et d’entraînement du modèle pour préparer sa validation ultérieure ; sans réalisation de son entraînement.
 
 ![Validation des données](assets/selected-work/work-6/data_validation.png "Mise en évidence d’un défaut de calibration en énergie et suivi après correction.")
 

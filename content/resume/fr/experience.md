@@ -10,3 +10,9 @@ CNRS — LAPP, Annecy (2021–2023) ; LPC/LPCA, Clermont-Ferrand (2023.12.01–2
 Master et doctorat intégrés en physique des particules, University of Chinese Academy of Sciences.
 - Acquisition des bases mathématiques, expérimentales et numériques pour modéliser des mesures bruitées, évaluer les hypothèses et communiquer les résultats scientifiques.
 - Démarche transférable à de nouveaux problèmes techniques : étudier le système physique, mettre en œuvre une analyse, la confronter aux données et en documenter les limites.
+
+### Projets de calcul et de validation de modèles
+- **Calcul numérique TensorFlow/GPU :** construction et évaluation de densités de probabilité à amplitudes complexes pour une mesure conjointe de gamma. [Contexte](index-fr.html#work-8).
+- **Calibration en apprentissage profond :** validation et calibration d’un modèle de marquage de saveur à partir de données réelles. [Contribution](index-fr.html#work-9).
+- **Évaluation de modèles de reconnaissance d’images :** étude et optimisation sur données réelles d’un modèle de clustering de l’ECAL de LHCb au Run 3. [Étude de performance](index-fr.html#work-6).
+- **Connaissance du processus d’entraînement :** participation aux discussions de construction et d’entraînement des modèles de marquage de saveur et de clustering pour préparer la calibration et la validation ultérieures ; sans réalisation de leur entraînement.

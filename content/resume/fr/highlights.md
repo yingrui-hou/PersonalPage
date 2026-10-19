@@ -1,5 +1,6 @@
-- **Adaptation et apprentissage :** application d’ajustements statistiques, de CatBoost et de Geant4 à différentes problématiques d’analyse et de détecteurs. [Exemples](index-fr.html#work-3).
+- **Adaptation et apprentissage :** application d’ajustements statistiques, de CatBoost, de TensorFlow/GPU et de Geant4 à différentes problématiques d’analyse et de détecteurs. [Exemples](index-fr.html#work-3).
 - **Coordination de travaux de recherche :** articulation des données d’essai, cartes de réponse, simulation et validation en livrables réutilisables. [Chaîne mesure-modèle](index-fr.html#work-4).
 - **Présentation :** communication des méthodes et résultats au GDR-InF 2022 et à FCC/DRD France 2025 ; cette dernière au nom de GRAiNITA.
 - **Collaboration internationale :** contributions à LHCb et GRAiNITA, avec code partagé et revues. [Validation collaborative](index-fr.html#work-8).
+- **Validation de modèles :** calibration d’un modèle de marquage de saveur par apprentissage profond et évaluation sur données réelles du clustering ECAL. [Calibration](index-fr.html#work-9) · [Contrôles](index-fr.html#work-6).
 - **Transfert vers l’ingénierie :** méthodes applicables aux produits de données, à l’analyse capteur et aux jumeaux numériques fondés sur la mesure ; le déploiement industriel constitue un domaine d’application visé.

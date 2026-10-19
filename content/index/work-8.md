@@ -4,7 +4,7 @@ homepage_order: 7
 homepage_group: secondary
 collapsible: true
 title: Advanced Inference Workflow Validation
-tags: Advanced Statistical Modelling | Basis-Function Methods | Latent-Parameter Estimation | Collaborative R&D
+tags: TensorFlow | GPU Computing | Statistical Modelling | Collaborative R&D
 methods: basis expansion, covariance-aware joint fitting, pseudoexperiment validation, statistical background subtraction
 impact: helped move a novel inference method into a realistic workflow by testing robustness against background, efficiency, and resolution effects and by preparing purified real-data inputs.
 industry: Advanced Modelling | Inverse Problems | Signal Analytics | Collaborative Method Development
@@ -20,6 +20,10 @@ The method problem was not only to propose a new structured inference strategy, 
 - Evaluated how experimental background, reconstruction efficiency, and detector resolution affect an unbinned basis-expansion inference strategy for extracting latent parameters.
 - Prepared a real-data signal sample end to end, including reconstruction, event selection, and statistical background subtraction, so the method could be tested on realistic inputs rather than idealised samples.
 - Contributed within a broader collaborative method effort by connecting the weighting-function idea to fit-ready inputs, covariance-aware validation, pseudoexperiments, and robustness studies required for a full joint measurement.
+
+### TensorFlow and GPU model evaluation
+- Used TensorFlow and GPU acceleration to construct and evaluate probability density models based on complex amplitudes in the joint gamma measurement.
+- This work connects statistical modelling with numerical implementation and accelerated model evaluation.
 
 ### Result
 - Helped turn a novel inference idea into a realistic analysis workflow instead of leaving it as a purely formal method proposal.

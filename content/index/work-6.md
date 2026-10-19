@@ -2,13 +2,13 @@
 number: 06
 homepage_order: 3
 collapsible: true
-title: Test-Data Validation & Root-Cause Analysis
-tags: Monitoring | Data Validation | Performance Diagnostics | Root-Cause Analysis
+title: Image-Recognition Model Validation & ECAL Performance
+tags: Image Recognition | Real-Data Validation | Performance Optimisation | Root-Cause Analysis
 methods: benchmark-channel checks, MC-data comparison, detector-level diagnostics
 impact: translated validation discrepancies into concrete calibration, detector, and software follow-ups before they became accepted bias.
 industry: Research Monitoring | Model Validation | Observability | Quality Assurance
 ---
-**Built a research validation workflow for early Run 3 photon reconstruction, focused on finding actionable detector and software issues.**
+**Used real data to evaluate and optimise an image-recognition model for LHCb Run 3 ECAL clustering, within a wider photon-reconstruction validation workflow.**
 
 ### Problem
 The early Run 3 reconstruction chain needed validation before performance discrepancies hardened into accepted bias. The main challenge was to distinguish normal modelling differences from issues that were actually actionable at detector, calibration, or software level.
@@ -16,7 +16,9 @@ The early Run 3 reconstruction chain needed validation before performance discre
 ### Workflow
 - Used multiple high- and low-momentum photon channels as benchmark datasets for reconstruction and identification checks.
 - Compared MC and data across trigger streams and offline selections to isolate where discrepancies entered the pipeline.
-- Traced anomalies back to detector-level and software-level causes instead of stopping at monitoring plots, leading to several fixes in the reconstruction chain and measurable improvement in energy-reconstruction performance.
+- Traced anomalies to detector and software causes, documenting findings for calibration and corrective follow-up by the responsible teams.
+- Used real-data-driven checks to study and optimise the performance of the image-recognition model used for ECAL clustering.
+- Participated in model-construction and training discussions to support subsequent validation; did not train the clustering model.
   
 ![Data validation](assets/selected-work/work-6/data_validation.png "Validation plots exposed an energy miscalibration issue, and performance improved after the fix.")
 

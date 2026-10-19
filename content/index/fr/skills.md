@@ -7,6 +7,10 @@
 - C/C++
 - ROOT / RooFit
 - Geant4
+- TensorFlow — calcul numérique sur GPU
+- Calibration de modèles d’apprentissage profond
+- Évaluation de modèles de reconnaissance d’images
+- Contrôles de performance sur données réelles
 - CatBoost / Gradient Boosting
 - Modélisation probabiliste
 - Inférence statistique
