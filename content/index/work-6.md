@@ -8,7 +8,7 @@ methods: benchmark-channel checks, MC-data comparison, detector-level diagnostic
 impact: translated validation discrepancies into concrete calibration, detector, and software follow-ups before they became accepted bias.
 industry: Research Monitoring | Model Validation | Observability | Quality Assurance
 ---
-**Used real data to evaluate and optimise an image-recognition model for LHCb Run 3 ECAL clustering, within a wider photon-reconstruction validation workflow.**
+**Investigated performance discrepancies using real data and identified findings for calibration and software follow-up. The work included evaluating and optimising an image-recognition model for LHCb Run 3 ECAL clustering.**
 
 ### Problem
 The early Run 3 reconstruction chain needed validation before performance discrepancies hardened into accepted bias. The main challenge was to distinguish normal modelling differences from issues that were actually actionable at detector, calibration, or software level.

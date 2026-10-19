@@ -1,6 +1,6 @@
 ---
-eyebrow: Vue d’ensemble
-title: Les réalisations derrière les compétences
-map_label: Projets et résultats
+eyebrow: Réalisations
+title: Des problèmes traités concrètement
+map_label: Explorer les projets
 ---
-Mes projets suivent une démarche d’ingénierie concrète : comprendre la mesure, construire la chaîne de données, modéliser le comportement, confronter le modèle aux observations et expliquer ses limites. Les études ci-dessous présentent les réalisations et leurs résultats.
+Comment un modèle se comporte-t-il sur des données réelles ? Que change un écart entre échantillons ? D’où vient une anomalie de performance ? Les projets présentent ma contribution, les vérifications et les résultats. Leurs méthodes sont transférables à l’évaluation de modèles, au diagnostic de qualité des données et au calcul numérique dans un nouveau domaine.

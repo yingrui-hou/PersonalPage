@@ -8,7 +8,7 @@ methods: Canaux de référence, comparaison données-simulation, analyse instrum
 impact: Transformation d’écarts de validation en actions de calibration et de correction.
 industry: Qualité des données | Validation de modèles | Diagnostic
 ---
-**Évaluation et optimisation, à partir de données réelles, d’un modèle de reconnaissance d’images pour le clustering de l’ECAL de LHCb au Run 3, dans une chaîne de validation de la reconstruction des photons.**
+**Investigation d’écarts de performance sur données réelles et identification de pistes pour la calibration et le suivi logiciel. Le travail comprend l’évaluation et l’optimisation d’un modèle de reconnaissance d’images pour le clustering de l’ECAL de LHCb au Run 3.**
 
 ### Réalisation personnelle
 - Utilisation de plusieurs canaux de référence à différentes impulsions.

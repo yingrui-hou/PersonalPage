@@ -1,5 +1,5 @@
 ---
-title: Data Science & Simulation Engineering
-eyebrow: Positioning
+title: Data science grounded in real data
+eyebrow: Contribution
 ---
-I bring statistical inference, reliable data workflows and measurement-informed simulation to **data science and engineering** and **digital twin development**. My contribution is grounded in research software, experimental validation and explaining how model assumptions affect decisions.
+**Reproducible analysis, model calibration and performance diagnosis.** I bring these research-tested capabilities to opportunities in data science, scientific data engineering and simulation. They provide a practical starting point for understanding a new business problem, checking the available evidence and delivering analysis a team can review and use.

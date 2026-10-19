@@ -1,6 +1,6 @@
 ---
-eyebrow: Expérience de recherche, compétences d’ingénierie
-title: Des mesures aux modèles validés
-about: Data science & ingénierie de simulation
+eyebrow: Data science · Validation de modèles · Calcul scientifique
+title: Des données complexes aux analyses fiables
+about: Docteure en physique | La recherche appliquée aux données et à l’ingénierie
 ---
-Physicienne issue de la recherche doctorale et postdoctorale, je relie données, modèles statistiques et systèmes expérimentaux. Je développe des chaînes Python/C++ et utilise TensorFlow avec accélération GPU pour le calcul de modèles scientifiques. Mon expérience comprend la calibration de modèles d’apprentissage profond et la validation de modèles de reconnaissance d’images à partir de données réelles. Au sein de LHCb et GRAiNITA, j’adapte les méthodes, coordonne des tâches d’analyse et présente les résultats en collaboration internationale.
+Je transforme des problèmes de données complexes en analyses reproductibles et vérifie la fiabilité des modèles sur des observations réelles. Mes travaux doctoraux et postdoctoraux associent modélisation statistique, apprentissage automatique, calibration et calcul numérique. J’ai construit des chaînes d’analyse réutilisables, étudié des écarts de performance et présenté les résultats en équipes internationales. L’application de CatBoost, de TensorFlow/GPU et de Geant4 à différentes problématiques a développé ma capacité à apprendre et à adapter les méthodes.

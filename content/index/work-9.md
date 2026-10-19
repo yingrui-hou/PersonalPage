@@ -8,7 +8,7 @@ methods: real-data model checks, flavour-tagging calibration, collaborative revi
 impact: calibrated and validated a flavour-tagging model for use in physics analysis.
 industry: Applied ML | Model Validation | Scientific Data Analysis
 ---
-**Validated and calibrated a deep-learning flavour-tagging model using real data.**
+**Checked and calibrated the outputs of a learned classifier against real data for subsequent analysis. The model performed flavour tagging in particle physics.**
 
 ### Contribution
 - Performed model calibration and validation based on real-data checks for subsequent physics analysis.

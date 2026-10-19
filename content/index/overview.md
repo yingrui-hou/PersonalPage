@@ -1,6 +1,6 @@
 ---
-eyebrow: Overview
-title: Evidence behind the engineering skills
-map_label: Project evidence
+eyebrow: Evidence
+title: Problems I have worked through
+map_label: Explore the project evidence
 ---
-My projects connect a practical engineering chain: understand the measurement, build the data workflow, model the behaviour, validate against evidence and communicate the limits. Explore the cases below for implementation details and results.
+How does a model behave on real data? What changes when samples differ? Where does a performance discrepancy come from? The projects below show my contribution, the checks performed and the results. Their methods can support model evaluation, data-quality investigation and numerical modelling in a new domain.

@@ -1,6 +1,7 @@
 ---
-label: Résultats et périmètre
+label: Contributions et résultats
 ---
+- Calibration d’un modèle d’apprentissage profond sur données réelles et évaluation d’un modèle de clustering par reconnaissance d’images ; articulation des contrôles avec les investigations de calibration et de reconstruction.
+- Identification d’écarts de reconstruction ayant conduit à un suivi de calibration et de correction logicielle, dont un problème d’énergie manquante corrigé ensuite en aval.
 - Intégration de cartes de réponse mesurées dans la simulation ; contribution des non-uniformités au terme constant de résolution en énergie inférieure à **1 %** dans l’étude du premier prototype GRAiNITA.
 - Réduction d’environ un facteur **2** d’un terme de résolution en énergie dans une étude PSD représentative fondée sur une rotation ; résultat propre à cette étude.
-- Identification d’écarts de reconstruction ayant conduit à un suivi de calibration et de correction logicielle, dont un problème d’énergie manquante corrigé ensuite en aval.
