@@ -22,3 +22,4 @@
 - Adaptation de domaine
 - Automatisation (YAML / Shell / CMake)
 - Analyse de données à grande échelle
+- Configuration et gestion d’une station GPU multi-utilisateur

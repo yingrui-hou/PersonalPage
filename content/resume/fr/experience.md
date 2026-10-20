@@ -12,7 +12,8 @@ Master et doctorat intégrés en physique des particules, University of Chinese 
 - Démarche transférable à de nouveaux problèmes techniques : étudier le système physique, mettre en œuvre une analyse, la confronter aux données et en documenter les limites.
 
 ### Projets de calcul et de validation de modèles
-- **Calcul numérique TensorFlow/GPU :** construction et évaluation de densités de probabilité à amplitudes complexes pour une mesure conjointe de gamma. [Contexte](index-fr.html#work-8).
+- **Apprentissage et adaptation de TensorFlow :** sans connaissance préalable, étude d’un code fourni, ajout de modèles d’amplitude et d’effets de mesure (efficacité, résolution, biais), puis vérification sur données simulées générées avec le nouveau modèle. [Projet](index-fr.html#work-8).
+- **Calcul GPU partagé :** configuration et gestion d’une station multi-utilisateur confiée par l’équipe. Configuration en une demi-journée ; migration et première exécution GPU en une demi-journée supplémentaire. Ces durées concernent ces deux étapes ; le développement des modèles est décrit séparément.
 - **Calibration en apprentissage profond :** validation et calibration d’un modèle de marquage de saveur à partir de données réelles. [Contribution](index-fr.html#work-9).
 - **Évaluation de modèles de reconnaissance d’images :** étude et optimisation sur données réelles d’un modèle de clustering de l’ECAL de LHCb au Run 3. [Étude de performance](index-fr.html#work-6).
 - **Connaissance du processus d’entraînement :** participation aux discussions de construction et d’entraînement des modèles de marquage de saveur et de clustering pour préparer la calibration et la validation ultérieures ; sans réalisation de leur entraînement.

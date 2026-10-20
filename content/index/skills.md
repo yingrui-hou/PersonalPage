@@ -22,3 +22,4 @@
 - Domain Adaptation
 - Workflow Automation (YAML / Shell / CMake)
 - Large-Scale Data Analysis
+- Shared GPU workstation setup and management
