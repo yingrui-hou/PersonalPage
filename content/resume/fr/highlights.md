@@ -13,3 +13,5 @@ Une proposition pour le premier mois, dont le périmètre et le calendrier serai
 - **Établir une référence :** examiner la qualité des données et reproduire un résultat existant ou une analyse simple.
 - **Étudier une priorité :** analyser un biais d’échantillon, une calibration ou un écart de performance précis, avec des contrôles convenus avec les experts métier.
 - **Livrer un résultat vérifiable :** partager une analyse reproductible, ses conclusions, ses limites et une proposition d’actions prioritaires.
+
+- **Automatisation de l’acquisition et de la qualité :** Développement d’une chaîne Shell pour l’acquisition sous faisceau, le stockage, la calibration rapide et les premiers contrôles qualité, reliant lecture du détecteur, tracking et calibration temporelle. Participation au montage et à la prise de données ; appui aux ajustements et corrections des effets de mesure.

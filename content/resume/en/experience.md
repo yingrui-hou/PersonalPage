@@ -17,3 +17,5 @@ Joint Master and PhD in Particle Physics, University of Chinese Academy of Scien
 - **Deep-learning calibration:** validated and calibrated a flavour-tagging model using real data. [Contribution](index.html#work-9).
 - **Image-recognition model evaluation:** used real data to study and optimise a model used for LHCb Run 3 ECAL clustering. [Performance study](index.html#work-6).
 - **Training-process familiarity:** participated in construction and training discussions for the flavour-tagging and clustering models to support subsequent calibration and validation; did not train these two models.
+
+- **Acquisition and quality automation:** Developed a Shell pipeline for beam-test acquisition, storage, quick calibration and initial quality checks, connecting detector readout, tracking and timing calibration. Participated in on-site setup and data taking; assisted subsequent fitting and measurement-effect corrections.

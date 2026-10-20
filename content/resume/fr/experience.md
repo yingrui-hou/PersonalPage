@@ -17,3 +17,5 @@ Master et doctorat intégrés en physique des particules, University of Chinese 
 - **Calibration en apprentissage profond :** validation et calibration d’un modèle de marquage de saveur à partir de données réelles. [Contribution](index-fr.html#work-9).
 - **Évaluation de modèles de reconnaissance d’images :** étude et optimisation sur données réelles d’un modèle de clustering de l’ECAL de LHCb au Run 3. [Étude de performance](index-fr.html#work-6).
 - **Connaissance du processus d’entraînement :** participation aux discussions de construction et d’entraînement des modèles de marquage de saveur et de clustering pour préparer la calibration et la validation ultérieures ; sans réalisation de leur entraînement.
+
+- **Automatisation de l’acquisition et de la qualité :** Développement d’une chaîne Shell pour l’acquisition sous faisceau, le stockage, la calibration rapide et les premiers contrôles qualité, reliant lecture du détecteur, tracking et calibration temporelle. Participation au montage et à la prise de données ; appui aux ajustements et corrections des effets de mesure.

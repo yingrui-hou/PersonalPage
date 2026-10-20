@@ -13,3 +13,5 @@ A proposed first-month sequence, with scope and timing agreed with the team once
 - **Establish a baseline:** review data quality and reproduce an existing result or a simple reference analysis.
 - **Investigate one priority:** examine sample bias, model calibration or a specific performance discrepancy, using checks agreed with domain experts.
 - **Deliver a reviewable result:** share reproducible analysis, findings, limitations and a prioritised next-step proposal.
+
+- **Acquisition and quality automation:** Developed a Shell pipeline for beam-test acquisition, storage, quick calibration and initial quality checks, connecting detector readout, tracking and timing calibration. Participated in on-site setup and data taking; assisted subsequent fitting and measurement-effect corrections.

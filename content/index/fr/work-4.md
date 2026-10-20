@@ -25,3 +25,6 @@ industry: Jumeaux numériques | Validation simulation-essais | Analyse capteur
 Contribution des non-uniformités au terme constant inférieure à 1 % dans cette étude du premier prototype. La démarche mesure → modèle → validation est transférable au développement de jumeaux numériques ; elle n’établit pas un déploiement industriel connecté en temps réel.
 ### Publication
 Étude collective : *Studying the GRAiNITA concept: first test beam results*, [DOI](https://doi.org/10.1088/1748-0221/21/03/P03048).
+
+### Réalisation personnelle : automatisation sous faisceau
+Développement d’une chaîne Shell pour l’acquisition sous faisceau, le stockage, la calibration rapide et les premiers contrôles qualité, reliant lecture du détecteur, tracking et calibration temporelle. Participation au montage et à la prise de données ; appui aux ajustements et corrections des effets de mesure. La chaîne reliait des algorithmes existants ; cela ne signifie pas que j’ai développé chacun de ces algorithmes.
