@@ -5,6 +5,8 @@
 - **Learn and apply methods:** started with no TensorFlow knowledge, adapted inherited code with new amplitude and measurement-effect models, and verified it using generated simulations. With no prior GPU or multi-user administration experience, configured a shared GPU workstation in half a day and migrated the code to a successful GPU run in a further half-day. These timings cover setup and migration. [Learning and implementation case](index.html#work-8).
 - **Coordinate and communicate:** organised connected measurement, analysis and validation tasks; contributed to shared code and technical reviews. Presented at GDR-InF 2022 and FCC/DRD France 2025, including on behalf of GRAiNITA.
 
+- **Reliable scientific software:** compared TensorFlow amplitudes with a mature C++ reference, resolved variable-type discrepancies and used GitLab reviews to detect a fitter sign error. Weekly team planning adjusted priorities as new data issues emerged. [Verification and collaboration](index.html#work-8).
+
 ### How I would approach a new business problem
 A proposed first-month sequence, with scope and timing agreed with the team once data and environment access are available:
 - **Understand the decision:** identify the users, current process, success criteria and costs of different errors.

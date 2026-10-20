@@ -39,6 +39,22 @@ Understanding unfamiliar software, extending it with domain-specific models, che
 - Helped turn a novel inference idea into a realistic analysis workflow instead of leaving it as a purely formal method proposal.
 - Anchored the method in practical validation work: weighted Fourier observables, joint fitting over latent parameters, and explicit checks under background, efficiency, resolution, and higher-order modelling variations.
 
+### Verification and individual contribution
+I personally ported the amplitude models to TensorFlow, added the measurement-effect models and performed the associated tests. A collaborator developed the fitter; I also contributed to its testing.
+
+- Ran a small generated sample to check the program, then a large sample to compare amplitude calculations with a mature C++ implementation at identical sampling points.
+- Traced small disagreements to inconsistent variable types. After aligning them, calculations agreed at the required decimal precision. Large-sample runs also probed memory-leak and crash risks.
+- Compared distributions of physical observables from simulations and real-data signals using KS tests. This checks observable distributions; amplitudes cannot be directly compared point by point in real data.
+
+### Comparing inference methods fairly
+Before the formal measurement, generated pseudoexperiments for B → D(→ K⁰KK)h at the statistics of the real dataset. Applied Fourier and binned BPGGSZ methods to the **same samples, without changing their size**. Precision was assessed from the width of fitted-gamma distributions across repeated experiments. Small observed biases were not statistically significant at the reported 2-sigma level. This study does not establish a trend with sample size.
+
+### Collaborative software delivery
+Agreed variable definitions and amplitude/fitter interfaces before development. Used GitLab for separate component development and mutual merge-request review, with weekly progress discussions and short technical discussions when problems arose. During review, identified a reversed sign in the fitter; we checked the derivation together, confirmed and corrected the error, and revisited the other derivations. As real-data processing exposed new issues, the team revised priorities and timelines according to their necessity and impact.
+
+### Collaborative outcome
+The software supported the BESIII–LHCb joint gamma measurement. The papers report approximately **5% lower LHCb statistical uncertainty** with the new method compared with a binned analysis of the same datasets. This is a collaborative method result, not a TensorFlow speedup or an individually attributable gain. The final combined result is gamma = 71.3 ± 5.0 degrees, including statistical and systematic uncertainties.
+
 ### Publications & Reports
 - Publication: *Measurement of the CKM angle γ in B± → D(→ KS0h′+h′−)h± decays with a novel approach*. DOI: [10.48550/arXiv.2604.05701](https://doi.org/10.48550/arXiv.2604.05701)
 - Publication: *Precise measurement of the CKM angle γ with a novel approach*. DOI: [10.48550/arXiv.2604.05712](https://doi.org/10.48550/arXiv.2604.05712)

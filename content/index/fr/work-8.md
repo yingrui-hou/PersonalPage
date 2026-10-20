@@ -33,6 +33,22 @@ Comprendre un logiciel inconnu, l’étendre avec des modèles métier, vérifie
 
 ### Résultat
 Une proposition théorique confrontée à des variations expérimentales et de modélisation, avec attribution de la contribution à la validation et à la préparation des données.
+### Vérification et contribution personnelle
+J’ai réalisé le portage des modèles d’amplitude vers TensorFlow, ajouté les modèles d’effets de mesure et effectué les tests associés. Un collaborateur a développé le fitter ; j’ai également participé à ses tests.
+
+- Exécution d’un petit échantillon simulé, puis d’un grand échantillon pour comparer les amplitudes à un code C++ éprouvé aux mêmes points d’échantillonnage.
+- Identification de types de variables incohérents à l’origine de faibles écarts. Après harmonisation, accord à la précision décimale requise. Les grands échantillons ont également servi à rechercher des risques de fuite mémoire et d’arrêt du programme.
+- Comparaison des distributions d’observables simulées et des signaux de données réelles par tests KS. Les amplitudes des données réelles ne peuvent pas être comparées directement point par point.
+
+### Comparaison contrôlée des méthodes d’inférence
+Avant la mesure formelle, génération de pseudo-expériences B → D(→ K⁰KK)h avec la statistique du jeu de données réel. Application des méthodes de Fourier et BPGGSZ par bins aux **mêmes échantillons, sans changer leur taille**. La précision correspond à la largeur de la distribution des valeurs de gamma ajustées sur les expériences répétées. Les faibles biais observés n’étaient pas statistiquement significatifs au niveau de 2 sigma rapporté. Cette étude n’établit pas une tendance avec la taille des échantillons.
+
+### Développement logiciel collaboratif
+Définitions des variables et interfaces amplitude/fitter convenues avant le développement. Développement de composants sur GitLab et revues croisées de merge requests, avec points hebdomadaires et échanges rapides face aux problèmes techniques. En revue, détection d’un signe inversé dans le fitter : vérification collective de la dérivation, confirmation et correction de l’erreur, puis réexamen des autres dérivations. Face aux difficultés nouvelles du traitement des données, révision collective des priorités et délais selon leur nécessité et leur impact.
+
+### Résultat collectif
+Le logiciel a servi à la mesure conjointe de gamma BESIII–LHCb. Les articles rapportent une réduction d’environ **5 % de l’incertitude statistique LHCb** par rapport à une analyse par bins des mêmes données. Il s’agit d’un résultat collectif de méthode, sans lien établi avec un gain de vitesse TensorFlow ou une attribution individuelle. Le résultat combiné final est gamma = 71,3 ± 5,0 degrés, incertitudes statistiques et systématiques comprises.
+
 ### Publications
 - *Measurement of the CKM angle γ … with a novel approach*, [DOI](https://doi.org/10.48550/arXiv.2604.05701).
 - *Precise measurement of the CKM angle γ with a novel approach*, [DOI](https://doi.org/10.48550/arXiv.2604.05712).

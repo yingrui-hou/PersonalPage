@@ -5,6 +5,8 @@
 - **Apprendre et appliquer :** sans connaissance préalable de TensorFlow, adaptation d’un code existant avec de nouveaux modèles d’amplitude et d’effets de mesure, puis vérification sur données simulées. Sans expérience GPU ni d’administration multi-utilisateur, configuration d’une station partagée en une demi-journée et migration vers une exécution GPU réussie en une demi-journée supplémentaire. Ces durées concernent la configuration et la migration. [Apprentissage et réalisation](index-fr.html#work-8).
 - **Coordonner et communiquer :** organisation de tâches liées de mesure, d’analyse et de validation ; contributions au code partagé et aux revues. Présentations au GDR-InF 2022 et à FCC/DRD France 2025, dont au nom de GRAiNITA.
 
+- **Fiabilité du logiciel scientifique :** comparaison des amplitudes TensorFlow à une référence C++, harmonisation des types et détection d’une erreur de signe du fitter en revue GitLab. Ajustement collectif des priorités lors des points hebdomadaires. [Vérification et collaboration](index-fr.html#work-8).
+
 ### Ma démarche face à un nouveau problème métier
 Une proposition pour le premier mois, dont le périmètre et le calendrier seraient convenus avec l’équipe après accès aux données et à l’environnement :
 - **Comprendre la décision :** identifier les utilisateurs, le processus existant, les critères de réussite et le coût des différentes erreurs.
