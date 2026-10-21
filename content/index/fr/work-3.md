@@ -28,6 +28,8 @@ L’objectif était de sélectionner un signal rare parmi le bruit de fond combi
 
 La repondération précédait l’entraînement du classifieur. Chaque cycle utilisait cinq plis avec des partitions distinctes pour l’entraînement et le test ; les premiers cycles fixaient les variables, puis les hyperparamètres étaient optimisés. L’échantillon final d’application n’a participé ni à l’entraînement du classifieur ni au réglage des hyperparamètres.
 
+Le critère balayé était `FOM = S / sqrt(S + B)`. Les efficacités étaient estimées sur l’ensemble des événements d’entraînement et de test, après des contrôles KS indiquant des réponses et performances compatibles. L’évaluation finale provenait des résultats de validation à cinq plis ; aucun échantillon étiqueté supplémentaire n’était réservé à un test final indépendant. Ces contrôles étayent la compatibilité entraînement/test, sans constituer une estimation finale indépendante de généralisation.
+
 ![Performance de sélection](assets/selected-work/work-3/bkg_veto_performance.png "La comparaison Run 1 montre une réduction du fond après sélection BDT, avec maintien du pic de signal. Figure d’étude LHCb unofficial ; aucun gain chiffré n’est déduit de l’image.")
 ![Validation entraînement/test](assets/selected-work/work-3/train-test.png "Accord global des distributions de réponse entraînement/test pour les deux classes ; diagnostic de surapprentissage, sans garantie d’évaluation indépendante.")
 ![Importance des variables](assets/selected-work/work-3/feature_importance.png "L’importance et les diagnostics de séparation ont guidé la simplification du modèle.")

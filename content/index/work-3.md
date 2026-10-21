@@ -28,6 +28,8 @@ At each threshold, estimated the signal and combinatorial-background yields as `
 
 Reweighting preceded classifier training. Each training round used five folds with separate training and testing partitions; early rounds selected features, followed by hyperparameter tuning with the feature set fixed. The final application sample was not used for classifier training or hyperparameter tuning.
 
+The scanned criterion was `FOM = S / sqrt(S + B)`. Efficiency estimates used the combined training and testing events after KS checks showed compatible train/test responses and performance. Final model assessment came from the five-fold validation results; no additional untouched labelled test sample was available. These checks support train/test compatibility, without establishing an independent final generalisation estimate.
+
 ![Background veto performance](assets/selected-work/work-3/bkg_veto_performance.png "The displayed Run 1 comparison shows lower background after BDT selection, with the signal peak retained. LHCb unofficial study plot; no numerical improvement is inferred from the image.")
 ![Train-test GBDT response comparison](assets/selected-work/work-3/train-test.png "Training and test score distributions broadly agree for both classes in the displayed diagnostic; this is an overtraining check, not a guarantee of independent evaluation.")
 ![Feature importance ranking](assets/selected-work/work-3/feature_importance.png "Feature importance was used with separation diagnostics to simplify the model.")
