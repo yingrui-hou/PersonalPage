@@ -23,3 +23,5 @@ Joint Master and PhD in Particle Physics, University of Chinese Academy of Scien
 - **Diagnosis to code review:** Diagnosed incorrect ECAL photon truth associations; revised cluster-energy matching, tested multiple simulated decay channels and improved thread safety through review. The merged change supported subsequent Run 3 analyses and reconstruction-performance checks.
 
 - **ML tied to the measurement objective:** Developed CatBoost selection with reweighting, feature pruning, five-fold assessment and train/test KS checks; scanned a measurement-oriented threshold using fitted yields and selection efficiencies.
+
+- **Measurement-informed PSD simulation:** Used measured scintillation timing parameters in simulations to assess PSD feasibility; developed time-profile fitting and ROOT/C++ energy-correction studies.

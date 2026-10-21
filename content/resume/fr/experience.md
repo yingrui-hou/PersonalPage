@@ -23,3 +23,5 @@ Master et doctorat intégrés en physique des particules, University of Chinese 
 - **Du diagnostic à la revue de code:** Diagnostic d’associations erronées des photons ECAL ; modification du matching par énergie déposée dans le cluster, tests sur plusieurs canaux simulés et amélioration de la sûreté multithread après revue. Modification intégrée et utilisée pour les analyses Run 3 et les contrôles de reconstruction.
 
 - **ML relié à l’objectif de mesure:** Sélection CatBoost avec repondération, réduction des variables, évaluation à cinq plis et contrôles KS entraînement/test ; seuil lié à la mesure, fondé sur les effectifs ajustés et les efficacités.
+
+- **Simulation PSD fondée sur les mesures:** Utilisation des paramètres temporels mesurés de scintillation en simulation pour évaluer la faisabilité PSD ; ajustements temporels et études de correction d’énergie ROOT/C++.

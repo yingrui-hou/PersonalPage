@@ -20,6 +20,8 @@ The team tested ZnWO4 and BGO by measuring scintillation decay-time profiles acr
 
 The team chose **ZnWO4** for further PSD studies. At low energies, the measured BGO profiles were too similar to the electromagnetic-excitation profiles to provide the desired separation. This experimental material comparison informed the subsequent modelling work; it is separate from the simulated reconstruction-resolution results below.
 
+Engineers handled the measurement setup and particle-source operation. I participated in comparing the final time profiles, then used the measured timing parameters as simulation inputs, generated samples and checked whether the resulting temporal separation was sufficient to apply PSD. My contribution connected experimental measurements to a simulation feasibility check.
+
 ### Workflow
 - Generated `e/p/pi` simulation samples in two crystal-material candidates (`ZnWO4` and `BGO`) over `1 to 20 GeV` and first validated that the relevant correlation structure between deposited hadronic energy, EM fraction, and total energy remained stable across the energy range.
 - Extended the simulation with scintillation timing, updating time constants dynamically by particle type and `dE/dx`, then fitted the time distributions with EM-, hadronic-, and proton-like components instead of relying only on total signal amplitude.

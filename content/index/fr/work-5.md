@@ -17,6 +17,8 @@ L’équipe a testé ZnWO4 et BGO en mesurant les profils de décroissance tempo
 
 L’équipe a retenu **ZnWO4** pour poursuivre les études PSD. À basse énergie, les profils mesurés de BGO étaient trop proches des profils d’excitation électromagnétique pour fournir la séparation recherchée. Cette comparaison expérimentale a guidé la suite de la modélisation ; elle est distincte des résultats simulés de résolution présentés ci-dessous.
 
+Les ingénieurs ont assuré le montage de mesure et l’utilisation des sources de particules. J’ai participé à la comparaison des profils temporels finaux, puis utilisé les paramètres mesurés dans la simulation pour générer des échantillons et vérifier si la séparation temporelle permettait d’appliquer la PSD. Ma contribution reliait les mesures expérimentales à une vérification de faisabilité par simulation.
+
 ### Réalisation personnelle
 - Génération d’échantillons simulés électron/proton/pion pour ZnWO4 et BGO entre 1 et 20 GeV ; vérification des corrélations pertinentes.
 - Extension de la simulation avec des constantes temporelles dépendant du type de particule et de dE/dx.

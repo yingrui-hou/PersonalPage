@@ -20,4 +20,4 @@ A proposed first-month sequence, with scope and timing agreed with the team once
 
 - **ML tied to the measurement objective:** Developed CatBoost selection with reweighting, feature pruning, five-fold assessment and train/test KS checks; scanned a measurement-oriented threshold using fitted yields and selection efficiencies.
 
-- **Experimental evidence for design choices:** In the PSD project, measured time profiles guided the team’s choice of ZnWO4 over BGO for further study, because BGO had insufficient low-energy temporal separation in the tested conditions. This connects experimental feasibility checks to a material-selection decision.
+- **Experimental evidence for design choices:** Compared measured PSD time profiles and used the measured parameters to generate simulations and check temporal separation. This contributed to the team’s choice of ZnWO4 for further study; engineers handled measurement setup and particle sources.
