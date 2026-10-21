@@ -19,3 +19,5 @@ Joint Master and PhD in Particle Physics, University of Chinese Academy of Scien
 - **Training-process familiarity:** participated in construction and training discussions for the flavour-tagging and clustering models to support subsequent calibration and validation; did not train these two models.
 
 - **Acquisition and quality automation:** Developed a Shell pipeline for beam-test acquisition, storage, quick calibration and initial quality checks, connecting detector readout, tracking and timing calibration. Participated in on-site setup and data taking; assisted subsequent fitting and measurement-effect corrections.
+
+- **Diagnosis to code review:** Diagnosed incorrect ECAL photon truth associations; revised cluster-energy matching, tested multiple simulated decay channels and improved thread safety through review. The merged change supported subsequent Run 3 analyses and reconstruction-performance checks.

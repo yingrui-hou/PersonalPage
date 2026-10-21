@@ -15,3 +15,5 @@ Une proposition pour le premier mois, dont le périmètre et le calendrier serai
 - **Livrer un résultat vérifiable :** partager une analyse reproductible, ses conclusions, ses limites et une proposition d’actions prioritaires.
 
 - **Automatisation de l’acquisition et de la qualité :** Développement d’une chaîne Shell pour l’acquisition sous faisceau, le stockage, la calibration rapide et les premiers contrôles qualité, reliant lecture du détecteur, tracking et calibration temporelle. Participation au montage et à la prise de données ; appui aux ajustements et corrections des effets de mesure.
+
+- **Du diagnostic à la revue de code:** Diagnostic d’associations erronées des photons ECAL ; modification du matching par énergie déposée dans le cluster, tests sur plusieurs canaux simulés et amélioration de la sûreté multithread après revue. Modification intégrée et utilisée pour les analyses Run 3 et les contrôles de reconstruction.

@@ -15,3 +15,5 @@ A proposed first-month sequence, with scope and timing agreed with the team once
 - **Deliver a reviewable result:** share reproducible analysis, findings, limitations and a prioritised next-step proposal.
 
 - **Acquisition and quality automation:** Developed a Shell pipeline for beam-test acquisition, storage, quick calibration and initial quality checks, connecting detector readout, tracking and timing calibration. Participated in on-site setup and data taking; assisted subsequent fitting and measurement-effect corrections.
+
+- **Diagnosis to code review:** Diagnosed incorrect ECAL photon truth associations; revised cluster-energy matching, tested multiple simulated decay channels and improved thread safety through review. The merged change supported subsequent Run 3 analyses and reconstruction-performance checks.

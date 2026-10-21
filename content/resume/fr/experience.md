@@ -19,3 +19,5 @@ Master et doctorat intégrés en physique des particules, University of Chinese 
 - **Connaissance du processus d’entraînement :** participation aux discussions de construction et d’entraînement des modèles de marquage de saveur et de clustering pour préparer la calibration et la validation ultérieures ; sans réalisation de leur entraînement.
 
 - **Automatisation de l’acquisition et de la qualité :** Développement d’une chaîne Shell pour l’acquisition sous faisceau, le stockage, la calibration rapide et les premiers contrôles qualité, reliant lecture du détecteur, tracking et calibration temporelle. Participation au montage et à la prise de données ; appui aux ajustements et corrections des effets de mesure.
+
+- **Du diagnostic à la revue de code:** Diagnostic d’associations erronées des photons ECAL ; modification du matching par énergie déposée dans le cluster, tests sur plusieurs canaux simulés et amélioration de la sûreté multithread après revue. Modification intégrée et utilisée pour les analyses Run 3 et les contrôles de reconstruction.
