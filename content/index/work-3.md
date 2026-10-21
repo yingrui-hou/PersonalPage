@@ -3,28 +3,32 @@ number: 03
 homepage_order: 1
 collapsible: true
 title: Domain Adaptation for ML
-tags: GBDT | CatBoost | Reweighting | Feature Validation
-methods: CatBoost training, train-test diagnostics, gradient-boosting reweighting
-impact: improved downstream model reliability by treating dataset mismatch and overtraining checks as part of the research workflow.
-industry: Domain Adaptation | Applied ML | Dataset Shift
+tags: CatBoost | Five-Fold Validation | Reweighting | Decision Thresholds
+methods: control-sample checks, feature correlations, gradient-boosting reweighting, ROC/AUC and precision-oriented threshold scans
+impact: connected data quality, model selection and the operating threshold to the precision objective of a rare-signal measurement.
+industry: Applied ML | Dataset Shift | Decision Optimisation
 ---
-**Built an ML validation and sample-alignment workflow in a shared analysis environment for noisy selection problems under dataset shift.**
+**Built a CatBoost selection workflow for the rare Bs → phi gamma signal, connecting simulation/data checks, feature selection and five-fold training/testing to a threshold chosen for expected measurement precision.**
 
-![Background veto performance](assets/selected-work/work-3/bkg_veto_performance.png "Background is strongly reduced after applying the final GBDT selection model.")
-![Train-test GBDT response comparison](assets/selected-work/work-3/train-test.png "Train and test response curves remain aligned for both classes, providing a direct overtraining check before threshold tuning.")
-![Feature importance ranking](assets/selected-work/work-3/feature_importance.png "Feature-importance ranking of the final model after iterative refinement.")
+### Task and individual contribution
+The goal was to select a rare signal from combinatorial background for a physics measurement. I developed the selection and validation workflow. I used existing Monte Carlo signal samples with detector simulation and reconstruction consistent with the data; I did not develop the original simulation software for these samples, although I studied calorimeter-simulation code.
 
-### Problem
-The ML problem was not only to classify noisy events, but to do so under dataset shift, where calibration and control samples do not naturally match the target sample. Without explicit validation and alignment, model scores would look good in training while degrading downstream inference.
+### Data preparation and domain checks
+- Applied preselection to reduce combinatorial background, then used fitted-component sWeights to study signal distributions statistically in mixed data. This did not provide pure signal labels for individual data events.
+- Proposed features from the decay physics, detector performance and subdetector observables. Used a topologically similar control sample to investigate simulation/data discrepancies and trained a hep_ml gradient-boosting reweighter where needed.
+- Checked correlations between features and with the target observable, excluding strongly correlated candidates to reduce the risk of distorting the measurement.
 
-### Workflow
-- Trained CatBoost-based classifiers and used train-test response comparisons to check separation quality and overtraining behaviour before optimising thresholds.
-- Reweighted calibration and control samples so their kinematics better matched the target signal sample before downstream inference.
-- Treated reweighting, score validation, threshold scans, job configuration, and saved model outputs as one integrated workflow rather than isolated model-training steps.
+### Training and choosing an operating point
+- Trained with simulated signal in the signal region and real-data background away from that region. Used five folds to make use of limited signal and background statistics.
+- Examined feature importance and ROC/AUC, removed low-contribution features and tuned hyperparameters for the retained feature set. Compared training and test responses to diagnose overtraining.
+- Scanned a task-specific figure of merit using signal/background efficiencies and expected event statistics. Chose the operating point for expected statistical precision and applied it to real data.
 
-### Result
-- Improved downstream model reliability by making dataset mismatch and overtraining checks part of the research pipeline instead of optional diagnostics.
-- Kept train and test response curves aligned for both classes, providing a direct validation that the classifier behaviour remained stable before selection tuning.
+![Background veto performance](assets/selected-work/work-3/bkg_veto_performance.png "The displayed Run 1 comparison shows lower background after BDT selection, with the signal peak retained. LHCb unofficial study plot; no numerical improvement is inferred from the image.")
+![Train-test GBDT response comparison](assets/selected-work/work-3/train-test.png "Training and test score distributions broadly agree for both classes in the displayed diagnostic; this is an overtraining check, not a guarantee of independent evaluation.")
+![Feature importance ranking](assets/selected-work/work-3/feature_importance.png "Feature importance was used with separation diagnostics to simplify the model.")
+
+### Result and transferable method
+The selected working point was applied to data. The displayed comparison shows background suppression, and the training/test response plot supports the validation study. The transferable contribution is an analysis workflow linking domain knowledge, sample mismatch, model complexity and the decision threshold to the final task objective.
 
 ### Publications & Reports
-- [Internal note: *Measurement of the branching fraction ratio between B0 → K∗0γ and Bs0 → ϕγ decays using the full LHCb dataset*] includes the CatBoost training setup, simulation-to-data reweighting, feature validation, and overtraining checks used in this ML workflow.
+- [Internal note: *Measurement of the branching fraction ratio between B0 → K∗0γ and Bs0 → ϕγ decays using the full LHCb dataset*] contains the CatBoost selection, reweighting and validation work.

@@ -21,3 +21,5 @@ Master et doctorat intégrés en physique des particules, University of Chinese 
 - **Automatisation de l’acquisition et de la qualité :** Développement d’une chaîne Shell pour l’acquisition sous faisceau, le stockage, la calibration rapide et les premiers contrôles qualité, reliant lecture du détecteur, tracking et calibration temporelle. Participation au montage et à la prise de données ; appui aux ajustements et corrections des effets de mesure.
 
 - **Du diagnostic à la revue de code:** Diagnostic d’associations erronées des photons ECAL ; modification du matching par énergie déposée dans le cluster, tests sur plusieurs canaux simulés et amélioration de la sûreté multithread après revue. Modification intégrée et utilisée pour les analyses Run 3 et les contrôles de reconstruction.
+
+- **ML relié à l’objectif de mesure:** Sélection de signal rare avec CatBoost : repondération par échantillon de contrôle, corrélations, entraînement/test à cinq plis et réduction des variables ; seuil choisi selon la précision attendue.
