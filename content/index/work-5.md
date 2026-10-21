@@ -22,6 +22,11 @@ The team chose **ZnWO4** for further PSD studies. At low energies, the measured 
 
 Engineers handled the measurement setup and particle-source operation. I participated in comparing the final time profiles, then used the measured timing parameters as simulation inputs, generated samples and checked whether the resulting temporal separation was sufficient to apply PSD. My contribution connected experimental measurements to a simulation feasibility check.
 
+### From curve screening to quantitative feasibility checks
+First compared normalised time profiles to screen for excessive similarity. Using the measured parameters, simulated high-energy protons entering the calorimeter sensitive layer, their energy deposits and the resulting scintillation-light time profiles.
+
+Fitted the complete light time profile with fixed templates to estimate photon counts from the different processes, before using the components for PSD energy reconstruction. When profiles were insufficiently separated, component counts could not be recovered accurately at this stage. **Fit-result correlation matrices and bias distributions** were used to assess the reliability of component recovery. These diagnostics connected the material choice to whether the proposed reconstruction method was usable.
+
 ### Workflow
 - Generated `e/p/pi` simulation samples in two crystal-material candidates (`ZnWO4` and `BGO`) over `1 to 20 GeV` and first validated that the relevant correlation structure between deposited hadronic energy, EM fraction, and total energy remained stable across the energy range.
 - Extended the simulation with scintillation timing, updating time constants dynamically by particle type and `dE/dx`, then fitted the time distributions with EM-, hadronic-, and proton-like components instead of relying only on total signal amplitude.

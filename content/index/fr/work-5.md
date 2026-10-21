@@ -19,6 +19,11 @@ L’équipe a retenu **ZnWO4** pour poursuivre les études PSD. À basse énergi
 
 Les ingénieurs ont assuré le montage de mesure et l’utilisation des sources de particules. J’ai participé à la comparaison des profils temporels finaux, puis utilisé les paramètres mesurés dans la simulation pour générer des échantillons et vérifier si la séparation temporelle permettait d’appliquer la PSD. Ma contribution reliait les mesures expérimentales à une vérification de faisabilité par simulation.
 
+### Du tri visuel à la vérification quantitative de faisabilité
+Comparaison initiale des profils temporels normalisés pour repérer une similarité excessive. À partir des paramètres mesurés, simulation de protons de haute énergie entrant dans la couche sensible du calorimètre, de leurs dépôts d’énergie et des profils temporels de scintillation produits.
+
+Ajustement du profil lumineux complet avec des gabarits fixés pour estimer le nombre de photons provenant des différents processus, avant reconstruction de l’énergie par PSD. Lorsque les profils étaient trop proches, les effectifs de chaque composante ne pouvaient pas être retrouvés avec précision à cette étape. **Matrices de corrélation des résultats d’ajustement et distributions des biais** servaient à évaluer la fiabilité de cette extraction. Ces diagnostics reliaient le choix du matériau à la faisabilité de la reconstruction.
+
 ### Réalisation personnelle
 - Génération d’échantillons simulés électron/proton/pion pour ZnWO4 et BGO entre 1 et 20 GeV ; vérification des corrélations pertinentes.
 - Extension de la simulation avec des constantes temporelles dépendant du type de particule et de dE/dx.

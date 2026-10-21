@@ -24,4 +24,4 @@ Master et doctorat intégrés en physique des particules, University of Chinese 
 
 - **ML relié à l’objectif de mesure:** Sélection CatBoost avec repondération, réduction des variables, évaluation à cinq plis et contrôles KS entraînement/test ; seuil lié à la mesure, fondé sur les effectifs ajustés et les efficacités.
 
-- **Simulation PSD fondée sur les mesures:** Utilisation des paramètres temporels mesurés de scintillation en simulation pour évaluer la faisabilité PSD ; ajustements temporels et études de correction d’énergie ROOT/C++.
+- **Simulation PSD fondée sur les mesures:** Paramètres temporels mesurés utilisés en simulation PSD ; extraction des composantes vérifiée par gabarits, matrices de corrélation et distributions des biais avant les études de correction d’énergie.

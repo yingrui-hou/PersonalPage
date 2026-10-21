@@ -24,4 +24,4 @@ Joint Master and PhD in Particle Physics, University of Chinese Academy of Scien
 
 - **ML tied to the measurement objective:** Developed CatBoost selection with reweighting, feature pruning, five-fold assessment and train/test KS checks; scanned a measurement-oriented threshold using fitted yields and selection efficiencies.
 
-- **Measurement-informed PSD simulation:** Used measured scintillation timing parameters in simulations to assess PSD feasibility; developed time-profile fitting and ROOT/C++ energy-correction studies.
+- **Measurement-informed PSD simulation:** Used measured timing parameters in PSD simulations; checked component recovery with template fits, correlation matrices and bias distributions before energy-correction studies.

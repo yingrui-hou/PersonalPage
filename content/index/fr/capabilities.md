@@ -20,4 +20,4 @@ Une proposition pour le premier mois, dont le périmètre et le calendrier serai
 
 - **ML relié à l’objectif de mesure:** Sélection CatBoost avec repondération, réduction des variables, évaluation à cinq plis et contrôles KS entraînement/test ; seuil lié à la mesure, fondé sur les effectifs ajustés et les efficacités.
 
-- **Résultats expérimentaux et choix de conception:** Comparaison des profils PSD mesurés et utilisation des paramètres pour générer des simulations et vérifier la séparation temporelle. Contribution au choix collectif de ZnWO4 pour poursuivre l’étude ; montage et sources assurés par les ingénieurs.
+- **Résultats expérimentaux et choix de conception:** Comparaison des profils mesurés et simulation avec leurs paramètres ; extraction des composantes contrôlée par corrélations et distributions des biais. Contribution au choix collectif de ZnWO4 pour la PSD. Les ingénieurs ont assuré le montage et les sources.
