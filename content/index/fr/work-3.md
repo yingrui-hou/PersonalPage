@@ -23,6 +23,11 @@ L’objectif était de sélectionner un signal rare parmi le bruit de fond combi
 - Étude de l’importance des variables et des courbes ROC/AUC, retrait des variables peu contributives, puis réglage des hyperparamètres. Comparaison entraînement/test pour diagnostiquer le surapprentissage.
 - Balayage d’un critère lié à la précision statistique attendue, tenant compte des efficacités et des effectifs du signal et du fond. Application du seuil retenu aux données réelles.
 
+### Effectifs attendus et rôle des échantillons
+À chaque seuil, estimation des effectifs de signal et de fond combinatoire par `S = S0 × effs` et `B = B0 × effb`, avec `S0` et `B0` issus de l’ajustement des données présélectionnées. Ces estimations ont été comparées aux attentes fondées sur la luminosité et les sections efficaces.
+
+La repondération précédait l’entraînement du classifieur. Chaque cycle utilisait cinq plis avec des partitions distinctes pour l’entraînement et le test ; les premiers cycles fixaient les variables, puis les hyperparamètres étaient optimisés. L’échantillon final d’application n’a participé ni à l’entraînement du classifieur ni au réglage des hyperparamètres.
+
 ![Performance de sélection](assets/selected-work/work-3/bkg_veto_performance.png "La comparaison Run 1 montre une réduction du fond après sélection BDT, avec maintien du pic de signal. Figure d’étude LHCb unofficial ; aucun gain chiffré n’est déduit de l’image.")
 ![Validation entraînement/test](assets/selected-work/work-3/train-test.png "Accord global des distributions de réponse entraînement/test pour les deux classes ; diagnostic de surapprentissage, sans garantie d’évaluation indépendante.")
 ![Importance des variables](assets/selected-work/work-3/feature_importance.png "L’importance et les diagnostics de séparation ont guidé la simplification du modèle.")

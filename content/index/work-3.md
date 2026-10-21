@@ -23,6 +23,11 @@ The goal was to select a rare signal from combinatorial background for a physics
 - Examined feature importance and ROC/AUC, removed low-contribution features and tuned hyperparameters for the retained feature set. Compared training and test responses to diagnose overtraining.
 - Scanned a task-specific figure of merit using signal/background efficiencies and expected event statistics. Chose the operating point for expected statistical precision and applied it to real data.
 
+### Expected yields and sample roles
+At each threshold, estimated the signal and combinatorial-background yields as `S = S0 × effs` and `B = B0 × effb`, where `S0` and `B0` came from fitting the preselected data. These estimates were cross-checked against luminosity and process-cross-section expectations.
+
+Reweighting preceded classifier training. Each training round used five folds with separate training and testing partitions; early rounds selected features, followed by hyperparameter tuning with the feature set fixed. The final application sample was not used for classifier training or hyperparameter tuning.
+
 ![Background veto performance](assets/selected-work/work-3/bkg_veto_performance.png "The displayed Run 1 comparison shows lower background after BDT selection, with the signal peak retained. LHCb unofficial study plot; no numerical improvement is inferred from the image.")
 ![Train-test GBDT response comparison](assets/selected-work/work-3/train-test.png "Training and test score distributions broadly agree for both classes in the displayed diagnostic; this is an overtraining check, not a guarantee of independent evaluation.")
 ![Feature importance ranking](assets/selected-work/work-3/feature_importance.png "Feature importance was used with separation diagnostics to simplify the model.")

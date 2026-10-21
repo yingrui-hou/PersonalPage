@@ -22,4 +22,4 @@ Master et doctorat intégrés en physique des particules, University of Chinese 
 
 - **Du diagnostic à la revue de code:** Diagnostic d’associations erronées des photons ECAL ; modification du matching par énergie déposée dans le cluster, tests sur plusieurs canaux simulés et amélioration de la sûreté multithread après revue. Modification intégrée et utilisée pour les analyses Run 3 et les contrôles de reconstruction.
 
-- **ML relié à l’objectif de mesure:** Sélection de signal rare avec CatBoost : repondération par échantillon de contrôle, corrélations, entraînement/test à cinq plis et réduction des variables ; seuil choisi selon la précision attendue.
+- **ML relié à l’objectif de mesure:** CatBoost : repondération préalable, corrélations, sélection de variables à cinq plis puis réglage des hyperparamètres ; seuil fondé sur les effectifs ajustés et les efficacités de sélection.

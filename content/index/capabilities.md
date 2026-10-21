@@ -18,4 +18,4 @@ A proposed first-month sequence, with scope and timing agreed with the team once
 
 - **Diagnosis to code review:** Diagnosed incorrect ECAL photon truth associations; revised cluster-energy matching, tested multiple simulated decay channels and improved thread safety through review. The merged change supported subsequent Run 3 analyses and reconstruction-performance checks.
 
-- **ML tied to the measurement objective:** Built CatBoost rare-signal selection with control-sample reweighting, correlation checks, five-fold training/testing and feature pruning; tuned the threshold for expected measurement precision.
+- **ML tied to the measurement objective:** Trained CatBoost with pre-training reweighting, correlation checks, five-fold feature selection and subsequent hyperparameter tuning; set the threshold using fitted event yields and selection efficiencies.
