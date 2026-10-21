@@ -19,3 +19,5 @@ Une proposition pour le premier mois, dont le périmètre et le calendrier serai
 - **Du diagnostic à la revue de code:** Diagnostic d’associations erronées des photons ECAL ; modification du matching par énergie déposée dans le cluster, tests sur plusieurs canaux simulés et amélioration de la sûreté multithread après revue. Modification intégrée et utilisée pour les analyses Run 3 et les contrôles de reconstruction.
 
 - **ML relié à l’objectif de mesure:** Sélection CatBoost avec repondération, réduction des variables, évaluation à cinq plis et contrôles KS entraînement/test ; seuil lié à la mesure, fondé sur les effectifs ajustés et les efficacités.
+
+- **Résultats expérimentaux et choix de conception:** Dans le projet PSD, les profils temporels mesurés ont guidé le choix collectif de ZnWO4 pour poursuivre l’étude, la séparation de BGO à basse énergie étant insuffisante dans les conditions testées. Ce cas relie la faisabilité expérimentale à une décision de matériau.

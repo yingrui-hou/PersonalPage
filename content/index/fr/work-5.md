@@ -12,6 +12,11 @@ industry: Analyse de signaux | Caractérisation capteur | Validation de modèle
 
 ![Résolution avant et après correction](assets/selected-work/work-5/res_compare.png "Évaluation de la correction dans les conditions étudiées.")
 
+### Comparaison expérimentale pour choisir le matériau
+L’équipe a testé ZnWO4 et BGO en mesurant les profils de décroissance temporelle de la scintillation dans plusieurs domaines d’énergie, sous excitation électromagnétique ou hadronique. Le critère de choix était la capacité à distinguer ces processus par leurs profils temporels dans les conditions étudiées.
+
+L’équipe a retenu **ZnWO4** pour poursuivre les études PSD. À basse énergie, les profils mesurés de BGO étaient trop proches des profils d’excitation électromagnétique pour fournir la séparation recherchée. Cette comparaison expérimentale a guidé la suite de la modélisation ; elle est distincte des résultats simulés de résolution présentés ci-dessous.
+
 ### Réalisation personnelle
 - Génération d’échantillons simulés électron/proton/pion pour ZnWO4 et BGO entre 1 et 20 GeV ; vérification des corrélations pertinentes.
 - Extension de la simulation avec des constantes temporelles dépendant du type de particule et de dE/dx.

@@ -15,6 +15,11 @@ industry: Time-Resolved Sensing | Signal Decomposition | Measurement-System Desi
 ### Problem
 The problem was to recover useful composition information from scintillation timing, instead of treating total light yield as a single undifferentiated signal. For the method to be credible, it also had to remain usable under realistic material behaviour, particle-dependent time constants, and the limited separation between EM-like and hadronic-like components.
 
+### Experimental comparison guiding material choice
+The team tested ZnWO4 and BGO by measuring scintillation decay-time profiles across energy ranges and electromagnetic or hadronic excitation processes. The design criterion was how well the time profiles could distinguish these processes under the tested conditions.
+
+The team chose **ZnWO4** for further PSD studies. At low energies, the measured BGO profiles were too similar to the electromagnetic-excitation profiles to provide the desired separation. This experimental material comparison informed the subsequent modelling work; it is separate from the simulated reconstruction-resolution results below.
+
 ### Workflow
 - Generated `e/p/pi` simulation samples in two crystal-material candidates (`ZnWO4` and `BGO`) over `1 to 20 GeV` and first validated that the relevant correlation structure between deposited hadronic energy, EM fraction, and total energy remained stable across the energy range.
 - Extended the simulation with scintillation timing, updating time constants dynamically by particle type and `dE/dx`, then fitted the time distributions with EM-, hadronic-, and proton-like components instead of relying only on total signal amplitude.

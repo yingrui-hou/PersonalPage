@@ -19,3 +19,5 @@ A proposed first-month sequence, with scope and timing agreed with the team once
 - **Diagnosis to code review:** Diagnosed incorrect ECAL photon truth associations; revised cluster-energy matching, tested multiple simulated decay channels and improved thread safety through review. The merged change supported subsequent Run 3 analyses and reconstruction-performance checks.
 
 - **ML tied to the measurement objective:** Developed CatBoost selection with reweighting, feature pruning, five-fold assessment and train/test KS checks; scanned a measurement-oriented threshold using fitted yields and selection efficiencies.
+
+- **Experimental evidence for design choices:** In the PSD project, measured time profiles guided the team’s choice of ZnWO4 over BGO for further study, because BGO had insufficient low-energy temporal separation in the tested conditions. This connects experimental feasibility checks to a material-selection decision.
