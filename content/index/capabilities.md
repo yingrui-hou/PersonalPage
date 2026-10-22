@@ -7,6 +7,9 @@
 
 - **Reliable scientific software:** compared TensorFlow amplitudes with a mature C++ reference, resolved variable-type discrepancies and used GitLab reviews to detect a fitter sign error. Weekly team planning adjusted priorities as new data issues emerged. [Verification and collaboration](index.html#work-8).
 
+- **Extend shared software:** Delivery: upgraded the existing QCFilter toolkit—method design, C++, Gaudi/BOSS integration and testing. Used for subsequent project simulations; collaborators extended this version with further processes. [QCFilter](index.html#work-7).
+
+
 ### How I would approach a new business problem
 A proposed first-month sequence, with scope and timing agreed with the team once data and environment access are available:
 - **Understand the decision:** identify the users, current process, success criteria and costs of different errors.

@@ -2,26 +2,26 @@
 number: 07
 homepage_order: 6
 collapsible: true
-title: Model Correction Workflow
-tags: Scientific Software | Event Filtering | Simulation Correction | Framework Integration
-methods: Gaudi-package development, event-level correction, framework integration
-impact: turned measured constraints into a reusable event-level correction package for improving simplified simulation realism.
-industry: Simulation Platforms | Scientific Computing | Model Correction
+title: QCFilter: Extending Shared Simulation Software
+tags: C++ | Scientific Software | Gaudi/BOSS | Simulation Correction
+methods: existing-toolkit extension, method design, framework integration, testing
+impact: delivered an upgraded toolkit used in subsequent project simulation samples and extended by collaborators.
+industry: Simulation Platforms | Scientific Computing | Software Integration
 ---
-**Developed simulation-correction tooling that turns measured physics constraints into an event-level resampling workflow.**
+**Upgraded an existing open-source QCFilter toolkit for quantum-correlated D⁰D̄⁰ simulation in Gaudi-based systems. Personally handled method design, C++ implementation, Gaudi/BOSS integration and testing.**
 
-### Problem
-The simplified fast simulation was good enough for most kinematic behaviour, but it could not reproduce one paired-particle correlation effect needed downstream. A full first-principles simulation of the multi-body process was not practical, so measured constraints had to be folded back into the event distribution in an operational and auditable way rather than through ad hoc post-processing.
+### Context
+QCFilter applies physics constraints through event-level filtering to represent quantum correlations in simulated D⁰D̄⁰ systems. The work extended an existing toolkit and added support for several major physics processes.
 
-### Workflow
-- Built a framework-integrated C++ package to correct inclusive fast-simulation samples event by event so that the missing correlation effect was restored.
-- Encoded correction factors from measured inputs into a filtering workflow that keeps or rejects events to match the corrected distribution.
-- Designed the package with headers, source files, job options, and framework integration points so the correction logic is reusable beyond a single analysis or software stack.
+### Personal contribution
+- Designed the methods needed for the upgrade and implemented the changes in C++.
+- Integrated the updated toolkit with Gaudi/BOSS and carried out final testing.
+- Added several major physics processes and delivered the updated QCFilter package.
 
-### Result
-- Turned measured constraints into a reusable event-level correction package for improving simplified simulation realism.
-- Kept the event-level behaviour explicit and auditable: each event receives a correction factor and is accepted or rejected through a simple stochastic rule, which makes the method portable, reviewable, and suitable for shared technical environments.
+### Adoption and collaboration
+The delivered toolkit was used for subsequent simulation samples in the project. Other collaborators then built on this version to add signal processes for their own studies.
 
-### Publications & Reports
-- [Technical note: *Feasibility study of determining charm mixing and CP violation parameters in super tau-charm factory*] documents the `QCFilterAlg` package and the event-level correction workflow used to restore missing correlation structure in fast simulation.
-- Related publication: *CP violation studies at Super Tau-Charm Facility*. DOI: [10.48550/arXiv.2502.08907](https://doi.org/10.48550/arXiv.2502.08907)
+This demonstrates extending an existing codebase, delivering an integrated tool and supporting reuse through a version that colleagues could extend. The toolkit’s scope is Gaudi-based simulation of quantum-correlated D⁰D̄⁰ systems.
+
+### Related publication
+*CP violation studies at Super Tau-Charm Facility*, [DOI](https://doi.org/10.48550/arXiv.2502.08907).

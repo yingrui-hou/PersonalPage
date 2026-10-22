@@ -7,6 +7,9 @@
 
 - **Fiabilité du logiciel scientifique :** comparaison des amplitudes TensorFlow à une référence C++, harmonisation des types et détection d’une erreur de signe du fitter en revue GitLab. Ajustement collectif des priorités lors des points hebdomadaires. [Vérification et collaboration](index-fr.html#work-8).
 
+- **Faire évoluer un logiciel partagé:** Réalisation : évolution de QCFilter existant — méthodes, C++, intégration Gaudi/BOSS et tests. Outil utilisé pour les simulations suivantes du projet, puis enrichi par les collaborateurs. [QCFilter](index-fr.html#work-7).
+
+
 ### Ma démarche face à un nouveau problème métier
 Une proposition pour le premier mois, dont le périmètre et le calendrier seraient convenus avec l’équipe après accès aux données et à l’environnement :
 - **Comprendre la décision :** identifier les utilisateurs, le processus existant, les critères de réussite et le coût des différentes erreurs.
