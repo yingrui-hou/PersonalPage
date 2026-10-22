@@ -8,15 +8,20 @@ methods: existing-toolkit extension, method design, framework integration, testi
 impact: delivered an upgraded toolkit used in subsequent project simulation samples and extended by collaborators.
 industry: Simulation Platforms | Scientific Computing | Software Integration
 ---
-**Upgraded an existing open-source QCFilter toolkit for quantum-correlated D⁰D̄⁰ simulation in Gaudi-based systems. Personally handled method design, C++ implementation, Gaudi/BOSS integration and testing.**
+**Upgraded an existing QCFilter toolkit shared within the experimental collaboration for quantum-correlated D⁰D̄⁰ simulation in Gaudi-based systems. Personally handled method design, C++ implementation, Gaudi/BOSS integration and testing.**
 
 ### Context
-QCFilter applies physics constraints through event-level filtering to represent quantum correlations in simulated D⁰D̄⁰ systems. The work extended an existing toolkit and added support for several major physics processes.
+QCFilter applies physics constraints through event-level filtering to represent quantum correlations in simulated D⁰D̄⁰ systems. The existing code was outdated, had a small number of known bugs and supported only the C-antisymmetric correlation case. The upgrade addressed the codebase and made it easier to add custom physics processes.
 
 ### Personal contribution
-- Designed the methods needed for the upgrade and implemented the changes in C++.
+- Rewrote the existing code using a newer C++ standard and the Gaudi framework.
+- Added a **general amplitude-model interface**, allowing users to implement custom physics processes through a common interface.
 - Integrated the updated toolkit with Gaudi/BOSS and carried out final testing.
 - Added several major physics processes and delivered the updated QCFilter package.
+
+### Verification
+- Compared simulation results from the original and updated tools; the results agreed in the comparisons performed.
+- Compared the updated simulation with real data for key kinematic variables and amplitude-related observables. They were broadly consistent; residual differences were attributed to limitations of the model.
 
 ### Adoption and collaboration
 The delivered toolkit was used for subsequent simulation samples in the project. Other collaborators then built on this version to add signal processes for their own studies.
