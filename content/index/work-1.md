@@ -29,6 +29,8 @@ Used a staged diagnostic approach, usually starting with the simplest check:
 
 This combines inexpensive screening with simulation-based sensitivity checks when examining the reliability of an inferred result.
 
+These checks did not identify problems in the analyses described. I included them in the systematic-uncertainty assessment of each analysis.
+
 ### Result
 - Turned the mass-fit strategy into reusable analysis tooling rather than a one-off fit tuned to a single dataset.
 - Demonstrated that the extraction logic was robust enough to support a dedicated branching-ratio measurement, which is a stronger validation than simply showing a visible peak.

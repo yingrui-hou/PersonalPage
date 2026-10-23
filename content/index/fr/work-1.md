@@ -27,5 +27,7 @@ Démarche progressive, en commençant généralement par le contrôle le plus si
 
 Cette démarche associe des diagnostics simples à des études de sensibilité par simulation pour examiner la fiabilité du résultat inféré.
 
+Ces contrôles n’ont pas mis en évidence de problème dans les analyses décrites. Je les ai inclus dans l’évaluation des incertitudes systématiques de chaque analyse.
+
 ### Résultat
 Une méthode réutilisable et vérifiable, employée dans une mesure de rapport de branchement. Les détails de la note de collaboration restent internes.

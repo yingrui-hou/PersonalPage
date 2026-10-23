@@ -10,7 +10,7 @@
 - **Faire évoluer un logiciel partagé:** Réalisation : refonte C++/Gaudi de QCFilter et interface générique d’amplitudes. Validation face à l’ancienne version et aux données ; outil réutilisé et étendu par les collaborateurs. [QCFilter](index-fr.html#work-7).
 
 
-- **Sensibilité des estimations:** Corrélations entre variables, matrices de corrélation des ajustements et biais des pulls en pseudo-expériences pour étudier la sensibilité au modèle et à la sélection, en commençant par les contrôles simples. [Case](index-fr.html#work-1).
+- **Sensibilité des estimations:** Corrélations entre variables, matrices des ajustements et biais des pulls en pseudo-expériences intégrés aux évaluations des incertitudes systématiques. Aucun problème relevé lors de ces contrôles. [Case](index-fr.html#work-1).
 
 ### Ma démarche face à un nouveau problème métier
 Une proposition pour le premier mois, dont le périmètre et le calendrier seraient convenus avec l’équipe après accès aux données et à l’environnement :
