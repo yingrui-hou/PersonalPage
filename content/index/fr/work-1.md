@@ -19,5 +19,13 @@ Séparer un signal rare du bruit combinatoire tout en contrôlant la stabilité 
 - Implémentation d’ajustements de vraisemblance signal-bruit de fond et extraction des rendements.
 - Automatisation de la présélection, des ajustements et des vérifications de rapports de branchement dans des scripts d’analyse.
 - Validation sur un canal de contrôle plus abondant et suivi des rendements, largeurs et ajustements selon les sélections.
+### Pratique personnelle de validation
+Démarche progressive, en commençant généralement par le contrôle le plus simple :
+1. Examen des coefficients de corrélation entre variables pour repérer les associations visibles.
+2. Inspection des matrices de corrélation des ajustements pour étudier les relations entre paramètres et composantes du modèle.
+3. Pseudo-expériences pour étudier les variations du biais des distributions de pull selon le modèle et les conditions de sélection.
+
+Cette démarche associe des diagnostics simples à des études de sensibilité par simulation pour examiner la fiabilité du résultat inféré.
+
 ### Résultat
 Une méthode réutilisable et vérifiable, employée dans une mesure de rapport de branchement. Les détails de la note de collaboration restent internes.

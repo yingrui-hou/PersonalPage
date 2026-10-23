@@ -10,6 +10,8 @@
 - **Extend shared software:** Delivery: modernised QCFilter C++/Gaudi code and added a general amplitude interface. Verified against prior simulations and real data; the toolkit was reused and extended by collaborators. [QCFilter](index.html#work-7).
 
 
+- **Statistical sensitivity checks:** Used variable correlations, fit-parameter correlation matrices and pseudoexperiment pull-bias studies to investigate sensitivity to model and selection choices, starting with simple diagnostics. [Case](index.html#work-1).
+
 ### How I would approach a new business problem
 A proposed first-month sequence, with scope and timing agreed with the team once data and environment access are available:
 - **Understand the decision:** identify the users, current process, success criteria and costs of different errors.

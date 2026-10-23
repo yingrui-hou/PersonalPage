@@ -21,6 +21,14 @@ The analysis problem was to recover a weak signal from dominant combinatorial ba
 - Automated yield extraction, preselection, and branching-ratio cross-checks through analysis scripts and structured inputs rather than relying on one-off notebooks.
 - Validated the strategy against a higher-yield control decay and monitored yield, width, and fit stability across runs and selection settings.
 
+### Personal validation practice
+Used a staged diagnostic approach, usually starting with the simplest check:
+1. Examined variable correlation coefficients to identify evident associations.
+2. Inspected fit-result correlation matrices to investigate relationships among fitted parameters and model components.
+3. Ran pseudoexperiments to study whether pull-distribution bias changed with model choices and selection conditions.
+
+This combines inexpensive screening with simulation-based sensitivity checks when examining the reliability of an inferred result.
+
 ### Result
 - Turned the mass-fit strategy into reusable analysis tooling rather than a one-off fit tuned to a single dataset.
 - Demonstrated that the extraction logic was robust enough to support a dedicated branching-ratio measurement, which is a stronger validation than simply showing a visible peak.
