@@ -3,37 +3,25 @@ number: 01
 homepage_order: 8
 homepage_group: secondary
 collapsible: true
-title: Weak-Signal Inference
-tags: Mixture Models | Maximum Likelihood | Feature Selection | Statistical Validation
+title: Weak-signal analysis
+tags: Statistical Modelling | Uncertainty | Validation
 methods: likelihood fitting, control-sample validation, reproducible yield workflows
 impact: turned rare-signal extraction into a reproducible workflow with stability checks and auditable validation logic.
 industry: Rare Event Analytics | Anomaly Detection | Weakly Labeled Systems
 ---
-**Built a reusable C++/Python/ROOT workflow for weak-signal extraction in data where background dominates and event-level truth is unavailable.**
-
-![Weak-signal mass fit case 2](assets/selected-work/work-1/BToVG.png "A narrow signal peak is recovered from dominant background through an explicit signal-plus-background fit.")
+Developed reusable Python/C++ analysis software to estimate a weak signal within noisy, mixed data.
 
 ### Problem
-The analysis problem was to recover a weak signal from dominant combinatorial background without having reliable event-level truth labels. That makes simple cut-based counting fragile and forces the extraction logic to carry its own validation.
+The signal could not be identified reliably observation by observation. The analysis needed to estimate its contribution while accounting for background and measurement uncertainty.
 
-### Workflow
-- Implemented signal-plus-background likelihood fits to separate rare signal from background and extract stable yields under low signal-to-noise conditions.
-- Automated yield extraction, preselection, and branching-ratio cross-checks through analysis scripts and structured inputs rather than relying on one-off notebooks.
-- Validated the strategy against a higher-yield control decay and monitored yield, width, and fit stability across runs and selection settings.
+### My contribution
+- Built likelihood models to separate signal and background statistically.
+- Automated data selection, signal estimation and reference-sample comparisons in Python/C++/ROOT.
+- Checked variable correlations, fitted-parameter correlations and bias in repeated simulated experiments as part of each analysis’s uncertainty assessment.
 
-### Personal validation practice
-Used a staged diagnostic approach, usually starting with the simplest check:
-1. Examined variable correlation coefficients to identify evident associations.
-2. Inspected fit-result correlation matrices to investigate relationships among fitted parameters and model components.
-3. Ran pseudoexperiments to study whether pull-distribution bias changed with model choices and selection conditions.
+### Validation and result
+Compared fit stability across datasets and selection settings. The checks performed found no problematic dependence or bias; the workflow supported a dedicated measurement. This is evidence of the checks performed, rather than a claim that every possible bias was excluded.
 
-This combines inexpensive screening with simulation-based sensitivity checks when examining the reliability of an inferred result.
+### Figures
 
-These checks did not identify problems in the analyses described. I included them in the systematic-uncertainty assessment of each analysis.
-
-### Result
-- Turned the mass-fit strategy into reusable analysis tooling rather than a one-off fit tuned to a single dataset.
-- Demonstrated that the extraction logic was robust enough to support a dedicated branching-ratio measurement, which is a stronger validation than simply showing a visible peak.
-
-### Publications & Reports
-- [Internal note: *Measurement of the branching fraction ratio between B0 → K∗0γ and Bs0 → ϕγ decays using the full LHCb dataset*] documents the signal-plus-background fits, validation logic, and final branching-ratio extraction supported by this workflow.
+![Weak-signal mass fit case 2](assets/selected-work/work-1/BToVG.png "A narrow signal peak is recovered from dominant background through an explicit signal-plus-background fit.")

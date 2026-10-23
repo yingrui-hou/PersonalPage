@@ -1,6 +1,6 @@
 ---
 title: Yingrui Hou | CV
-description: CV de Yingrui Hou, ingénieure simulation et data science pour systèmes physiques.
+description: Yingrui Hou — logiciels scientifiques, analyse de données et validation de modèles.
 eyebrow: CV
 back_home: Retour à l'accueil
 contact_label: Contact

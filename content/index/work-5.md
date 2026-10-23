@@ -2,42 +2,26 @@
 number: 05
 homepage_order: 4
 collapsible: true
-title: Pulse-Shape Discrimination for Energy Reconstruction
-tags: Pulse Shape Discrimination | Detector Simulation | Time-Resolved Signal Analysis | Resolution Optimisation
+title: Signal decomposition for sensor design
+tags: Signal Processing | Simulation | Design Validation
 methods: particle-dependent timing models, component fitting, correlation-based correction
 impact: showed that PSD-derived shower fractions can improve reconstructed energy and help judge which detector materials remain usable for timing-based separation.
 industry: Time-Resolved Sensing | Signal Decomposition | Measurement-System Design
 ---
-**Built a PSD-oriented simulation and analysis workflow to extract shower composition from scintillation time profiles and use it to improve reconstructed energy.**
-
-![PSD-assisted resolution before and after correction](assets/selected-work/work-5/res_compare.png "Resolution improves after PSD-based correction across the tested energy range.")
+Used measured pulse profiles and simulation to assess whether signal components could be separated reliably and improve energy reconstruction.
 
 ### Problem
-The problem was to recover useful composition information from scintillation timing, instead of treating total light yield as a single undifferentiated signal. For the method to be credible, it also had to remain usable under realistic material behaviour, particle-dependent time constants, and the limited separation between EM-like and hadronic-like components.
+Two candidate sensor materials produced overlapping light-pulse profiles. A reconstruction method could only work if the component signals remained distinguishable.
 
-### Experimental comparison guiding material choice
-The team tested ZnWO4 and BGO by measuring scintillation decay-time profiles across energy ranges and electromagnetic or hadronic excitation processes. The design criterion was how well the time profiles could distinguish these processes under the tested conditions.
+### My contribution
+- Compared measured time profiles; engineers operated the measurement setup and sources.
+- Used measured timing parameters in simulation and fitted the resulting signals with component templates.
+- Checked parameter correlations and bias distributions to assess component recovery before applying an energy correction.
 
-The team chose **ZnWO4** for further PSD studies. At low energies, the measured BGO profiles were too similar to the electromagnetic-excitation profiles to provide the desired separation. This experimental material comparison informed the subsequent modelling work; it is separate from the simulated reconstruction-resolution results below.
+### Validation and result
+The study supported the team’s choice of ZnWO4: BGO profiles were insufficiently separated at low energies. One representative simulated correction study reduced a resolution term by about a factor of two. This result concerns that simulation study, not a measured gain in a deployed sensor.
 
-Engineers handled the measurement setup and particle-source operation. I participated in comparing the final time profiles, then used the measured timing parameters as simulation inputs, generated samples and checked whether the resulting temporal separation was sufficient to apply PSD. My contribution connected experimental measurements to a simulation feasibility check.
+### Figures
 
-### From curve screening to quantitative feasibility checks
-First compared normalised time profiles to screen for excessive similarity. Using the measured parameters, simulated high-energy protons entering the calorimeter sensitive layer, their energy deposits and the resulting scintillation-light time profiles.
-
-Fitted the complete light time profile with fixed templates to estimate photon counts from the different processes, before using the components for PSD energy reconstruction. When profiles were insufficiently separated, component counts could not be recovered accurately at this stage. **Fit-result correlation matrices and bias distributions** were used to assess the reliability of component recovery. These diagnostics connected the material choice to whether the proposed reconstruction method was usable.
-
-### Workflow
-- Generated `e/p/pi` simulation samples in two crystal-material candidates (`ZnWO4` and `BGO`) over `1 to 20 GeV` and first validated that the relevant correlation structure between deposited hadronic energy, EM fraction, and total energy remained stable across the energy range.
-- Extended the simulation with scintillation timing, updating time constants dynamically by particle type and `dE/dx`, then fitted the time distributions with EM-, hadronic-, and proton-like components instead of relying only on total signal amplitude.
-- Used the extracted fractions inside a correction workflow for reconstructed energy, then compared the resulting resolution before and after correction while checking which material choices stayed separable enough for PSD-based inference.
-
+![PSD-assisted resolution before and after correction](assets/selected-work/work-5/res_compare.png "Resolution improves after PSD-based correction across the tested energy range.")
 ![Time-profile fit used to recover shower fractions](assets/selected-work/work-5/time_fit.png "Representative time-profile fit showing the recovered EM fraction close to the injected value.")
-
-### Result
-- Showed that the PSD-based correction improves deposited-energy resolution, with one representative rotation-based study reducing the resolution term by about a factor of `2`.
-- Demonstrated that the time-profile fit can recover the dominant EM component with usable accuracy, for example `F_em = 0.740 +/- 0.055` for a reference value of `0.738` in one validation study.
-- Identified a practical design constraint rather than just a positive result: one material candidate (`BGO`) did not separate proton-like and electron-like timing strongly enough for accurate EM-fraction extraction, while `ZnWO4` retained more distinguishable time shapes and therefore offered a more credible PSD route.
-
-### Publications & Reports
-- [Internal report: *PSD study update*] summarizes the time-profile fitting, EM-fraction recovery, and resolution-improvement studies behind this PSD workflow.

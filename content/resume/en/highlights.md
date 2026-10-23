@@ -1,28 +1,11 @@
-### Capabilities supported by project work
-- **Check model reliability:** Selected reference channels, aligned kinematics with gradient-boosting reweighting and fitted predicted-to-observed mistag calibration. Cross-checked with reweighted signal simulation; results agreed within uncertainties. [Calibration case](index.html#work-9).
-- **Investigate performance problems:** used real data to assess an ECAL image-recognition model and traced reconstruction discrepancies to calibration, detector or software issues. Applicable to model evaluation and root-cause investigation. [Diagnostic case](index.html#work-6).
-- **Handle sample differences:** trained CatBoost classifiers with train/test checks and aligned control and target samples through reweighting. Applicable to evaluating models when data distributions differ. [Dataset-shift case](index.html#work-3).
-- **Learn and apply methods:** started with no TensorFlow knowledge, adapted inherited code with new amplitude and measurement-effect models, and verified it using generated simulations. With no prior GPU or multi-user administration experience, configured a shared GPU workstation in half a day and migrated the code to a successful GPU run in a further half-day. These timings cover setup and migration. [Learning and implementation case](index.html#work-8).
-- **Coordinate and communicate:** organised connected measurement, analysis and validation tasks; contributed to shared code and technical reviews. Presented at GDR-InF 2022 and FCC/DRD France 2025, including on behalf of GRAiNITA.
+### Learn and deliver
+Adapted an unfamiliar TensorFlow codebase, added numerical models and verified them against a C++ reference. Set up a shared GPU workstation and brought the code onto GPU. [Software verification](index.html#work-8).
 
-- **Reliable scientific software:** compared TensorFlow amplitudes with a mature C++ reference, resolved variable-type discrepancies and used GitLab reviews to detect a fitter sign error. Weekly team planning adjusted priorities as new data issues emerged. [Verification and collaboration](index.html#work-8).
+### Diagnose and validate
+Traced performance anomalies to data, calibration or software causes. Delivered a reviewed algorithm correction used in later analyses. [Root-cause investigation](index.html#work-6).
 
-- **Extend shared software:** Delivery: modernised QCFilter C++/Gaudi code and added a general amplitude interface. Verified against prior simulations and real data; the toolkit was reused and extended by collaborators. [QCFilter](index.html#work-7).
+### Build for reuse
+Modernised a C++ toolkit, designed an extensible model interface and integrated it into a shared framework. Colleagues reused and extended the result. [Software integration](index.html#work-7).
 
-
-- **Statistical sensitivity checks:** Used variable correlations, fit-parameter correlation matrices and pseudoexperiment pull-bias checks in systematic-uncertainty assessments. No problems were identified in the checks performed. [Case](index.html#work-1).
-
-### How I would approach a new business problem
-A proposed first-month sequence, with scope and timing agreed with the team once data and environment access are available:
-- **Understand the decision:** identify the users, current process, success criteria and costs of different errors.
-- **Establish a baseline:** review data quality and reproduce an existing result or a simple reference analysis.
-- **Investigate one priority:** examine sample bias, model calibration or a specific performance discrepancy, using checks agreed with domain experts.
-- **Deliver a reviewable result:** share reproducible analysis, findings, limitations and a prioritised next-step proposal.
-
-- **Acquisition and quality automation:** Developed a Shell pipeline for beam-test acquisition, storage, quick calibration and initial quality checks, connecting detector readout, tracking and timing calibration. Participated in on-site setup and data taking; assisted subsequent fitting and measurement-effect corrections.
-
-- **Diagnosis to code review:** Diagnosed incorrect ECAL photon truth associations; revised cluster-energy matching, tested multiple simulated decay channels and improved thread safety through review. The merged change supported subsequent Run 3 analyses and reconstruction-performance checks.
-
-- **ML tied to the measurement objective:** Developed CatBoost selection with reweighting, feature pruning, five-fold assessment and train/test KS checks; scanned a measurement-oriented threshold using fitted yields and selection efficiencies.
-
-- **Experimental evidence for design choices:** Compared measured profiles and simulated with measured parameters; checked template-fit component recovery through correlations and bias distributions. This informed the team’s choice of ZnWO4 for PSD. Engineers handled the measurement setup and particle sources.
+### Coordinate and communicate
+Agreed component interfaces, reviewed merge requests and adjusted weekly priorities as new issues emerged. Presented results to international teams. [Collaborative development](index.html#work-8).

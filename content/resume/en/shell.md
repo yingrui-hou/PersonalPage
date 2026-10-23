@@ -1,6 +1,6 @@
 ---
 title: Yingrui Hou | Resume
-description: Resume of Yingrui Hou, simulation and data science engineer for physical systems.
+description: Yingrui Hou — scientific software, data analysis and model validation.
 eyebrow: Resume
 back_home: Back to Homepage
 contact_label: Contact

@@ -50,16 +50,17 @@ This site is driven by Markdown modules, but `index.html` and `resume.html` are 
   - `number`
   - `title`
   - `tags`
-  - `methods`
-  - `impact`
-  - `industry`
   Optional:
   - `evidence_title`
   - `homepage_order` to control homepage display order without renaming files
   - `homepage_group: secondary` to move a case into the secondary homepage grouping
   - `collapsible: true` to show only title, tags, summary, and preview image until the reader clicks `Read more`
   - `homepage: false` to keep a work file in the repo but hide it from the homepage
-  Body structure:
+  Body structure (consistent across both languages):
+  - concise plain-text summary
+  - `### Problem`, `### My contribution`, `### Validation and result` (French equivalents in `fr/`)
+  - the builder renders case subsections as `h4`, below the `h3` case title
+  - figures and publications remain inside the expandable detail; no duplicate methods/impact footer
   - short intro paragraph
   - bullet list
   - optional standalone Markdown image lines such as `![Alt text](assets/example.png)` or `![Alt text](assets/example.png "Caption")`
@@ -131,3 +132,7 @@ python3 -m http.server
 - `capabilities.md` connects transferable skills to public project evidence.
 - Build outputs: `index.html`, `index-fr.html`, `resume.html`, `resume-fr.html`. Each has complete static content; resume buttons also switch language interactively.
 - Four two-page PDFs are linked from both pages under `assets/cv/`. Editable bilingual CV sources and layout files live in `CV_related/career_profiles_2026/`.
+
+## Editorial consistency
+
+Use engineering problem statements, explicit personal actions and verified results. Keep domain names in qualifications and publications, and retain technical terms only where they explain the method. Do not convert research experience into claims of industrial deployment. Keep training, calibration and validation responsibilities distinct. Homepage and resume summaries must agree in English and French.

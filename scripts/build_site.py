@@ -321,12 +321,6 @@ def render_case_study(module: dict, index: int, lang: str = "en") -> str:
     preview_image_markdown = ""
     evidence_markdown = sections.get("evidence", "")
     collapsible = str(attrs.get("collapsible", "false")).lower() == "true"
-    if collapsible:
-        if evidence_markdown:
-            preview_image_markdown, evidence_markdown = split_first_image(evidence_markdown)
-        elif detail_markdown:
-            preview_image_markdown, detail_markdown = split_first_image(detail_markdown)
-
     preview_html = render_markdown(summary_markdown) if summary_markdown else ""
     preview_image_html = render_markdown(preview_image_markdown) if preview_image_markdown else ""
 
@@ -340,10 +334,7 @@ def render_case_study(module: dict, index: int, lang: str = "en") -> str:
 """.strip()
 
     detail_html = f"""
-  {render_markdown(detail_markdown) if detail_markdown else ""}
-  <p class="case-meta"><strong>{('Méthodes :' if lang == 'fr' else 'Methods:')}</strong> {escape(attrs.get("methods", ""))}</p>
-  <p class="impact-note"><strong>{('Résultat :' if lang == 'fr' else 'Impact:')}</strong> {escape(attrs.get("impact", ""))}</p>
-  <p class="impact">{('Applications en ingénierie :' if lang == 'fr' else 'Industry relevance:')} {escape(attrs.get("industry", ""))}</p>
+  {render_markdown(detail_markdown).replace("<h3>", "<h4>").replace("</h3>", "</h4>") if detail_markdown else ""}
   {evidence_html}
 """.strip()
 
@@ -361,10 +352,10 @@ def render_case_study(module: dict, index: int, lang: str = "en") -> str:
     {preview_html}
     {preview_image_html}
   </div>
-  <div class="case-details" hidden>
+  <div class="case-details" id="{escape(module['stem'])}-details" hidden>
     {detail_html}
   </div>
-  <button class="case-toggle" type="button" data-read-toggle aria-expanded="false">
+  <button class="case-toggle" type="button" data-read-toggle aria-controls="{escape(module['stem'])}-details" aria-expanded="false">
     <span class="case-toggle-more">{('Lire la suite' if lang == 'fr' else 'Read more')}</span>
     <span class="case-toggle-less">{('Réduire' if lang == 'fr' else 'Read less')}</span>
   </button>
@@ -379,9 +370,6 @@ def render_case_study(module: dict, index: int, lang: str = "en") -> str:
   </div>
   <div class="case-tags" aria-label="{('Compétences et outils utilisés' if lang == 'fr' else 'Skills and tools used')}">{tags}</div>
   {render_markdown(default_markdown)}
-  <p class="case-meta"><strong>{('Méthodes :' if lang == 'fr' else 'Methods:')}</strong> {escape(attrs.get("methods", ""))}</p>
-  <p class="impact-note"><strong>{('Résultat :' if lang == 'fr' else 'Impact:')}</strong> {escape(attrs.get("impact", ""))}</p>
-  <p class="impact">{('Applications en ingénierie :' if lang == 'fr' else 'Industry relevance:')} {escape(attrs.get("industry", ""))}</p>
   {evidence_html}
 </article>
 """.strip()
@@ -396,6 +384,11 @@ def render_downloads(lang: str) -> str:
         links = " · ".join(f'<a href="assets/cv/CV_YingruiHou_{slug}_{code.upper()}.pdf" download>{label} (PDF)</a>' for code, label in [("en", "English"), ("fr", "Français")])
         cards.append(f'<div class="cv-download"><h3>{escape(en if lang == "en" else fr)}</h3><p>{links}</p></div>')
     return f'<section class="resume-card cv-downloads" aria-label="{title}"><h2>{title}</h2>{"".join(cards)}</section>'
+
+
+def render_capabilities(markdown: str) -> str:
+    html = render_markdown(markdown)
+    return re.sub(r"(<h3>.*?</h3>)(.*?)(?=<h3>|$)", r'<div class="capability">\1\2</div>', html, flags=re.S)
 
 
 def build_index(profile: dict, lang: str = "en") -> str:
@@ -423,14 +416,14 @@ def build_index(profile: dict, lang: str = "en") -> str:
         for work in secondary_works
     )
     work_cards = "\n".join(render_case_study(work, index, lang) for index, work in enumerate(primary_works))
-    secondary_work_cards = "\n".join(render_case_study(work, index, lang) for index, work in enumerate(secondary_works))
+    secondary_work_cards = "\n".join(render_case_study(work, index + len(primary_works), lang) for index, work in enumerate(secondary_works))
     outcomes_html = render_markdown(outcomes["body"])
     secondary_section = ""
     secondary_map = ""
     if secondary_works:
         secondary_map = f"""
             <p class="sidebar-label toc-secondary-label">{escape(additional_methods["attributes"].get("eyebrow", "Additional Statistical Methods"))}</p>
-            <ol class="toc-list toc-list-secondary">
+            <ol class="toc-list toc-list-secondary" start="{len(primary_works) + 1}">
               {secondary_work_map}
             </ol>
         """.strip()
@@ -487,11 +480,6 @@ def build_index(profile: dict, lang: str = "en") -> str:
       <header class="hero">
         <div class="hero-layout" id="top">
           <section class="profile-panel">
-            <div class="closing-panel profile-positioning">
-              <h2>{escape(positioning["attributes"].get("title", ""))}</h2>
-              {render_markdown(positioning["body"])}
-            </div>
-
             <p class="eyebrow">{escape(intro["attributes"].get("eyebrow", "Personal Introduction"))}</p>
             <h1>{escape(intro["attributes"].get("title", ""))}</h1>
             <p class="hero-about">{escape(intro["attributes"].get("about", ""))}</p>
@@ -529,13 +517,13 @@ def build_index(profile: dict, lang: str = "en") -> str:
 
       <main>
         <section class="section" id="capabilities">
-          <div class="section-heading"><p class="eyebrow">{"Compétences transférables" if lang == "fr" else "Transferable capabilities"}</p></div>
-          <div class="resume-card">{render_markdown(parse_module(base / "capabilities.md")["body"].replace("index.html#", "#").replace("index-fr.html#", "#"))}</div>
+          <div class="section-heading"><h2>{"Compétences transférables" if lang == "fr" else "Transferable capabilities"}</h2></div>
+          <div class="resume-card capability-grid">{render_capabilities(parse_module(base / "capabilities.md")["body"].replace("index.html#", "#").replace("index-fr.html#", "#"))}</div>
         </section>
         {render_downloads(lang)}
         <section class="section" id="selected-work">
           <div class="section-heading">
-            <p class="eyebrow">{('Projets' if lang == 'fr' else 'Selected Work')}</p>
+            <h2>{('Projets' if lang == 'fr' else 'Selected Work')}</h2>
           </div>
 
           <div class="case-study-grid">
@@ -658,7 +646,7 @@ def build_resume(profile: dict, initial_lang: str = "en") -> str:
 
       <section class="resume-card resume-summary" id="resume-summary">{initial["summary_html"]}</section>
       <section class="resume-card resume-outcomes">
-        <p class="sidebar-label" id="outcomes-label">{escape(initial["outcomes_label"])}</p>
+        <h2 class="sidebar-label" id="outcomes-label">{escape(initial["outcomes_label"])}</h2>
         <div class="resume-markdown resume-main-markdown" id="resume-outcomes">{initial["outcomes_html"]}</div>
       </section>
 
@@ -666,34 +654,34 @@ def build_resume(profile: dict, initial_lang: str = "en") -> str:
       <div class="resume-grid">
         <aside class="resume-sidebar">
           <section class="resume-card">
-            <p class="sidebar-label" id="contact-label">{escape(initial["contact_label"])}</p>
+            <h2 class="sidebar-label" id="contact-label">{escape(initial["contact_label"])}</h2>
             <div class="contact-list" id="resume-contact">{initial["contact_html"]}</div>
           </section>
 
           <section class="resume-card">
-            <p class="sidebar-label" id="education-label">{escape(initial["education_label"])}</p>
+            <h2 class="sidebar-label" id="education-label">{escape(initial["education_label"])}</h2>
             <div class="resume-markdown resume-sidebar-markdown" id="resume-education">{initial["education_html"]}</div>
           </section>
 
           <section class="resume-card">
-            <p class="sidebar-label" id="skills-label">{escape(initial["skills_label"])}</p>
+            <h2 class="sidebar-label" id="skills-label">{escape(initial["skills_label"])}</h2>
             <div class="resume-markdown resume-sidebar-markdown" id="resume-skills">{initial["skills_html"]}</div>
           </section>
 
           <section class="resume-card">
-            <p class="sidebar-label" id="languages-label">{escape(initial["languages_label"])}</p>
+            <h2 class="sidebar-label" id="languages-label">{escape(initial["languages_label"])}</h2>
             <div class="resume-markdown resume-sidebar-markdown" id="resume-languages">{initial["languages_html"]}</div>
           </section>
         </aside>
 
         <main class="resume-main">
           <section class="resume-card">
-            <p class="sidebar-label" id="highlights-label">{escape(initial["highlights_label"])}</p>
+            <h2 class="sidebar-label" id="highlights-label">{escape(initial["highlights_label"])}</h2>
             <div class="resume-markdown resume-main-markdown" id="resume-highlights">{initial["highlights_html"]}</div>
           </section>
 
           <section class="resume-card">
-            <p class="sidebar-label" id="experience-label">{escape(initial["experience_label"])}</p>
+            <h2 class="sidebar-label" id="experience-label">{escape(initial["experience_label"])}</h2>
             <div class="resume-markdown resume-main-markdown" id="resume-experience">{initial["experience_html"]}</div>
           </section>
         </main>

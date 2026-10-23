@@ -1,27 +1,14 @@
-### Chercheuse postdoctorale | 2021–2026
-CNRS — LAPP, Annecy (2021–2023) ; LPC/LPCA, Clermont-Ferrand (2023.12.01–2026.05.31). Recherche au sein des collaborations LHCb et GRAiNITA.
-- Développement de chaînes réutilisables Python/C++/ROOT reliant préparation des données, inférence statistique, calibration et validation.
-- Construction de chaînes de sélection CatBoost avec diagnostics entraînement/test et études de seuils ; alignement d’échantillons de contrôle et cibles par repondération avec gradient boosting.
-- Intégration de mesures sous faisceau, de cartes de réponse et de simulations Geant4 pour évaluer le détecteur dans des conditions mesurées.
-- Investigation d’écarts de reconstruction et de calibration, identification de causes instrumentales ou logicielles et contribution au suivi des corrections.
-- Organisation de tâches d’analyse liées, depuis les données expérimentales jusqu’aux résultats validés ; travail sur code partagé et participation aux revues de collaboration.
-- Présentation de travaux au GDR-InF 2022 et au 5e atelier FCC/DRD France en 2025, notamment au nom du groupe GRAiNITA.
-### Formation par la recherche doctorale | 2016–2021
-Master et doctorat intégrés en physique des particules, University of Chinese Academy of Sciences.
-- Acquisition des bases mathématiques, expérimentales et numériques pour modéliser des mesures bruitées, évaluer les hypothèses et communiquer les résultats scientifiques.
-- Démarche transférable à de nouveaux problèmes techniques : étudier le système physique, mettre en œuvre une analyse, la confronter aux données et en documenter les limites.
+### Recherche postdoctorale | 2021–2026
+CNRS — LAPP, Annecy (2021–2023) ; LPC/LPCA, Clermont-Ferrand (2023.12.01–2026.05.31).
 
-### Projets de calcul et de validation de modèles
-- **Apprentissage et adaptation de TensorFlow :** sans connaissance préalable, étude d’un code fourni, ajout de modèles d’amplitude et d’effets de mesure (efficacité, résolution, biais), puis vérification sur données simulées générées avec le nouveau modèle. [Projet](index-fr.html#work-8).
-- **Calcul GPU partagé :** configuration et gestion d’une station multi-utilisateur confiée par l’équipe. Configuration en une demi-journée ; migration et première exécution GPU en une demi-journée supplémentaire. Ces durées concernent ces deux étapes ; le développement des modèles est décrit séparément.
-- **Calibration en apprentissage profond :** validation et calibration d’un modèle de marquage de saveur à partir de données réelles. [Contribution](index-fr.html#work-9).
-- **Évaluation de modèles de reconnaissance d’images :** étude et optimisation sur données réelles d’un modèle de clustering de l’ECAL de LHCb au Run 3. [Étude de performance](index-fr.html#work-6).
-- **Connaissance du processus d’entraînement :** participation aux discussions de construction et d’entraînement des modèles de marquage de saveur et de clustering pour préparer la calibration et la validation ultérieures ; sans réalisation de leur entraînement.
+- Développement de workflows Python/C++ réutilisables pour préparer les données, modéliser, calibrer et valider.
+- Entraînement de classificateurs CatBoost, étude des écarts entre échantillons et calibration d’un classificateur existant sur mesures réelles.
+- Diagnostic d’anomalies de reconstruction et livraison d’une correction logicielle revue et utilisée dans les analyses suivantes.
+- Intégration de mesures de capteurs dans Geant4 et automatisation de l’acquisition et des premiers contrôles qualité.
+- Coordination des tâches par planification hebdomadaire et revue de code ; présentations à GDR-InF 2022 et FCC/DRD France 2025.
 
-- **Automatisation de l’acquisition et de la qualité :** Développement d’une chaîne Shell pour l’acquisition sous faisceau, le stockage, la calibration rapide et les premiers contrôles qualité, reliant lecture du détecteur, tracking et calibration temporelle. Participation au montage et à la prise de données ; appui aux ajustements et corrections des effets de mesure.
+### Recherche doctorale | 2016–2021
+Université de l’Académie chinoise des sciences — cursus conjoint de master et doctorat en physique des particules.
 
-- **Du diagnostic à la revue de code:** Diagnostic d’associations erronées des photons ECAL ; modification du matching par énergie déposée dans le cluster, tests sur plusieurs canaux simulés et amélioration de la sûreté multithread après revue. Modification intégrée et utilisée pour les analyses Run 3 et les contrôles de reconstruction.
-
-- **ML relié à l’objectif de mesure:** Sélection CatBoost avec repondération, réduction des variables, évaluation à cinq plis et contrôles KS entraînement/test ; seuil lié à la mesure, fondé sur les effectifs ajustés et les efficacités.
-
-- **Simulation PSD fondée sur les mesures:** Paramètres temporels mesurés utilisés en simulation PSD ; extraction des composantes vérifiée par gabarits, matrices de corrélation et distributions des biais avant les études de correction d’énergie.
+- Formation à la modélisation statistique, aux méthodes numériques et à l’analyse de données expérimentales.
+- Démarche appliquée aux problèmes nouveaux : comprendre le système, implémenter une solution, comparer aux données et documenter les limites.

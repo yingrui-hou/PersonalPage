@@ -2,34 +2,26 @@
 number: 05
 homepage_order: 4
 collapsible: true
-title: Décomposition temporelle et reconstruction du signal
-tags: Analyse temporelle | PSD | Correction de modèle
+title: Décomposition de signaux pour la conception de capteurs
+tags: Traitement du signal | Simulation | Validation de conception
 methods: Modèles de scintillation, ajustements de composantes, corrections par corrélation
 impact: Réduction d’environ 2× d’un terme de résolution dans une étude représentative par rotation.
 industry: Analyse de signaux | Caractérisation capteur | Validation de modèle
 ---
-**Développement d’une simulation et d’une analyse PSD pour extraire les composantes de gerbe à partir de profils temporels de scintillation.**
+Utilisation de profils temporels mesurés et de simulations pour évaluer la séparation des composantes d’un signal et améliorer la reconstruction d’énergie.
+
+### Problème
+Deux matériaux de capteur produisaient des impulsions lumineuses partiellement similaires. La méthode de reconstruction exigeait des composantes suffisamment distinctes.
+
+### Ma contribution
+- Comparaison des profils mesurés ; les ingénieurs assuraient le montage et l’utilisation des sources.
+- Introduction des paramètres temporels mesurés dans la simulation et ajustement des signaux par des profils de référence.
+- Contrôle des corrélations entre paramètres et des distributions de biais avant application d’une correction d’énergie.
+
+### Validation et résultat
+L’étude a conforté le choix de ZnWO4 par l’équipe : les profils de BGO étaient trop proches aux faibles énergies. Une étude de correction simulée a réduit un terme de résolution d’environ un facteur deux. Ce résultat reste propre à cette simulation, sans représenter un gain mesuré sur un capteur déployé.
+
+### Illustrations
 
 ![Résolution avant et après correction](assets/selected-work/work-5/res_compare.png "Évaluation de la correction dans les conditions étudiées.")
-
-### Comparaison expérimentale pour choisir le matériau
-L’équipe a testé ZnWO4 et BGO en mesurant les profils de décroissance temporelle de la scintillation dans plusieurs domaines d’énergie, sous excitation électromagnétique ou hadronique. Le critère de choix était la capacité à distinguer ces processus par leurs profils temporels dans les conditions étudiées.
-
-L’équipe a retenu **ZnWO4** pour poursuivre les études PSD. À basse énergie, les profils mesurés de BGO étaient trop proches des profils d’excitation électromagnétique pour fournir la séparation recherchée. Cette comparaison expérimentale a guidé la suite de la modélisation ; elle est distincte des résultats simulés de résolution présentés ci-dessous.
-
-Les ingénieurs ont assuré le montage de mesure et l’utilisation des sources de particules. J’ai participé à la comparaison des profils temporels finaux, puis utilisé les paramètres mesurés dans la simulation pour générer des échantillons et vérifier si la séparation temporelle permettait d’appliquer la PSD. Ma contribution reliait les mesures expérimentales à une vérification de faisabilité par simulation.
-
-### Du tri visuel à la vérification quantitative de faisabilité
-Comparaison initiale des profils temporels normalisés pour repérer une similarité excessive. À partir des paramètres mesurés, simulation de protons de haute énergie entrant dans la couche sensible du calorimètre, de leurs dépôts d’énergie et des profils temporels de scintillation produits.
-
-Ajustement du profil lumineux complet avec des gabarits fixés pour estimer le nombre de photons provenant des différents processus, avant reconstruction de l’énergie par PSD. Lorsque les profils étaient trop proches, les effectifs de chaque composante ne pouvaient pas être retrouvés avec précision à cette étape. **Matrices de corrélation des résultats d’ajustement et distributions des biais** servaient à évaluer la fiabilité de cette extraction. Ces diagnostics reliaient le choix du matériau à la faisabilité de la reconstruction.
-
-### Réalisation personnelle
-- Génération d’échantillons simulés électron/proton/pion pour ZnWO4 et BGO entre 1 et 20 GeV ; vérification des corrélations pertinentes.
-- Extension de la simulation avec des constantes temporelles dépendant du type de particule et de dE/dx.
-- Ajustement des profils temporels en composantes électromagnétique, hadronique et protonique, puis utilisation des fractions dans la correction de l’énergie.
-
 ![Ajustement temporel](assets/selected-work/work-5/time_fit.png "Comparaison d’une fraction extraite à sa référence simulée.")
-
-### Résultat
-Dans une étude représentative fondée sur une rotation, un terme de résolution est réduit d’environ un facteur 2. Une validation donne F_em = 0,740 ± 0,055 pour une référence de 0,738. L’étude identifie aussi une limite : la séparation temporelle de BGO est moins favorable que celle de ZnWO4. Ces résultats restent propres aux configurations étudiées.

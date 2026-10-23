@@ -2,23 +2,21 @@
 number: 09
 homepage_order: 2
 collapsible: true
-title: Calibration de modèles d’apprentissage profond
-tags: Apprentissage profond | Calibration | Données réelles
+title: Calibration de la confiance d’un classificateur
+tags: Calibration | Écarts de distribution | Validation sur données
 methods: contrôles sur données réelles, calibration du marquage de saveur, revue collaborative
 impact: calibration et validation d’un modèle de marquage de saveur pour l’analyse physique.
 industry: ML appliqué | Validation de modèles | Analyse scientifique
 ---
-**Calibration des probabilités de mauvais marquage pour l’analyse Bs → φγ, à partir de canaux de référence dans les données et d’une vérification par simulation.**
+Calibration des probabilités d’erreur estimées par un classificateur à partir de mesures de référence, puis vérification par simulation.
 
-### Problème et domaine d’application
-Le modèle fournissait une décision de saveur (−1, 0 ou +1) et une probabilité estimée de mauvais marquage comprise entre 0 et 0,5. Son entraînement reposait sur des échantillons simulés d’un processus particulier. Les écarts simulation-données nécessitaient une calibration. Ces écarts dépendent du processus cible : la calibration ne peut pas être supposée universelle.
+### Problème
+Le classificateur était entraîné sur une simulation dont les distributions différaient des données réelles. Ses probabilités d’erreur devaient être calibrées pour l’analyse cible.
 
-### Contribution personnelle
-- Choix de **B+ → J/ψ K et Bs → Ds π** comme canaux de calibration, selon les caractéristiques du tagger et du signal cible.
-- Vérification préalable des distributions cinématiques clés ; **repondération par gradient boosting** si nécessaire pour rapprocher les échantillons de référence du signal, la réponse du modèle dépendant de la cinématique.
-- Utilisation des informations de saveur issues des charges et nombres quantiques de l’état final reconstruit. Comparaison avec les décisions du modèle, puis **ajustement de la relation entre probabilités prédites et taux de mauvais marquage observés**, appliquée au signal.
-- **Vérification avec une simulation du signal repondérée vers la cinématique attendue dans les données. Les estimations étaient compatibles dans leurs incertitudes**, ce qui étaye la fiabilité de la calibration pour cette analyse.
-- Participation aux discussions de construction et d’entraînement en vue de la calibration et de la validation ; sans réalisation de l’entraînement du modèle.
+### Ma contribution
+- Choix de processus de référence dont les classes sont identifiables et contrôle de leur pertinence pour les données cibles.
+- Alignement des distributions d’entrée importantes par repondération lorsque nécessaire.
+- Ajustement de la relation entre probabilités d’erreur prédites et observées, puis application de la correction à l’analyse cible.
 
-### Transfert vers l’ingénierie
-Choisir des données de référence pertinentes, traiter les différences de distribution avant le transfert d’une calibration, ajuster la confiance du modèle et la confronter à la simulation. Le résultat soutient l’analyse considérée, sans établir une calibration universelle ou l’absence de tout biais résiduel.
+### Validation et résultat
+Vérification de la calibration par une simulation cible repondérée : les estimations d’erreur concordaient dans les incertitudes. Ma contribution portait sur la calibration et la validation, avec participation aux discussions sur l’entraînement. Je n’ai pas entraîné ce modèle. La calibration reste propre au processus cible et aux conditions des données de référence.

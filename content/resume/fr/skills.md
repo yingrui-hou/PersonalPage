@@ -1,11 +1,14 @@
-### Analyse de données & apprentissage automatique
-- Python, NumPy, pandas, scikit-learn, statsmodels ; CatBoost et gradient boosting.
-- Inférence statistique, vraisemblance, sélection de variables, diagnostics entraînement/test et repondération d’échantillons.
-- Calibration du marquage de saveur par apprentissage profond ; validation et optimisation de modèles de reconnaissance d’images pour le clustering, à partir de données réelles.
-### Logiciel scientifique & calcul numérique
-- Adaptation de code TensorFlow, modèles d’amplitude complexe et d’effets de mesure ; vérification sur données simulées générées par le modèle.
-- Configuration et gestion d’une station GPU partagée ; migration du calcul TensorFlow vers le GPU.
-- C/C++, ROOT/RooFit, Linux ; automatisation Shell, YAML et CMake, composants réutilisables et revue de code partagé.
-### Simulation & mesure
-- Modèles de détecteurs Geant4, cartes de réponse, calibration et validation simulation-mesure.
-- Analyse temporelle des signaux, correction des biais et interprétation tenant compte des incertitudes.
+### Données et apprentissage automatique
+- Python, NumPy, pandas, scikit-learn ; CatBoost.
+- Sélection de variables, validation croisée, repondération et calibration de classificateurs.
+- Modèles de vraisemblance, évaluation des incertitudes et des biais.
+
+### Logiciels et calcul
+- C++, ROOT/RooFit, modèles numériques TensorFlow ; Linux et Shell.
+- Configuration d’une station GPU partagée, merge requests GitLab et revue de code.
+- HTCondor au CERN ; SLURM au CC-IN2P3, avec scripts de soumission, de suivi et de contrôle des résultats.
+- Utilisation et diagnostic des pipelines CI/CD LHCb Run 3 ; création de pipelines d’analyse personnels.
+
+### Simulation et mesure
+- Geant4, modélisation de réponse de capteurs et comparaison simulation–mesures.
+- Décomposition de signaux, calibration et automatisation de l’acquisition.

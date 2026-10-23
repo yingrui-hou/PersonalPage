@@ -1,25 +1,8 @@
-- Python
-- NumPy
-- pandas
-- scikit-learn
-- statsmodels
-- matplotlib / seaborn
-- C/C++
-- ROOT / RooFit
+- Python · NumPy · pandas
+- C++ · ROOT/RooFit
+- CatBoost · scikit-learn
+- TensorFlow · GPU
 - Geant4
-- TensorFlow — calcul numérique sur GPU
-- Calibration de modèles d’apprentissage profond
-- Évaluation de modèles de reconnaissance d’images
-- Contrôles de performance sur données réelles
-- CatBoost / Gradient Boosting
-- Modélisation probabiliste
-- Inférence statistique
-- Estimation par maximum de vraisemblance
-- Validation de modèles
-- Calibration et correction des biais
-- Alignement simulation-données
-- Traitement du signal
-- Adaptation de domaine
-- Automatisation (YAML / Shell / CMake)
-- Analyse de données à grande échelle
-- Configuration et gestion d’une station GPU multi-utilisateur
+- Linux · Shell · Git
+- Calibration de modèles
+- Validation statistique

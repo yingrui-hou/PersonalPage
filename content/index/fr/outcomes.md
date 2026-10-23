@@ -1,7 +1,6 @@
 ---
 label: Contributions et résultats
 ---
-- Configuration d’une station GPU partagée en **une demi-journée**, puis migration du code TensorFlow vers une exécution GPU réussie en **une demi-journée supplémentaire**. Durées limitées à ces deux étapes.
-- Identification d’écarts de reconstruction ayant conduit à un suivi de calibration et de correction logicielle, dont un problème d’énergie manquante corrigé ensuite en aval.
-- Intégration de cartes de réponse mesurées dans la simulation ; contribution des non-uniformités au terme constant de résolution en énergie inférieure à **1 %** dans l’étude du premier prototype GRAiNITA.
-- Réduction d’environ un facteur **2** d’un terme de résolution en énergie dans une étude PSD représentative fondée sur une rotation ; résultat propre à cette étude.
+- **Livraison logicielle :** correction d’algorithme intégrée et utilisée dans les contrôles de performance suivants.
+- **Outils réutilisables :** outil de simulation C++ modernisé, adopté et étendu par les collaborateurs.
+- **Fiabilité des modèles :** calibration d’un classificateur vérifiée par simulation, avec accord dans les incertitudes.
